@@ -19,11 +19,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Topic_area" type="HBoxContainer" parent="VBoxContainer"]
+[node name="Title" type="HBoxContainer" parent="VBoxContainer"]
 margin_right = 1279.0
 margin_bottom = 51.0
 
-[node name="Topic_area" type="Label" parent="VBoxContainer/Topic_area"]
+[node name="TitleText" type="Label" parent="VBoxContainer/Title"]
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
@@ -31,35 +31,30 @@ custom_fonts/font = SubResource( 1 )
 text = "Topic Area"
 align = 1
 
-[node name="Main_menu_button" type="VBoxContainer" parent="."]
-margin_left = 1.0
-margin_top = 626.0
-margin_right = 188.0
-margin_bottom = 719.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Main" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 55.0
+margin_right = 1279.0
+margin_bottom = 672.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="Main_menu" type="Button" parent="Main_menu_button"]
+[node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 676.0
+margin_right = 1279.0
+margin_bottom = 723.0
+
+[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
 margin_right = 185.0
-margin_bottom = 93.0
+margin_bottom = 47.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
 text = "Main Menu"
 
-[node name="Start_quiz_button" type="VBoxContainer" parent="."]
-margin_left = 377.0
-margin_top = 626.0
-margin_right = 564.0
-margin_bottom = 719.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Start_quiz" type="Button" parent="Start_quiz_button"]
-margin_right = 158.0
-margin_bottom = 93.0
+[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation"]
+margin_left = 189.0
+margin_right = 347.0
+margin_bottom = 47.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
