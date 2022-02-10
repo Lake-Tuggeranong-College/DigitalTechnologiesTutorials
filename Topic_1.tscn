@@ -31,15 +31,36 @@ custom_fonts/font = SubResource( 1 )
 text = "Topic Area"
 align = 1
 
-[node name="Main_buttons" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 55.0
-margin_right = 185.0
-margin_bottom = 102.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
+[node name="Main_menu_button" type="VBoxContainer" parent="."]
+margin_left = 1.0
+margin_top = 626.0
+margin_right = 188.0
+margin_bottom = 719.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Button" type="Button" parent="VBoxContainer/Main_buttons"]
+[node name="Main_menu" type="Button" parent="Main_menu_button"]
 margin_right = 185.0
-margin_bottom = 47.0
+margin_bottom = 93.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
 text = "Main Menu"
+
+[node name="Start_quiz_button" type="VBoxContainer" parent="."]
+margin_left = 377.0
+margin_top = 626.0
+margin_right = 564.0
+margin_bottom = 719.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start_quiz" type="Button" parent="Start_quiz_button"]
+margin_right = 158.0
+margin_bottom = 93.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Start Quiz"
