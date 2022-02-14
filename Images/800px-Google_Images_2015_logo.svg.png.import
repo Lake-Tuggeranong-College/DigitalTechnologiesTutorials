@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/800px-Google_Images_2015_logo.svg.png-3aacafaca09cb0129f27e64b37af9138.stex"
+path="res://.import/800px-Google_Images_2015_logo.svg.png-e494c2759fa90139c602cd4bf1e0f9c8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://800px-Google_Images_2015_logo.svg.png"
-dest_files=[ "res://.import/800px-Google_Images_2015_logo.svg.png-3aacafaca09cb0129f27e64b37af9138.stex" ]
+source_file="res://Images/800px-Google_Images_2015_logo.svg.png"
+dest_files=[ "res://.import/800px-Google_Images_2015_logo.svg.png-e494c2759fa90139c602cd4bf1e0f9c8.stex" ]
 
 [params]
 
