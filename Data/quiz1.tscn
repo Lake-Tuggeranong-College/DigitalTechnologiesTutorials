@@ -29,11 +29,11 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1548.0
+margin_right = 1345.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1548.0
+margin_right = 1345.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -42,13 +42,13 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1548.0
+margin_right = 1345.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 603.0
+margin_right = 400.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -57,17 +57,16 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 101.0
 margin_top = 238.0
-margin_right = 501.0
+margin_right = 400.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 607.0
-margin_right = 1548.0
+margin_left = 404.0
+margin_right = 1345.0
 margin_bottom = 85.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -130,7 +129,7 @@ __meta__ = {
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 1548.0
+margin_right = 1345.0
 margin_bottom = 723.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
@@ -170,7 +169,7 @@ text = "Next"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
-margin_right = 1548.0
+margin_right = 1345.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
