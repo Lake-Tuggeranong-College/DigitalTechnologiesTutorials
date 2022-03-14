@@ -3,7 +3,7 @@
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
 
@@ -31,8 +31,8 @@ margin_bottom = 51.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 4 )
-text = "Topic Area"
+custom_fonts/font = SubResource( 1 )
+text = "Social & ethical"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -119,6 +119,6 @@ margin_left = 522.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
