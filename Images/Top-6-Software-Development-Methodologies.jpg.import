@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/Top-6-Software-Development-Methodologies.jpg-2275ef676c6fcefdc4f39012e47508a5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://Images/Top-6-Software-Development-Methodologies.jpg"
+dest_files=[ "res://.import/Top-6-Software-Development-Methodologies.jpg-2275ef676c6fcefdc4f39012e47508a5.stex" ]
 
 [params]
 

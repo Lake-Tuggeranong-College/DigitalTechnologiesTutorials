@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
+[ext_resource path="res://Images/Top-6-Software-Development-Methodologies.jpg" type="Texture" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -32,7 +32,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Software"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -52,10 +52,10 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 118.0
-margin_top = 238.0
-margin_right = 518.0
-margin_bottom = 375.0
+margin_left = 18.0
+margin_top = 147.0
+margin_right = 618.0
+margin_bottom = 466.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
@@ -67,11 +67,6 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
 align = 1
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
@@ -120,5 +115,5 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "15,500"
+text = "0"
 align = 2
