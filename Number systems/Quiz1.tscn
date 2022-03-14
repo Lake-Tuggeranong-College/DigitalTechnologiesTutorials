@@ -11,11 +11,11 @@ font_data = ExtResource( 1 )
 size = 32
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 40
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -82,7 +82,7 @@ margin_right = 479.342
 margin_bottom = 148.423
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Answer 1"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -95,7 +95,7 @@ margin_right = 479.342
 margin_bottom = 251.811
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Answer 2"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -108,7 +108,7 @@ margin_right = 476.621
 margin_bottom = 359.281
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Answer 3"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -121,7 +121,7 @@ margin_right = 479.342
 margin_bottom = 470.831
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Answer 3"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -137,7 +137,7 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
 
 [node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation"]
@@ -146,7 +146,7 @@ margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation"]
@@ -155,7 +155,7 @@ margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Back"
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation"]
@@ -164,10 +164,10 @@ margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Next"
 
-[node name="Score" type="Label" parent="VBoxContainer/Navigation"]
+[node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
 margin_right = 1279.0
 margin_bottom = 51.0
