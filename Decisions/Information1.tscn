@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
+[ext_resource path="res://Images/If_statement_screenshot.jpg" type="Texture" id=2]
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
 
@@ -31,20 +31,20 @@ margin_bottom = 51.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 text = "Topic Area"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
 margin_right = 1279.0
-margin_bottom = 668.0
+margin_bottom = 766.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
-margin_bottom = 613.0
+margin_right = 711.0
+margin_bottom = 711.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -52,32 +52,41 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 118.0
-margin_top = 238.0
-margin_right = 518.0
-margin_bottom = 375.0
+margin_right = 711.0
+margin_bottom = 711.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
+margin_left = 715.0
 margin_right = 1279.0
-margin_bottom = 613.0
+margin_bottom = 711.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "
+
+
+
+
+
+
+
+
+
+
+Programming decisions are determined by user input.
+For example, clicking a button or completing actions.
+Decisions use a true or false system to determine their outcomes.
+'If statements' are a simple form of decision making for a program.
+"
 align = 1
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 672.0
+margin_top = 770.0
 margin_right = 1279.0
-margin_bottom = 723.0
+margin_bottom = 821.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
 margin_right = 185.0
@@ -119,6 +128,6 @@ margin_left = 522.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
