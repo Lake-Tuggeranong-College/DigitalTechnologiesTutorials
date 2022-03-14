@@ -72,57 +72,48 @@ margin_bottom = 41.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "This is an example question"
+text = "What is an algorithm?"
 align = 1
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
+margin_left = -55.0
 margin_top = 72.4228
-margin_right = 479.342
+margin_right = 634.0
 margin_bottom = 148.423
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "Answer 1"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+text = "A way to instantly solve any problem"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
+margin_left = -51.0
 margin_top = 175.811
-margin_right = 479.342
+margin_right = 354.0
 margin_bottom = 251.811
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "Answer 2"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+text = "A way to do anything"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 132.621
-margin_top = 283.281
-margin_right = 476.621
-margin_bottom = 359.281
+margin_left = -50.0
+margin_top = 283.0
+margin_right = 594.0
+margin_bottom = 359.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "Answer 3"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+text = "A series of steps to solve a problem"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
+margin_left = -45.0
 margin_top = 394.831
-margin_right = 479.342
+margin_right = 519.0
 margin_bottom = 470.831
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "Answer 3"
+text = "A way to make daily decisions"
 __meta__ = {
 "_edit_use_anchors_": false
 }
