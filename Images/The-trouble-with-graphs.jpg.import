@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/142774.jpg-f3ae83e662c73b8cdf29a9430b2f0609.stex"
+path="res://.import/The-trouble-with-graphs.jpg-daece59ed81a217ea42ed36c65e873bb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/142774.jpg"
-dest_files=[ "res://.import/142774.jpg-f3ae83e662c73b8cdf29a9430b2f0609.stex" ]
+source_file="res://Images/The-trouble-with-graphs.jpg"
+dest_files=[ "res://.import/The-trouble-with-graphs.jpg-daece59ed81a217ea42ed36c65e873bb.stex" ]
 
 [params]
 
@@ -28,7 +28,6 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
-process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
