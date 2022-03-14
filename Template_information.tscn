@@ -114,7 +114,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Next"
 
-[node name="Label" type="Label" parent="VBoxContainer/Navigation"]
+[node name="Score" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
 margin_right = 1279.0
 margin_bottom = 51.0
