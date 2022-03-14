@@ -67,12 +67,9 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "An algorithm is a series of steps that a computer follows in order to solve a problem. The algorithm will follow the steps until it reaches the end."
 align = 1
+autowrap = true
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
