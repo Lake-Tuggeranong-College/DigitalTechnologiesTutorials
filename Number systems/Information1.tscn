@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
+[ext_resource path="res://Images/decimals_image.jpg" type="Texture" id=2]
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
 
@@ -24,27 +24,27 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1279.0
+margin_right = 2022.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1279.0
+margin_right = 2022.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 text = "Topic Area"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1279.0
-margin_bottom = 668.0
+margin_right = 2022.0
+margin_bottom = 791.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
-margin_bottom = 613.0
+margin_right = 1221.0
+margin_bottom = 736.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -52,32 +52,26 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 118.0
-margin_top = 238.0
-margin_right = 518.0
-margin_bottom = 375.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
+margin_right = 1221.0
+margin_bottom = 736.0
 texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
-margin_right = 1279.0
-margin_bottom = 613.0
+margin_left = 1225.0
+margin_right = 2022.0
+margin_bottom = 736.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "Decimal: The decimal number system is used regularly by people because it is simple and easy to remember. 
+The numbers range from 0-9, and are used to create numbers multiple digits
+ numbers, for example, 20 is made of 2 and 0, 101 is made of 1 and 0 and 1 , etc."
 align = 1
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 672.0
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_top = 795.0
+margin_right = 2022.0
+margin_bottom = 846.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
 margin_right = 185.0
@@ -116,9 +110,9 @@ text = "Next"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
-margin_right = 1279.0
+margin_right = 2022.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
