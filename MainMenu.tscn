@@ -1,18 +1,17 @@
+[gd_scene load_steps=5 format=2]
 
-[gd_scene load_steps=2 format=2]
+[ext_resource path="res://Button_Menu.gd" type="Script" id=1]
+[ext_resource path="res://MainMenu.gd" type="Script" id=2]
+[ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=3]
 
-[sub_resource type="GDScript" id=1]
-script/source = "extends Button
-
-var simultaneous_scene = preload(\"res://Topic_1.tscn\").instance()
-
-func _add_a_scene_manually():
-	# This is like autoloading the scene, only
-	# it happens after already loading the main scene.
-	get_tree().get_root().add_child(simultaneous_scene)
-"
+[sub_resource type="DynamicFont" id=1]
+size = 72
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
 
 [node name="Main" type="Node2D"]
+script = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_right = 1.0
@@ -25,15 +24,17 @@ __meta__ = {
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 1280.0
-margin_bottom = 14.0
+margin_bottom = 91.0
+custom_fonts/font = SubResource( 1 )
 text = "Digital Technologies Tutorials"
 align = 1
+uppercase = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Levels" type="GridContainer" parent="VBoxContainer"]
-margin_top = 18.0
+margin_top = 95.0
 margin_right = 1280.0
 margin_bottom = 720.0
 size_flags_horizontal = 3
@@ -45,76 +46,102 @@ __meta__ = {
 
 [node name="Topic 1" type="Button" parent="VBoxContainer/Levels"]
 margin_right = 424.0
-margin_bottom = 231.0
+margin_bottom = 153.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Topic 1"
-script = SubResource( 1 )
+text = "Algorithms"
+script = ExtResource( 1 )
+scene_to_load = "res://Algorithms/infomation1.tscn"
 
 [node name="Topic 2" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 428.0
 margin_right = 852.0
-margin_bottom = 231.0
+margin_bottom = 153.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Topic 2"
+text = "Code"
+script = ExtResource( 1 )
+scene_to_load = "res://Code/information1.tscn"
 
 [node name="Topic 3" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 856.0
 margin_right = 1280.0
-margin_bottom = 231.0
+margin_bottom = 153.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Topic 3"
+text = "Data"
+script = ExtResource( 1 )
+scene_to_load = "res://Data/information1.tscn"
 
 [node name="Topic 4" type="Button" parent="VBoxContainer/Levels"]
-margin_top = 235.0
+margin_top = 157.0
 margin_right = 424.0
-margin_bottom = 466.0
+margin_bottom = 310.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Topic 4"
+text = "Decisions"
+script = ExtResource( 1 )
+scene_to_load = "res://Decisions/Information1.tscn"
 
 [node name="Topic 5" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 428.0
-margin_top = 235.0
+margin_top = 157.0
 margin_right = 852.0
-margin_bottom = 466.0
+margin_bottom = 310.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Topic 5"
+text = "Hardware"
+script = ExtResource( 1 )
+scene_to_load = "res://Hardware/information1.tscn"
 
 [node name="Topic 6" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 856.0
-margin_top = 235.0
+margin_top = 157.0
 margin_right = 1280.0
-margin_bottom = 466.0
+margin_bottom = 310.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Topic 6"
+text = "Accessibility"
+script = ExtResource( 1 )
 
 [node name="Topic 7" type="Button" parent="VBoxContainer/Levels"]
-margin_top = 470.0
+margin_top = 314.0
 margin_right = 424.0
-margin_bottom = 701.0
+margin_bottom = 467.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Topic 7"
+text = "Number System"
+script = ExtResource( 1 )
+scene_to_load = "res://Number systems/Information1.tscn"
 
 [node name="Topic 8" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 428.0
-margin_top = 470.0
+margin_top = 314.0
 margin_right = 852.0
-margin_bottom = 701.0
+margin_bottom = 467.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Topic 8"
+text = "Social"
+script = ExtResource( 1 )
+scene_to_load = "res://Social/information1.tscn"
+
+[node name="Topic 9" type="Button" parent="VBoxContainer/Levels"]
+margin_left = 856.0
+margin_top = 314.0
+margin_right = 1280.0
+margin_bottom = 467.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Software"
+script = ExtResource( 1 )
+scene_to_load = "res://Software/Software_Information.tscn"
 
 [node name="Topic 10" type="Button" parent="VBoxContainer/Levels"]
-margin_left = 856.0
-margin_top = 470.0
-margin_right = 1280.0
-margin_bottom = 701.0
+margin_top = 471.0
+margin_right = 424.0
+margin_bottom = 624.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Topic 10"
+text = "Peripherals"
+script = ExtResource( 1 )
+scene_to_load = "res://Peripherals/Information.tscn"
