@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=1]
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Button_Menu.gd" type="Script" id=3]
+[ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -11,15 +13,16 @@ font_data = ExtResource( 2 )
 size = 32
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 40
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 32
 font_data = ExtResource( 2 )
 
 [node name="Topic_1" type="Node2D"]
+script = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_right = 1279.0
@@ -82,7 +85,7 @@ margin_right = 634.0
 margin_bottom = 148.423
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "A way to instantly solve any problem"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
@@ -92,7 +95,7 @@ margin_right = 354.0
 margin_bottom = 251.811
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "A way to do anything"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
@@ -102,7 +105,7 @@ margin_right = 594.0
 margin_bottom = 359.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "A series of steps to solve a problem"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
@@ -112,7 +115,7 @@ margin_right = 519.0
 margin_bottom = 470.831
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "A way to make daily decisions"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -123,43 +126,53 @@ margin_top = 672.0
 margin_right = 1279.0
 margin_bottom = 723.0
 
-[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
+margin_right = 578.0
+margin_bottom = 51.0
+
+[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
+script = ExtResource( 3 )
+scene_to_load = "res://MainMenu.tscn"
 
-[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Return_to_Info" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
-margin_right = 347.0
+margin_right = 407.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Start Quiz"
+custom_fonts/font = SubResource( 4 )
+text = "Reutrn to Info"
+script = ExtResource( 3 )
+scene_to_load = "res://Algorithms/infomation1.tscn"
 
-[node name="Back_button" type="Button" parent="VBoxContainer/Navigation"]
-margin_left = 351.0
-margin_right = 434.0
+[node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+margin_left = 411.0
+margin_right = 494.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Back"
+script = ExtResource( 3 )
 
-[node name="Next_button" type="Button" parent="VBoxContainer/Navigation"]
-margin_left = 438.0
-margin_right = 518.0
+[node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+margin_left = 498.0
+margin_right = 578.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Next"
+script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 522.0
+margin_left = 582.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
