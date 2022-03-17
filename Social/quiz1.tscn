@@ -32,11 +32,11 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1279.0
+margin_right = 2284.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1279.0
+margin_right = 2284.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -45,13 +45,13 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1279.0
+margin_right = 2284.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
+margin_right = 1140.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,22 +60,24 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 118.0
+margin_left = 370.0
 margin_top = 238.0
-margin_right = 518.0
+margin_right = 770.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
-margin_right = 1279.0
-margin_bottom = 41.0
+margin_left = 1144.0
+margin_right = 2284.0
+margin_bottom = 129.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "This is an example question"
+text = "your name is jason smith
+ and you want to make an account for yourself,
+ what's the best user name to protect your privacy?"
 align = 1
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
@@ -86,7 +88,7 @@ margin_bottom = 148.423
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 1"
+text = "Jason_the_man225"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -99,7 +101,7 @@ margin_bottom = 251.811
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 2"
+text = "Jason Smith"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -112,7 +114,7 @@ margin_bottom = 359.281
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 3"
+text = "Starwars19_ rulz77"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -125,14 +127,14 @@ margin_bottom = 470.831
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 3"
+text = "JasonB99"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 1279.0
+margin_right = 2284.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
@@ -182,7 +184,7 @@ script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 582.0
-margin_right = 1279.0
+margin_right = 2284.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
