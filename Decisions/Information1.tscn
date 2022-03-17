@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/If_statement_screenshot.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/If_statement_code.jpg" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -10,6 +10,7 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 25
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -20,34 +21,34 @@ font_data = ExtResource( 1 )
 script = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_right = 1280.0
+margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Decisions"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1279.0
-margin_bottom = 766.0
+margin_right = 1280.0
+margin_bottom = 665.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 711.0
-margin_bottom = 711.0
+margin_right = 638.0
+margin_bottom = 610.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -55,16 +56,20 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_right = 711.0
-margin_bottom = 711.0
+margin_left = 19.0
+margin_top = 5.0
+margin_right = 619.0
+margin_bottom = 605.0
+rect_min_size = Vector2( 600, 600 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
+expand = true
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 715.0
-margin_right = 1279.0
-margin_bottom = 711.0
+margin_left = 642.0
+margin_right = 1280.0
+margin_bottom = 610.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
@@ -72,24 +77,22 @@ text = "
 
 
 
+Programming decisions are determined by user input. For example, clicking a button
+or completing actions.
 
+Decisions use a true or false system to determine
+their outcomes.
 
-
-
-
-
-
-Programming decisions are determined by user input.
-For example, clicking a button or completing actions.
-Decisions use a true or false system to determine their outcomes.
-'If statements' are a simple form of decision making for a program.
+'If statements' are a simple form of
+decision making for a program.
 "
 align = 1
+autowrap = true
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 770.0
-margin_right = 1279.0
-margin_bottom = 821.0
+margin_top = 669.0
+margin_right = 1280.0
+margin_bottom = 720.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
 margin_right = 518.0
@@ -138,7 +141,7 @@ script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
