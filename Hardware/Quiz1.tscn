@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Hardware Question's"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -75,7 +75,6 @@ margin_bottom = 41.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "This is an example question"
 align = 1
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
@@ -86,20 +85,20 @@ margin_bottom = 148.423
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 1"
+text = "Television/Monitor"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 175.811
-margin_right = 479.342
-margin_bottom = 251.811
+margin_left = 135.0
+margin_top = 176.0
+margin_right = 505.0
+margin_bottom = 252.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 2"
+text = "Toaster"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -107,12 +106,12 @@ __meta__ = {
 [node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
 margin_left = 132.621
 margin_top = 283.281
-margin_right = 476.621
+margin_right = 505.0
 margin_bottom = 359.281
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 3"
+text = "Mobile Phone"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -120,12 +119,12 @@ __meta__ = {
 [node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
 margin_left = 135.342
 margin_top = 394.831
-margin_right = 479.342
+margin_right = 505.0
 margin_bottom = 470.831
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 4"
+text = "Air Conditioner"
 __meta__ = {
 "_edit_use_anchors_": false
 }
