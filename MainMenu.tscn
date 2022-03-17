@@ -202,6 +202,7 @@ custom_styles/normal = SubResource( 15 )
 custom_fonts/font = SubResource( 5 )
 text = "Accessibility"
 script = ExtResource( 1 )
+scene_to_load = "res://useraccess.tscn"
 
 [node name="Topic 7" type="Button" parent="VBoxContainer/Levels"]
 margin_top = 294.0
