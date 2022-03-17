@@ -40,7 +40,7 @@ margin_right = 1345.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Transferring data"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -99,7 +99,7 @@ margin_bottom = 251.811
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "email"
+text = "Cloud"
 __meta__ = {
 "_edit_use_anchors_": false
 }
