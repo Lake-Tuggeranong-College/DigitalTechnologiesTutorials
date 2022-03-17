@@ -17,7 +17,11 @@ outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=12]
+[sub_resource type="StyleBoxTexture" id=3]
+
+[sub_resource type="StyleBoxTexture" id=4]
+
+[sub_resource type="DynamicFont" id=5]
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 3 )
@@ -128,7 +132,6 @@ size_flags_vertical = 3
 custom_styles/hover = SubResource( 3 )
 custom_styles/normal = SubResource( 4 )
 custom_fonts/font = SubResource( 5 )
-
 text = "Algorithms"
 expand_icon = true
 script = ExtResource( 1 )
@@ -143,7 +146,6 @@ size_flags_vertical = 3
 custom_styles/hover = SubResource( 6 )
 custom_styles/normal = SubResource( 7 )
 custom_fonts/font = SubResource( 5 )
-
 text = "Code"
 script = ExtResource( 1 )
 scene_to_load = "res://Code/information1.tscn"
@@ -157,7 +159,6 @@ size_flags_vertical = 3
 custom_styles/hover = SubResource( 8 )
 custom_styles/normal = SubResource( 9 )
 custom_fonts/font = SubResource( 5 )
-
 text = "Data"
 script = ExtResource( 1 )
 scene_to_load = "res://Data/information1.tscn"
@@ -171,7 +172,6 @@ size_flags_vertical = 3
 custom_styles/hover = SubResource( 10 )
 custom_styles/normal = SubResource( 11 )
 custom_fonts/font = SubResource( 5 )
-
 text = "Decisions"
 script = ExtResource( 1 )
 scene_to_load = "res://Decisions/Information1.tscn"
@@ -186,7 +186,6 @@ size_flags_vertical = 3
 custom_styles/hover = SubResource( 12 )
 custom_styles/normal = SubResource( 13 )
 custom_fonts/font = SubResource( 5 )
-
 text = "Hardware"
 script = ExtResource( 1 )
 scene_to_load = "res://Hardware/information1.tscn"
@@ -201,7 +200,6 @@ size_flags_vertical = 3
 custom_styles/hover = SubResource( 14 )
 custom_styles/normal = SubResource( 15 )
 custom_fonts/font = SubResource( 5 )
-
 text = "Accessibility"
 script = ExtResource( 1 )
 
@@ -214,7 +212,6 @@ size_flags_vertical = 3
 custom_styles/hover = SubResource( 16 )
 custom_styles/normal = SubResource( 17 )
 custom_fonts/font = SubResource( 5 )
-
 text = "Number System"
 script = ExtResource( 1 )
 scene_to_load = "res://Number systems/Information1.tscn"
@@ -226,10 +223,9 @@ margin_right = 852.0
 margin_bottom = 437.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-
-custom_fonts/font = SubResource( 12 )
-custom_styles/hover = SubResource( 21 )
-custom_styles/normal = SubResource( 9 )
+custom_styles/hover = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
+custom_fonts/font = SubResource( 5 )
 
 text = "Social"
 script = ExtResource( 1 )
@@ -256,7 +252,6 @@ margin_bottom = 584.0
 custom_styles/hover = SubResource( 22 )
 custom_styles/normal = SubResource( 23 )
 custom_fonts/font = SubResource( 5 )
-
 text = "Options Or Quit"
 script = ExtResource( 1 )
 
@@ -283,6 +278,5 @@ margin_bottom = 584.0
 custom_styles/hover = SubResource( 26 )
 custom_styles/normal = SubResource( 27 )
 custom_fonts/font = SubResource( 5 )
-
 text = "Credits"
 script = ExtResource( 1 )
