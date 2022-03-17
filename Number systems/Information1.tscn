@@ -10,6 +10,7 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 25
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -20,18 +21,20 @@ font_data = ExtResource( 1 )
 script = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_left = 50.0
+margin_top = 10.0
+margin_right = 1280.0
+margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 2022.0
+margin_right = 1230.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 2022.0
+margin_right = 1230.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -40,41 +43,46 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 2022.0
-margin_bottom = 791.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
+margin_right = 1104.0
+margin_bottom = 495.0
+size_flags_horizontal = 0
+size_flags_vertical = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 1221.0
-margin_bottom = 736.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
+margin_right = 650.0
+margin_bottom = 440.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_right = 1221.0
-margin_bottom = 736.0
+margin_right = 650.0
+margin_bottom = 440.0
+rect_min_size = Vector2( 650, 440 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
 texture = ExtResource( 2 )
+expand = true
+stretch_mode = 5
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 1225.0
-margin_right = 2022.0
-margin_bottom = 736.0
+margin_left = 654.0
+margin_right = 1104.0
+margin_bottom = 440.0
+rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Decimal: The decimal number system is used regularly by people because it is simple and easy to remember. 
-The numbers range from 0-9, and are used to create numbers multiple digits
- numbers, for example, 20 is made of 2 and 0, 101 is made of 1 and 0 and 1 , etc."
+text = "Decimal: The decimal number system is used regularly by people because it is simple and easy to remember. The numbers range from 0-9, and are used to create numbers multiple digits numbers, for example, 20 is made of 2 and 0, 101 is made of 1 and 0 and 1 , etc."
 align = 1
+autowrap = true
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 795.0
-margin_right = 2022.0
-margin_bottom = 846.0
+margin_top = 659.0
+margin_right = 1230.0
+margin_bottom = 710.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
 margin_right = 518.0
@@ -123,9 +131,9 @@ script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
-margin_right = 2022.0
+margin_right = 1230.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "15,500"
+text = "Score: 15,500"
 align = 2
