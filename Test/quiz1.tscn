@@ -10,11 +10,11 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 32
+size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 40
+size = 32
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
@@ -51,7 +51,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 825.0
+margin_right = 543.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,65 +60,51 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 212.0
+margin_left = 71.0
 margin_top = 238.0
-margin_right = 612.0
+margin_right = 471.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 829.0
-margin_right = 1279.0
+[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 547.0
+margin_right = 732.0
 margin_bottom = 613.0
 
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main/VBoxContainer"]
-margin_right = 450.0
-margin_bottom = 217.0
-rect_min_size = Vector2( 450, 0 )
-size_flags_horizontal = 3
-size_flags_vertical = 0
-custom_fonts/font = SubResource( 2 )
-text = "What is the best Star War? 
-What happens if this question is really long? 
-It will have to go on to different lines."
-align = 1
-autowrap = true
-
-[node name="Button" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 221.0
-margin_right = 450.0
-margin_bottom = 316.0
+[node name="Button" type="Button" parent="VBoxContainer/Main/Answers"]
+margin_right = 185.0
+margin_bottom = 150.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "Answer 1"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 320.0
-margin_right = 450.0
-margin_bottom = 415.0
+[node name="Button2" type="Button" parent="VBoxContainer/Main/Answers"]
+margin_top = 154.0
+margin_right = 185.0
+margin_bottom = 304.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "Answer 2"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 419.0
-margin_right = 450.0
-margin_bottom = 514.0
+[node name="Button3" type="Button" parent="VBoxContainer/Main/Answers"]
+margin_top = 308.0
+margin_right = 185.0
+margin_bottom = 458.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "Answer 3"
 script = ExtResource( 3 )
 __meta__ = {
@@ -126,18 +112,32 @@ __meta__ = {
 }
 scene_to_load = "res://Test/information2.tscn"
 
-[node name="Button4" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 518.0
-margin_right = 450.0
+[node name="Button4" type="Button" parent="VBoxContainer/Main/Answers"]
+margin_top = 462.0
+margin_right = 185.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "Answer 4"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
+margin_left = 736.0
+margin_right = 1279.0
+margin_bottom = 217.0
+rect_min_size = Vector2( 450, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 3 )
+text = "What is the best Star War? 
+What happens if this question is really long? 
+It will have to go on to different lines."
+align = 1
+autowrap = true
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
