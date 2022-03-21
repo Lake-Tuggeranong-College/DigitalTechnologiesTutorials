@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Test Question / Scene"
+text = "Hardware Question 1"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -75,18 +75,19 @@ margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 450.0
-margin_bottom = 41.0
+margin_bottom = 85.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
+text = "What Device does a HDMI cable plug into from a console"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 45.0
+margin_top = 89.0
 margin_right = 450.0
-margin_bottom = 285.0
+margin_bottom = 329.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 450.0
