@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
+[ext_resource path="res://Images/decimals_image.jpg" type="Texture" id=2]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=4]
 
@@ -25,34 +25,38 @@ font_data = ExtResource( 1 )
 script = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_left = 50.0
+margin_top = 10.0
+margin_right = 1280.0
+margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1751.0
-margin_bottom = 51.0
+margin_right = 1230.0
+margin_bottom = 105.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1751.0
-margin_bottom = 51.0
+margin_right = 1230.0
+margin_bottom = 105.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Number systems"
+text = "Number Systems
+"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 55.0
-margin_right = 1751.0
-margin_bottom = 668.0
+margin_top = 109.0
+margin_right = 1230.0
+margin_bottom = 659.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 400.0
-margin_bottom = 613.0
+margin_right = 613.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 600, 550 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -60,28 +64,34 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_top = 238.0
-margin_right = 400.0
-margin_bottom = 375.0
+margin_left = 6.0
+margin_top = 75.0
+margin_right = 606.0
+margin_bottom = 475.0
+rect_min_size = Vector2( 600, 400 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
+expand = true
+stretch_mode = 5
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 404.0
-margin_right = 1751.0
-margin_bottom = 41.0
+margin_left = 617.0
+margin_right = 1230.0
+margin_bottom = 129.0
+rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
 text = "How many unique numbers does the decimal number system use to create other numbers?"
 align = 1
+autowrap = true
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 72.4228
-margin_right = 479.342
-margin_bottom = 148.423
+margin_left = 120.0
+margin_top = 160.0
+margin_right = 464.0
+margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -91,10 +101,10 @@ __meta__ = {
 }
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 175.811
-margin_right = 479.342
-margin_bottom = 251.811
+margin_left = 120.0
+margin_top = 260.0
+margin_right = 464.0
+margin_bottom = 340.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -104,10 +114,10 @@ __meta__ = {
 }
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 132.621
-margin_top = 283.281
-margin_right = 476.621
-margin_bottom = 359.281
+margin_left = 120.0
+margin_top = 360.0
+margin_right = 464.0
+margin_bottom = 446.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -117,10 +127,10 @@ __meta__ = {
 }
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 394.831
-margin_right = 479.342
-margin_bottom = 470.831
+margin_left = 120.0
+margin_top = 465.0
+margin_right = 464.0
+margin_bottom = 540.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -130,9 +140,9 @@ __meta__ = {
 }
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 672.0
-margin_right = 1751.0
-margin_bottom = 723.0
+margin_top = 663.0
+margin_right = 1230.0
+margin_bottom = 714.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
 margin_right = 578.0
@@ -181,9 +191,9 @@ script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 582.0
-margin_right = 1751.0
+margin_right = 1230.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "15,500"
+text = "Score: 15,500"
 align = 2
