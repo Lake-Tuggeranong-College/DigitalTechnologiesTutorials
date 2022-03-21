@@ -202,7 +202,7 @@ custom_styles/normal = SubResource( 15 )
 custom_fonts/font = SubResource( 5 )
 text = "Accessibility"
 script = ExtResource( 1 )
-scene_to_load = "res://useraccess.tscn"
+scene_to_load = "res://user aessiblity/user_information1.tscn"
 
 [node name="Topic 7" type="Button" parent="VBoxContainer/Levels"]
 margin_top = 294.0
@@ -243,7 +243,7 @@ custom_styles/normal = SubResource( 21 )
 custom_fonts/font = SubResource( 5 )
 text = "Software"
 script = ExtResource( 1 )
-scene_to_load = "res://Software/Software_Information.tscn"
+scene_to_load = "res://Software/software_Information.tscn"
 
 [node name="Topic 11" type="Button" parent="VBoxContainer/Levels"]
 margin_top = 441.0
@@ -254,6 +254,7 @@ custom_styles/normal = SubResource( 23 )
 custom_fonts/font = SubResource( 5 )
 text = "Design Process"
 script = ExtResource( 1 )
+scene_to_load = "res://design process/information1.tscn"
 
 [node name="Topic 10" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 428.0

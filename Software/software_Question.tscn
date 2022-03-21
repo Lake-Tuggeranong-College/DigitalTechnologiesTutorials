@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Software"
+text = "Software: Question one"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -51,7 +51,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
+margin_right = 825.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,76 +60,90 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 45.0
+margin_left = 139.0
 margin_top = 170.0
-margin_right = 592.0
+margin_right = 686.0
 margin_bottom = 443.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 829.0
 margin_right = 1279.0
-margin_bottom = 85.0
+margin_bottom = 613.0
+
+[node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
+margin_right = 450.0
+margin_bottom = 129.0
+rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
 text = "What is the appropriate format
  for this information?"
 align = 1
+autowrap = true
 
-[node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 155.342
-margin_top = 111.423
-margin_right = 499.342
-margin_bottom = 187.423
+[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
+margin_top = 133.0
+margin_right = 450.0
+margin_bottom = 373.0
+
+[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_right = 450.0
+margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "List"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Software/software_Information_2.tscn"
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 155.342
-margin_top = 214.811
-margin_right = 499.342
-margin_bottom = 290.811
+[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 61.0
+margin_right = 450.0
+margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Table"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Software/software_Information_2.tscn"
 
-[node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 152.621
-margin_top = 322.281
-margin_right = 496.621
-margin_bottom = 398.281
+[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 122.0
+margin_right = 450.0
+margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Graph"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Software/software_Information_2.tscn"
 
-[node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 155.342
-margin_top = 433.831
-margin_right = 499.342
-margin_bottom = 509.831
+[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 183.0
+margin_right = 450.0
+margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Presentation"
+text = "Scatter plot"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Software/software_Information_2.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -137,7 +151,7 @@ margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 578.0
+margin_right = 518.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -148,22 +162,20 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 script = ExtResource( 3 )
-scene_to_load = "res://MainMenu.tscn"
 
-[node name="Return" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
-margin_right = 407.0
+margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "Return to Info"
+text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Software/Software_Information.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 411.0
-margin_right = 494.0
+margin_left = 351.0
+margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -172,8 +184,8 @@ text = "Back"
 script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 498.0
-margin_right = 578.0
+margin_left = 438.0
+margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -181,8 +193,8 @@ custom_fonts/font = SubResource( 4 )
 text = "Next"
 script = ExtResource( 3 )
 
-[node name="Score" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 582.0
+[node name="Label" type="Label" parent="VBoxContainer/Navigation"]
+margin_left = 522.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
