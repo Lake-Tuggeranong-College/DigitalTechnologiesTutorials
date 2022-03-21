@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/If_statement_code.jpg" type="Texture" id=2]
@@ -13,9 +13,21 @@ font_data = ExtResource( 1 )
 size = 32
 font_data = ExtResource( 1 )
 
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
+
 [sub_resource type="DynamicFont" id=3]
 size = 30
 font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.0588235, 0.745098, 0.254902, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 32
@@ -25,18 +37,18 @@ font_data = ExtResource( 1 )
 script = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_right = 1280.0
+margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -45,14 +57,15 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1279.0
-margin_bottom = 668.0
+margin_right = 1280.0
+margin_bottom = 665.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
-margin_bottom = 613.0
+margin_right = 638.0
+margin_bottom = 610.0
+rect_min_size = Vector2( 638, 610 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -60,19 +73,19 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 18.0
-margin_top = 6.0
-margin_right = 618.0
-margin_bottom = 606.0
-rect_min_size = Vector2( 600, 600 )
+margin_left = 69.0
+margin_top = 55.0
+margin_right = 569.0
+margin_bottom = 555.0
+rect_min_size = Vector2( 500, 500 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 expand = true
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
-margin_right = 1279.0
+margin_left = 642.0
+margin_right = 1280.0
 margin_bottom = 85.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -88,6 +101,7 @@ margin_right = 479.0
 margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_styles/pressed = SubResource( 7 )
 custom_fonts/font = SubResource( 3 )
 text = "'Program' statement"
 __meta__ = {
@@ -101,6 +115,7 @@ margin_right = 479.342
 margin_bottom = 301.811
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_styles/pressed = SubResource( 8 )
 custom_fonts/font = SubResource( 3 )
 text = "'If' statement"
 __meta__ = {
@@ -114,6 +129,7 @@ margin_right = 476.621
 margin_bottom = 409.281
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_styles/pressed = SubResource( 5 )
 custom_fonts/font = SubResource( 3 )
 text = "'Of' statement"
 __meta__ = {
@@ -127,6 +143,7 @@ margin_right = 479.342
 margin_bottom = 520.831
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_styles/pressed = SubResource( 6 )
 custom_fonts/font = SubResource( 3 )
 text = "'Do this' statement"
 __meta__ = {
@@ -134,12 +151,12 @@ __meta__ = {
 }
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 672.0
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_top = 669.0
+margin_right = 1280.0
+margin_bottom = 720.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 578.0
+margin_right = 407.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -164,6 +181,7 @@ script = ExtResource( 3 )
 scene_to_load = "res://Decisions/Information1.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
 margin_left = 411.0
 margin_right = 494.0
 margin_bottom = 51.0
@@ -174,8 +192,9 @@ text = "Back"
 script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 498.0
-margin_right = 578.0
+visible = false
+margin_left = 411.0
+margin_right = 491.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -184,8 +203,8 @@ text = "Next"
 script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 582.0
-margin_right = 1279.0
+margin_left = 411.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
