@@ -32,26 +32,26 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 2284.0
+margin_right = 1279.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 2284.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Social"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 2284.0
+margin_right = 1279.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 1140.0
+margin_right = 637.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,18 +60,19 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 370.0
+margin_left = 118.0
 margin_top = 238.0
-margin_right = 770.0
+margin_right = 518.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 1144.0
-margin_right = 2284.0
-margin_bottom = 129.0
+margin_left = 641.0
+margin_right = 1279.0
+margin_bottom = 217.0
+rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
@@ -79,12 +80,13 @@ text = "your name is jason smith
  and you want to make an account for yourself,
  what's the best user name to protect your privacy?"
 align = 1
+autowrap = true
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 72.4228
-margin_right = 479.342
-margin_bottom = 148.423
+margin_left = 131.641
+margin_top = 172.356
+margin_right = 512.641
+margin_bottom = 248.356
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -94,10 +96,10 @@ __meta__ = {
 }
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 175.811
-margin_right = 479.342
-margin_bottom = 251.811
+margin_left = 144.595
+margin_top = 281.296
+margin_right = 488.595
+margin_bottom = 357.296
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -107,10 +109,10 @@ __meta__ = {
 }
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 132.621
-margin_top = 283.281
-margin_right = 476.621
-margin_bottom = 359.281
+margin_left = 140.024
+margin_top = 390.617
+margin_right = 508.024
+margin_bottom = 466.617
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -120,10 +122,10 @@ __meta__ = {
 }
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 394.831
-margin_right = 479.342
-margin_bottom = 470.831
+margin_left = 150.147
+margin_top = 500.316
+margin_right = 494.147
+margin_bottom = 576.316
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -134,7 +136,7 @@ __meta__ = {
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 2284.0
+margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
@@ -184,7 +186,7 @@ script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 582.0
-margin_right = 2284.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
