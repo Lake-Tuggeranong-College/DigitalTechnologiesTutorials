@@ -9,11 +9,11 @@
 size = 40
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 32
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 size = 40
 font_data = ExtResource( 1 )
 
@@ -79,7 +79,7 @@ margin_bottom = 217.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "What is the best Star War? 
 What happens if this question is really long? 
 It will have to go on to different lines."
@@ -96,7 +96,7 @@ margin_right = 450.0
 margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "Answer 1"
 script = ExtResource( 3 )
 __meta__ = {
@@ -109,7 +109,7 @@ margin_right = 450.0
 margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "Answer 2"
 script = ExtResource( 3 )
 __meta__ = {
@@ -122,7 +122,7 @@ margin_right = 450.0
 margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "Answer 3"
 script = ExtResource( 3 )
 __meta__ = {
@@ -136,7 +136,7 @@ margin_right = 450.0
 margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "Answer 4"
 script = ExtResource( 3 )
 __meta__ = {
