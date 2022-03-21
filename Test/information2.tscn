@@ -35,7 +35,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Information 2"
+text = "Information 1"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -81,12 +81,8 @@ align = 1
 margin_left = 1278.0
 margin_right = 1278.0
 margin_bottom = 613.0
-<<<<<<< Updated upstream
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
-=======
->>>>>>> Stashed changes
-
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
