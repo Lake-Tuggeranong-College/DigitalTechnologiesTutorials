@@ -80,8 +80,9 @@ rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "What is the appropriate format
- for this information?"
+text = "If you were trying to display
+the composition of data, what
+would you use?"
 align = 1
 autowrap = true
 
@@ -96,7 +97,7 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "List"
+text = "Scatter plot"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -110,7 +111,7 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Table"
+text = "Histogram"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -124,7 +125,7 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Graph"
+text = "Pie chart"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -138,7 +139,7 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Scatter plot"
+text = "All of the above"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
