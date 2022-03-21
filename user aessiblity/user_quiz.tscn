@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Button_Menu.gd" type="Script" id=1]
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=3]
+[ext_resource path="res://Images/user_colouer_blind.jpeg" type="Texture" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
@@ -32,26 +32,26 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1279.0
+margin_right = 1485.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1279.0
+margin_right = 1485.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Test Question / Scene"
+text = "colouer blind "
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1279.0
+margin_right = 1485.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 636.0
+margin_right = 400.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,44 +60,51 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 118.0
-margin_top = 238.0
-margin_right = 518.0
-margin_bottom = 375.0
+margin_left = 50.0
+margin_top = 222.0
+margin_right = 350.0
+margin_bottom = 390.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 3 )
+
+[node name="Example_image2" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
+margin_left = 50.0
+margin_top = 222.0
+margin_right = 350.0
+margin_bottom = 390.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 3 )
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 640.0
-margin_right = 1090.0
+margin_left = 404.0
+margin_right = 854.0
 margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 450.0
-margin_bottom = 217.0
+margin_bottom = 173.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "What is the best Star War? 
-What happens if this question is really long? 
-It will have to go on to different lines."
+text = " What would be a good way to help colourblind people use your software?  different lines."
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1094.0
-margin_right = 1279.0
+margin_left = 858.0
+margin_right = 1485.0
 margin_bottom = 613.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/Answers"]
-margin_right = 185.0
+margin_right = 627.0
 margin_bottom = 150.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 1"
+text = "Remove all the colours."
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -106,12 +113,12 @@ scene_to_load = "res://Test/information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/Answers"]
 margin_top = 154.0
-margin_right = 185.0
+margin_right = 627.0
 margin_bottom = 304.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 2"
+text = "Make everything black and white"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -120,12 +127,12 @@ scene_to_load = "res://Test/information2.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/Answers"]
 margin_top = 308.0
-margin_right = 185.0
+margin_right = 627.0
 margin_bottom = 458.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 3"
+text = "Add a colourblind mode"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -134,12 +141,12 @@ scene_to_load = "res://Test/information2.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/Answers"]
 margin_top = 462.0
-margin_right = 185.0
+margin_right = 627.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 4"
+text = "Make everything red."
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -148,7 +155,7 @@ scene_to_load = "res://Test/information2.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 1279.0
+margin_right = 1485.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
@@ -192,7 +199,7 @@ text = "Next"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
-margin_right = 1279.0
+margin_right = 1485.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
