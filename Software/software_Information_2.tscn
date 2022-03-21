@@ -35,7 +35,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Software"
+text = "Software: two"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -46,7 +46,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
+margin_right = 635.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -55,22 +55,34 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 18.0
+margin_left = 17.0
 margin_top = 147.0
-margin_right = 618.0
+margin_right = 617.0
 margin_bottom = 466.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
-margin_right = 1279.0
+margin_left = 639.0
+margin_right = 1274.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
+text = "this is example text
+this is example text
+this is example text
+this is example text
+this is example text"
 align = 1
+
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 1278.0
+margin_right = 1278.0
+margin_bottom = 613.0
+
+[node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -100,7 +112,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Software/Software_Question_1.tscn"
+scene_to_load = "res://Software/software_Question.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 351.0
@@ -122,7 +134,7 @@ custom_fonts/font = SubResource( 3 )
 text = "Next"
 script = ExtResource( 3 )
 
-[node name="Score" type="Label" parent="VBoxContainer/Navigation"]
+[node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
 margin_right = 1279.0
 margin_bottom = 51.0

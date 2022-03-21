@@ -28,18 +28,19 @@ __meta__ = {
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
 margin_right = 1279.0
-margin_bottom = 51.0
+margin_bottom = 105.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
 margin_right = 1279.0
-margin_bottom = 51.0
+margin_bottom = 105.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Information 2
+"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 55.0
+margin_top = 109.0
 margin_right = 1279.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
@@ -47,7 +48,7 @@ size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
 margin_right = 635.0
-margin_bottom = 613.0
+margin_bottom = 559.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -56,9 +57,9 @@ __meta__ = {
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
 margin_left = 117.0
-margin_top = 238.0
+margin_top = 211.0
 margin_right = 517.0
-margin_bottom = 375.0
+margin_bottom = 348.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
@@ -66,7 +67,7 @@ texture = ExtResource( 2 )
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 639.0
 margin_right = 1274.0
-margin_bottom = 613.0
+margin_bottom = 559.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
@@ -83,6 +84,7 @@ margin_right = 1278.0
 margin_bottom = 613.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
+
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
