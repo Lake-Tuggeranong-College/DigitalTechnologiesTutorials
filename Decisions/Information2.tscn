@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/If_statement_code.jpg" type="Texture" id=2]
@@ -10,26 +10,10 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 32
+size = 25
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 30
-font_data = ExtResource( 1 )
-
-[sub_resource type="StyleBoxFlat" id=5]
-bg_color = Color( 0.0588235, 0.745098, 0.254902, 1 )
-
-[sub_resource type="StyleBoxFlat" id=6]
-bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
-
-[sub_resource type="StyleBoxFlat" id=7]
-bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
-
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=3]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -66,7 +50,7 @@ size_flags_vertical = 3
 margin_right = 638.0
 margin_bottom = 610.0
 rect_min_size = Vector2( 638, 610 )
-size_flags_horizontal = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -83,82 +67,31 @@ size_flags_vertical = 3
 texture = ExtResource( 2 )
 expand = true
 
-[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+[node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 642.0
-margin_right = 1280.0
+margin_right = 1276.0
 margin_bottom = 610.0
 size_flags_horizontal = 3
-
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
-margin_right = 638.0
-margin_bottom = 85.0
-size_flags_horizontal = 3
-size_flags_vertical = 0
+size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Which is a simple type of decision
-statement in programming?"
+text = "
+
+
+
+The ‘if’ part of the statement checks to see if the conditions of the statement  is either true or false.
+
+This could be checking numbers or if something is true or false.
+
+For example: If the player has reached level 2, can either be true or false. If they ARE level 2 or if they are NOT."
 align = 1
+autowrap = true
 
-[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 89.0
-margin_right = 638.0
-margin_bottom = 281.0
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 1280.0
+margin_right = 1280.0
+margin_bottom = 610.0
 
-[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_right = 638.0
-margin_bottom = 45.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_styles/pressed = SubResource( 3 )
-custom_fonts/font = SubResource( 4 )
-text = "'Program' statement"
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 49.0
-margin_right = 638.0
-margin_bottom = 94.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_styles/pressed = SubResource( 5 )
-custom_fonts/font = SubResource( 4 )
-text = "'If' statement"
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-scene_to_load = "res://Decisions/Information2.tscn"
-
-[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 98.0
-margin_right = 638.0
-margin_bottom = 143.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_styles/pressed = SubResource( 6 )
-custom_fonts/font = SubResource( 4 )
-text = "'Of' statement"
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 147.0
-margin_right = 638.0
-margin_bottom = 192.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_styles/pressed = SubResource( 7 )
-custom_fonts/font = SubResource( 4 )
-text = "'Do this' statement"
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 669.0
@@ -166,7 +99,7 @@ margin_right = 1280.0
 margin_bottom = 720.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 407.0
+margin_right = 347.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -174,46 +107,46 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
 
-[node name="Return" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
-margin_right = 407.0
+margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 8 )
-text = "Return to Info"
+custom_fonts/font = SubResource( 3 )
+text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Decisions/Information1.tscn"
+scene_to_load = "res://Decisions/Quiz1.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 visible = false
-margin_left = 411.0
-margin_right = 494.0
+margin_left = 351.0
+margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 3 )
 text = "Back"
 script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 visible = false
-margin_left = 411.0
-margin_right = 491.0
+margin_left = 438.0
+margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 3 )
 text = "Next"
 script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 411.0
+margin_left = 351.0
 margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
