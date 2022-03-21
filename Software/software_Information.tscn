@@ -10,6 +10,7 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 24
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -70,11 +71,23 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "Software is a set of instructions, data or programs used
+to operate computers and performs specific tasks.
+It is the opposite of hardware, which describes the 
+physical aspects of a computer.
+When displaying data you must look at what type of 
+data you are trying to display. 
+
+If you are trying to 
+show the relationshi between different sets of data, 
+you want to use a scatter or bubble plot. 
+
+If you are displaying the distribution of different sets
+of data, you want to use column charts such as;
+histograms or scatter plots.
+
+If your are trying to display the composition of different
+sets of data, you want to use a pie or waterfall chart."
 align = 1
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
