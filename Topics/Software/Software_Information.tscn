@@ -5,6 +5,7 @@
 [ext_resource path="res://Scripts/Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/Buttons_Nav.gd" type="Script" id=4]
 
+
 [sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )

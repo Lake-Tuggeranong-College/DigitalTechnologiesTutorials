@@ -5,12 +5,13 @@
 [ext_resource path="res://Scripts/Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/Buttons_Nav.gd" type="Script" id=4]
 
+
 [sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 36
+size = 32
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -32,11 +33,11 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1410.0
+margin_right = 1279.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1410.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -45,13 +46,13 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1410.0
+margin_right = 1279.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 703.0
+margin_right = 637.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,23 +61,23 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 78.0
+margin_left = 45.0
 margin_top = 170.0
-margin_right = 625.0
+margin_right = 592.0
 margin_bottom = 443.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 707.0
-margin_right = 1410.0
-margin_bottom = 95.0
+margin_left = 641.0
+margin_right = 1279.0
+margin_bottom = 85.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "What is the correct format 
-for this information"
+text = "What is the appropriate format
+ for this information?"
 align = 1
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
@@ -133,7 +134,7 @@ __meta__ = {
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 1410.0
+margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
@@ -183,7 +184,7 @@ script = ExtResource( 3 )
 
 [node name="Score" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 582.0
-margin_right = 1410.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
