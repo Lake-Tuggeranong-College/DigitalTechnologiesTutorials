@@ -56,11 +56,11 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 19.0
-margin_top = 5.0
-margin_right = 619.0
-margin_bottom = 605.0
-rect_min_size = Vector2( 600, 600 )
+margin_left = 69.0
+margin_top = 55.0
+margin_right = 569.0
+margin_bottom = 555.0
+rect_min_size = Vector2( 500, 500 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
@@ -95,7 +95,7 @@ margin_right = 1280.0
 margin_bottom = 720.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 518.0
+margin_right = 347.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -120,6 +120,7 @@ script = ExtResource( 3 )
 scene_to_load = "res://Decisions/Quiz1.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
 margin_left = 351.0
 margin_right = 434.0
 margin_bottom = 51.0
@@ -130,6 +131,7 @@ text = "Back"
 script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
 margin_left = 438.0
 margin_right = 518.0
 margin_bottom = 51.0
@@ -140,7 +142,7 @@ text = "Next"
 script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 522.0
+margin_left = 351.0
 margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
