@@ -148,7 +148,7 @@ custom_styles/normal = SubResource( 7 )
 custom_fonts/font = SubResource( 5 )
 text = "Code"
 script = ExtResource( 1 )
-scene_to_load = "res://Code/information1.tscn"
+scene_to_load = "res://Code/Information1.tscn"
 
 [node name="Topic 3" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 856.0
@@ -245,14 +245,14 @@ text = "Software"
 script = ExtResource( 1 )
 scene_to_load = "res://Software/Software_Information.tscn"
 
-[node name="Options or Quit" type="Button" parent="VBoxContainer/Levels"]
+[node name="Topic 11" type="Button" parent="VBoxContainer/Levels"]
 margin_top = 441.0
 margin_right = 424.0
 margin_bottom = 584.0
 custom_styles/hover = SubResource( 22 )
 custom_styles/normal = SubResource( 23 )
 custom_fonts/font = SubResource( 5 )
-text = "Options Or Quit"
+text = "Design Process"
 script = ExtResource( 1 )
 
 [node name="Topic 10" type="Button" parent="VBoxContainer/Levels"]
@@ -279,3 +279,4 @@ custom_styles/normal = SubResource( 27 )
 custom_fonts/font = SubResource( 5 )
 text = "Credits"
 script = ExtResource( 1 )
+scene_to_load = "res://Test/information1.tscn"

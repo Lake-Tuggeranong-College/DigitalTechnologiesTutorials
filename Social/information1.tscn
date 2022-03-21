@@ -70,11 +70,6 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
 align = 1
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]

@@ -10,6 +10,7 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 22
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -35,7 +36,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Hardware Information"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -70,12 +71,18 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "HDMI is a video output device which stands for
+ High Defintion Multimedia Interface,
+it plugs into most modern devices such as Game 
+Consoles like
+ (Playstation,Xbox and DVD-Players) 
+Typically the way a HDMI Cable is-
+Plugged in is one end of the cable is 
+plugged into a Device and the other-
+end is plugged into a Monitor or 
+Television to Output Audio and Video."
 align = 1
+valign = 1
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -126,6 +133,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Next"
 script = ExtResource( 3 )
+scene_to_load = "res://Hardware/Quiz1.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0

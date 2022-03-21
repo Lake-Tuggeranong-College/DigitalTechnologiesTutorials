@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/If_statement_code.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -10,7 +10,6 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 25
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -21,34 +20,35 @@ font_data = ExtResource( 1 )
 script = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_right = 1280.0
-margin_bottom = 720.0
+margin_right = 1279.0
+margin_bottom = 723.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1280.0
-margin_bottom = 51.0
+margin_right = 1279.0
+margin_bottom = 105.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1280.0
-margin_bottom = 51.0
+margin_right = 1279.0
+margin_bottom = 105.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Decisions"
+text = "Information 2
+"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 55.0
-margin_right = 1280.0
-margin_bottom = 665.0
+margin_top = 109.0
+margin_right = 1279.0
+margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 638.0
-margin_bottom = 610.0
+margin_right = 635.0
+margin_bottom = 559.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -56,46 +56,42 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 69.0
-margin_top = 55.0
-margin_right = 569.0
-margin_bottom = 555.0
-rect_min_size = Vector2( 500, 500 )
+margin_left = 117.0
+margin_top = 211.0
+margin_right = 517.0
+margin_bottom = 348.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
-expand = true
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 642.0
-margin_right = 1280.0
-margin_bottom = 610.0
+margin_left = 639.0
+margin_right = 1274.0
+margin_bottom = 559.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "
-
-
-
-Programming decisions are determined by user input. For example, clicking a button
-or completing actions.
-
-Decisions use a true or false system to determine
-their outcomes.
-
-'If statements' are a simple form of
-decision making for a program.
-"
+text = "this is example text
+this is example text
+this is example text
+this is example text
+this is example text"
 align = 1
-autowrap = true
+
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 1278.0
+margin_right = 1278.0
+margin_bottom = 559.0
+
+[node name="Answers" type="Node2D" parent="VBoxContainer/Main/questionAnswer"]
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 669.0
-margin_right = 1280.0
-margin_bottom = 720.0
+margin_top = 672.0
+margin_right = 1279.0
+margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 347.0
+margin_right = 518.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -117,10 +113,8 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Decisions/Quiz1.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-visible = false
 margin_left = 351.0
 margin_right = 434.0
 margin_bottom = 51.0
@@ -131,7 +125,6 @@ text = "Back"
 script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-visible = false
 margin_left = 438.0
 margin_right = 518.0
 margin_bottom = 51.0
@@ -142,8 +135,8 @@ text = "Next"
 script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 351.0
-margin_right = 1280.0
+margin_left = 522.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )

@@ -10,7 +10,7 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 25
+size = 31
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -31,26 +31,28 @@ __meta__ = {
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
 margin_right = 1230.0
-margin_bottom = 51.0
+margin_bottom = 105.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
 margin_right = 1230.0
-margin_bottom = 51.0
+margin_bottom = 105.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Number Systems
+"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 55.0
-margin_right = 1104.0
-margin_bottom = 495.0
+margin_top = 109.0
+margin_right = 1134.0
+margin_bottom = 659.0
 size_flags_horizontal = 0
 size_flags_vertical = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 650.0
-margin_bottom = 440.0
+margin_right = 600.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 600, 550 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
 __meta__ = {
@@ -58,9 +60,10 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_right = 650.0
-margin_bottom = 440.0
-rect_min_size = Vector2( 650, 440 )
+margin_top = 74.0
+margin_right = 600.0
+margin_bottom = 474.0
+rect_min_size = Vector2( 600, 400 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
 texture = ExtResource( 2 )
@@ -68,10 +71,10 @@ expand = true
 stretch_mode = 5
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 654.0
-margin_right = 1104.0
-margin_bottom = 440.0
-rect_min_size = Vector2( 450, 0 )
+margin_left = 604.0
+margin_right = 1134.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 530, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
@@ -80,9 +83,9 @@ align = 1
 autowrap = true
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 659.0
+margin_top = 663.0
 margin_right = 1230.0
-margin_bottom = 710.0
+margin_bottom = 714.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
 margin_right = 518.0

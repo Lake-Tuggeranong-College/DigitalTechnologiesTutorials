@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
+[ext_resource path="res://Images/Data tranfer_1.png" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -60,9 +60,10 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_top = 238.0
-margin_right = 400.0
-margin_bottom = 375.0
+margin_left = 77.0
+margin_top = 204.0
+margin_right = 322.0
+margin_bottom = 409.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
@@ -71,6 +72,7 @@ texture = ExtResource( 2 )
 margin_left = 404.0
 margin_right = 1345.0
 margin_bottom = 85.0
+rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
