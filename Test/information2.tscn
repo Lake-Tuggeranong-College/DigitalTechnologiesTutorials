@@ -1,22 +1,16 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
-[ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 32
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 40
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=4]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -38,19 +32,19 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Test Question / Scene"
+text = "Topic Area"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
 margin_right = 1279.0
-margin_bottom = 2076.0
+margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
 margin_right = 637.0
-margin_bottom = 2021.0
+margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -59,95 +53,38 @@ __meta__ = {
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
 margin_left = 118.0
-margin_top = 942.0
+margin_top = 238.0
 margin_right = 518.0
-margin_bottom = 1079.0
+margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
+[node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 641.0
 margin_right = 1279.0
-margin_bottom = 173.0
-rect_min_size = Vector2( 450, 0 )
+margin_bottom = 613.0
 size_flags_horizontal = 3
-size_flags_vertical = 0
+size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "What is the best Star War? 
-What happens if this question is really long? 
-It will have to go on to differnt lines."
+text = "this is example text
+this is example text
+this is example text
+this is example text
+this is example text"
 align = 1
-autowrap = true
-
-[node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 158.342
-margin_top = 199.0
-margin_right = 502.342
-margin_bottom = 275.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Answer 1"
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 158.342
-margin_top = 302.388
-margin_right = 502.342
-margin_bottom = 378.388
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Answer 2"
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 156.0
-margin_top = 409.577
-margin_right = 500.0
-margin_bottom = 485.577
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Answer 3"
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-scene_to_load = "res://Test/information2.tscn"
-
-[node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 158.342
-margin_top = 521.408
-margin_right = 502.342
-margin_bottom = 597.408
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Answer 4"
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 2080.0
+margin_top = 672.0
 margin_right = 1279.0
-margin_bottom = 2131.0
+margin_bottom = 723.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
 margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
 
 [node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation"]
@@ -156,7 +93,7 @@ margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation"]
@@ -165,7 +102,7 @@ margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Back"
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation"]
@@ -174,7 +111,7 @@ margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Next"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
