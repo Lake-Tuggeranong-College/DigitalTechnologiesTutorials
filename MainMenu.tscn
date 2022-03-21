@@ -243,7 +243,7 @@ custom_styles/normal = SubResource( 21 )
 custom_fonts/font = SubResource( 5 )
 text = "Software"
 script = ExtResource( 1 )
-scene_to_load = "res://Software/Software_Information.tscn"
+scene_to_load = "res://Software/software_Information.tscn"
 
 [node name="Options or Quit" type="Button" parent="VBoxContainer/Levels"]
 margin_top = 441.0
