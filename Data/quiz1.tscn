@@ -32,11 +32,11 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1345.0
+margin_right = 1279.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1345.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -45,13 +45,13 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1345.0
+margin_right = 1279.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 400.0
+margin_right = 334.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,17 +60,21 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 77.0
+margin_left = 44.0
 margin_top = 204.0
-margin_right = 322.0
+margin_right = 289.0
 margin_bottom = 409.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 404.0
-margin_right = 1345.0
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 338.0
+margin_right = 1279.0
+margin_bottom = 613.0
+
+[node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
+margin_right = 941.0
 margin_bottom = 85.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
@@ -80,61 +84,68 @@ text = "What the best way to transfer picture from a ipad to a computer
 "
 align = 1
 
-[node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 72.4228
-margin_right = 479.342
-margin_bottom = 148.423
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Cable"
+[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
+margin_top = 89.0
+margin_right = 941.0
+margin_bottom = 329.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 175.811
-margin_right = 479.342
-margin_bottom = 251.811
+[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_right = 941.0
+margin_bottom = 57.0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Cable"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Data/information2.tscn"
+
+[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 61.0
+margin_right = 941.0
+margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Cloud"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 132.621
-margin_top = 283.281
-margin_right = 476.621
-margin_bottom = 359.281
+[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 122.0
+margin_right = 941.0
+margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "bluetooth"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 134.342
-margin_top = 395.831
-margin_right = 478.342
-margin_bottom = 471.831
+[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 183.0
+margin_right = 941.0
+margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "carrier pigeon"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 1345.0
+margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
@@ -184,7 +195,7 @@ script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 582.0
-margin_right = 1345.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )

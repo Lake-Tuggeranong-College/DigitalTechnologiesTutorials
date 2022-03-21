@@ -81,9 +81,10 @@ align = 1
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 1278.0
 margin_right = 1278.0
-margin_bottom = 559.0
+margin_bottom = 613.0
 
-[node name="Answers" type="Node2D" parent="VBoxContainer/Main/questionAnswer"]
+[node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
+
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -113,6 +114,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 script = ExtResource( 3 )
+scene_to_load = "res://Test/quiz1.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 351.0
