@@ -13,23 +13,23 @@ font_data = ExtResource( 1 )
 size = 32
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=7]
+[sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 30
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=8]
-bg_color = Color( 0.0588235, 0.745098, 0.254902, 1 )
-
 [sub_resource type="StyleBoxFlat" id=5]
-bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
+bg_color = Color( 0.0588235, 0.745098, 0.254902, 1 )
 
 [sub_resource type="StyleBoxFlat" id=6]
 bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
+
+[sub_resource type="DynamicFont" id=8]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -66,7 +66,7 @@ size_flags_vertical = 3
 margin_right = 638.0
 margin_bottom = 610.0
 rect_min_size = Vector2( 638, 610 )
-size_flags_horizontal = 3
+size_flags_horizontal = 2
 size_flags_vertical = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -83,9 +83,14 @@ size_flags_vertical = 3
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 642.0
 margin_right = 1280.0
+margin_bottom = 610.0
+size_flags_horizontal = 3
+
+[node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
+margin_right = 638.0
 margin_bottom = 85.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -94,58 +99,63 @@ text = "Which is a simple type of decision
 statement in programming?"
 align = 1
 
-[node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.0
-margin_top = 122.0
-margin_right = 479.0
-margin_bottom = 198.0
+[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
+margin_top = 89.0
+margin_right = 638.0
+margin_bottom = 281.0
+
+[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_right = 638.0
+margin_bottom = 45.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/pressed = SubResource( 7 )
-custom_fonts/font = SubResource( 3 )
+custom_styles/pressed = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "'Program' statement"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 225.811
-margin_right = 479.342
-margin_bottom = 301.811
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_styles/pressed = SubResource( 8 )
-custom_fonts/font = SubResource( 3 )
-text = "'If' statement"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 132.621
-margin_top = 333.281
-margin_right = 476.621
-margin_bottom = 409.281
+[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 49.0
+margin_right = 638.0
+margin_bottom = 94.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/pressed = SubResource( 5 )
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "'If' statement"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Decisions/Information2.tscn"
+
+[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 98.0
+margin_right = 638.0
+margin_bottom = 143.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/pressed = SubResource( 6 )
+custom_fonts/font = SubResource( 4 )
 text = "'Of' statement"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 135.342
-margin_top = 444.831
-margin_right = 479.342
-margin_bottom = 520.831
+[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 147.0
+margin_right = 638.0
+margin_bottom = 192.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/pressed = SubResource( 6 )
-custom_fonts/font = SubResource( 3 )
+custom_styles/pressed = SubResource( 7 )
+custom_fonts/font = SubResource( 4 )
 text = "'Do this' statement"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -164,7 +174,7 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 8 )
 text = "Main Menu"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
@@ -175,7 +185,7 @@ margin_right = 407.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 8 )
 text = "Return to Info"
 script = ExtResource( 3 )
 scene_to_load = "res://Decisions/Information1.tscn"
@@ -187,7 +197,7 @@ margin_right = 494.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 8 )
 text = "Back"
 script = ExtResource( 3 )
 
@@ -198,7 +208,7 @@ margin_right = 491.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 8 )
 text = "Next"
 script = ExtResource( 3 )
 
