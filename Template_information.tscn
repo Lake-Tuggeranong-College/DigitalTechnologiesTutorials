@@ -74,7 +74,11 @@ margin_top = 672.0
 margin_right = 1279.0
 margin_bottom = 723.0
 
-[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
+margin_right = 518.0
+margin_bottom = 51.0
+
+[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
@@ -82,7 +86,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
 
-[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
 margin_right = 347.0
 margin_bottom = 51.0
@@ -91,7 +95,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 
-[node name="Back_button" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 351.0
 margin_right = 434.0
 margin_bottom = 51.0
@@ -100,7 +104,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Back"
 
-[node name="Next_button" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 438.0
 margin_right = 518.0
 margin_bottom = 51.0
