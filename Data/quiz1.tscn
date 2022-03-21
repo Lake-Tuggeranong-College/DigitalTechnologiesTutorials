@@ -68,15 +68,12 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Main"]
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 338.0
 margin_right = 1279.0
 margin_bottom = 613.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main/VBoxContainer"]
+[node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 941.0
 margin_bottom = 85.0
 rect_min_size = Vector2( 450, 0 )
@@ -87,49 +84,61 @@ text = "What the best way to transfer picture from a ipad to a computer
 "
 align = 1
 
-[node name="Button" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
+[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
 margin_top = 89.0
 margin_right = 941.0
-margin_bottom = 217.0
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Cable"
+margin_bottom = 329.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 221.0
+[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 941.0
-margin_bottom = 349.0
+margin_bottom = 57.0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Cable"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Data/information2.tscn"
+
+[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 61.0
+margin_right = 941.0
+margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Cloud"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 353.0
+[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 122.0
 margin_right = 941.0
-margin_bottom = 481.0
+margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "bluetooth"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button4" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 485.0
+[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 183.0
 margin_right = 941.0
-margin_bottom = 613.0
+margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "carrier pigeon"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

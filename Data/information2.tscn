@@ -27,11 +27,11 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1409.0
+margin_right = 1279.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1409.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -40,13 +40,13 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1409.0
+margin_right = 1279.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 702.0
+margin_right = 650.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -55,9 +55,8 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 26.0
 margin_top = 86.0
-margin_right = 676.0
+margin_right = 650.0
 margin_bottom = 526.0
 rect_min_size = Vector2( 650, 440 )
 size_flags_horizontal = 3
@@ -67,20 +66,29 @@ expand = true
 stretch_mode = 5
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 706.0
-margin_right = 1409.0
+margin_left = 654.0
+margin_right = 1275.0
 margin_bottom = 613.0
+rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Transfer a image or a drawing from a ipad to a computer can be done in a some ways. 
+text = "Transfer a image or a drawing from a ipad to a computer 
+can be done in a some ways. 
 Like use a cable 
 or upload to a cloud and grab it from it"
 align = 1
 
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 1279.0
+margin_right = 1279.0
+margin_bottom = 613.0
+
+[node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
+
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 1409.0
+margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
@@ -130,7 +138,7 @@ script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
-margin_right = 1409.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
