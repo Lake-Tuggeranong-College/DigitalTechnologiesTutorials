@@ -71,16 +71,17 @@ margin_bottom = 617.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Understanding The Design Process
-Defining Empathy, empathy is when you put yourself into somebody else's shoes, and understand someone else's situation. Seeing things from their perspective on why they may do specific things. It's the heart of design thinking
+text = "
+The 5 stages to design process
+The Empathy stage, empathy is when you put yourself into somebody else's shoes, and understand someone else's situation. Seeing things from their perspective on why they may do specific things. It's the heart of design thinking
 
-Defining Define, defining is using the things you learnt in the empathy stage to define the problem. You will use different perspectives to figure out what's needed in order for the solutions to be correct.
+The Define stage, defining is using the things you learnt in the empathy stage to define the problem. You will use different perspectives to figure out what's needed in order for the solutions to be correct.
 
-Defining Ideate, Ideating is when we imagine, create and express ideas about solutions to the problem we had just defined. Just like brainstorming but broader.
+The Ideate stage, Ideating is when we imagine, create and express ideas about solutions to the problem we had just defined. Just like brainstorming but broader.
 
-Defining the Prototype stage, You will gather your top ideas from the ideate stage and explore them more. Making prototypes and experimenting to find the best solution.
+The Prototype stage, You will gather your top ideas from the ideate stage and explore them more. Making prototypes and experimenting to find the best solution.
 
-Defining the Test stage, this is where you will go through your best prototypes, going into more depth developing it into a viable prototype. In the prototype stage 
+The Test stage, this is where you will go through your best prototypes, going into more depth developing it into a viable prototype. In the prototype stage 
 "
 align = 1
 valign = 1
