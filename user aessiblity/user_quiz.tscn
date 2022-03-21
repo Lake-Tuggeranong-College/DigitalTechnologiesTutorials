@@ -1,21 +1,25 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
-[ext_resource path="res://Button_Menu.gd" type="Script" id=3]
+[ext_resource path="res://Button_Menu.gd" type="Script" id=1]
+[ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
-font_data = ExtResource( 1 )
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 22
-font_data = ExtResource( 1 )
+size = 32
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
 size = 32
-font_data = ExtResource( 1 )
+font_data = ExtResource( 2 )
 
 [node name="Topic_1" type="Node2D"]
 script = ExtResource( 4 )
@@ -36,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Hardware Information"
+text = "Test Question / Scene"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -47,7 +51,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
+margin_right = 636.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -62,23 +66,82 @@ margin_right = 518.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
-[node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 640.0
+margin_right = 1090.0
+margin_bottom = 613.0
+
+[node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
+margin_right = 450.0
+margin_bottom = 217.0
+rect_min_size = Vector2( 450, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 2 )
+text = "What is the best Star War? 
+What happens if this question is really long? 
+It will have to go on to different lines."
+align = 1
+autowrap = true
+
+[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 1094.0
 margin_right = 1279.0
+margin_bottom = 613.0
+
+[node name="Button" type="Button" parent="VBoxContainer/Main/Answers"]
+margin_right = 185.0
+margin_bottom = 150.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Answer 1"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="VBoxContainer/Main/Answers"]
+margin_top = 154.0
+margin_right = 185.0
+margin_bottom = 304.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Answer 2"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="VBoxContainer/Main/Answers"]
+margin_top = 308.0
+margin_right = 185.0
+margin_bottom = 458.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Answer 3"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Test/information2.tscn"
+
+[node name="Button4" type="Button" parent="VBoxContainer/Main/Answers"]
+margin_top = 462.0
+margin_right = 185.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
-text = "A CPU is used in all electronic devices of the modern era
-and is just one of the core parts of a desktop computer,
-it's job is to cater to the user's need's such as interacting
-with applications and programs.
-
-For example "
-align = 1
-valign = 1
+custom_fonts/font = SubResource( 3 )
+text = "Answer 4"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -94,10 +157,8 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
-script = ExtResource( 3 )
-scene_to_load = "res://MainMenu.tscn"
 
 [node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
@@ -105,10 +166,8 @@ margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Start Quiz"
-script = ExtResource( 3 )
-scene_to_load = "res://Hardware/Quiz1.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 351.0
@@ -116,9 +175,8 @@ margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Back"
-script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 438.0
@@ -126,9 +184,8 @@ margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Next"
-script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0

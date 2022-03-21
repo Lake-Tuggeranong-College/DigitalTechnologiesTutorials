@@ -31,9 +31,40 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Title" type="HBoxContainer" parent="VBoxContainer"]
+[node name="Popup" type="HBoxContainer" parent="VBoxContainer"]
 margin_right = 1279.0
-margin_bottom = 51.0
+
+[node name="Panel" type="Panel" parent="VBoxContainer/Popup"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/Popup/Panel"]
+margin_left = 170.427
+margin_top = 90.2792
+margin_right = 449.427
+margin_bottom = 115.279
+rect_scale = Vector2( 2, 2 )
+text = "Are you sure that you want to quit the quiz?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/Popup/Panel"]
+margin_left = 320.477
+margin_top = 169.477
+margin_right = 432.477
+margin_bottom = 219.477
+rect_scale = Vector2( 2, 2 )
+text = "Yes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 4.0
+margin_right = 1279.0
+margin_bottom = 55.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
 margin_right = 1279.0
@@ -44,15 +75,15 @@ text = "Topic Area"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 55.0
+margin_top = 59.0
 margin_right = 1279.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 635.0
-margin_bottom = 613.0
+margin_right = 958.0
+margin_bottom = 609.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -60,17 +91,21 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 117.0
-margin_top = 238.0
-margin_right = 517.0
-margin_bottom = 375.0
+margin_left = 279.0
+margin_top = 236.0
+margin_right = 679.0
+margin_bottom = 373.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 639.0
-margin_right = 1274.0
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 962.0
+margin_right = 1279.0
+margin_bottom = 609.0
+
+[node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
+margin_right = 317.0
 margin_bottom = 173.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -81,84 +116,65 @@ name of the machine
  enigma codes?"
 align = 1
 
-[node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 187.036
-margin_top = 197.577
-margin_right = 531.036
-margin_bottom = 273.577
+[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
+margin_top = 177.0
+margin_right = 317.0
+margin_bottom = 417.0
+
+[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_right = 317.0
+margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Bomb."
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Code/Information2.tscn"
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 187.036
-margin_top = 300.965
-margin_right = 531.036
-margin_bottom = 376.965
+[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 61.0
+margin_right = 317.0
+margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Coding."
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Code/Information2.tscn"
 
-[node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 183.315
-margin_top = 408.435
-margin_right = 527.315
-margin_bottom = 484.435
+[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 122.0
+margin_right = 317.0
+margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Enigma."
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Code/Information2.tscn"
 
-[node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 185.928
-margin_top = 521.093
-margin_right = 529.928
-margin_bottom = 597.093
+[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 183.0
+margin_right = 317.0
+margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Bombe."
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Panel" type="Panel" parent="VBoxContainer/Main"]
-margin_left = 1278.0
-margin_right = 1278.0
-margin_bottom = 613.0
-
-[node name="Label" type="Label" parent="VBoxContainer/Main/Panel"]
-margin_left = 20.6492
-margin_top = 113.0
-margin_right = 299.649
-margin_bottom = 135.0
-rect_scale = Vector2( 3, 3 )
-text = "Are you sure that you want to quit the quiz?"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button" type="Button" parent="VBoxContainer/Main/Panel"]
-margin_left = 324.0
-margin_top = 249.0
-margin_right = 436.0
-margin_bottom = 299.0
-rect_scale = Vector2( 2, 2 )
-text = "Yes"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+scene_to_load = "res://Code/Information2.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
