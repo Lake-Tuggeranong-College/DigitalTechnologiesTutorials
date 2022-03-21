@@ -254,6 +254,7 @@ custom_styles/normal = SubResource( 23 )
 custom_fonts/font = SubResource( 5 )
 text = "Design Process"
 script = ExtResource( 1 )
+scene_to_load = "res://design process/information1.tscn"
 
 [node name="Topic 10" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 428.0

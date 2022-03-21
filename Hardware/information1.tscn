@@ -70,12 +70,13 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "HDMI is a Video and Audio output device which stands for High Defintion Multimedia
+Interface, it plugs into most modern devices such as, 
+(Playstation, Xbox, Computer and DVD Player) Typically the way a HDMI device is-
+plugged into a Device such as Game Consoles and the other end is plugged
+into a Monitor or Television to output Audio and Video."
 align = 1
+valign = 1
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 1278.0
