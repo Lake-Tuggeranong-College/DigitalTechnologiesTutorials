@@ -102,6 +102,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Test/information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/Answers"]
 margin_top = 154.0
@@ -115,6 +116,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Test/information2.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/Answers"]
 margin_top = 308.0
@@ -142,6 +144,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Test/information2.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
