@@ -28,11 +28,11 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1341.0
+margin_right = 1279.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1341.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -41,13 +41,13 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1341.0
+margin_right = 1279.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 668.0
+margin_right = 637.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -56,37 +56,33 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 134.0
+margin_left = 118.0
 margin_top = 238.0
-margin_right = 534.0
+margin_right = 518.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 672.0
-margin_right = 1341.0
+margin_left = 641.0
+margin_right = 1279.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "HDMI is a video output device which stands for
- High Defintion Multimedia Interface,
-it plugs into most modern devices such as Game 
-Consoles like
- (Playstation,Xbox and DVD-Players) 
-Typically the way a HDMI Cable is-
-Plugged in is one end of the cable is 
-plugged into a Device and the other-
-end is plugged into a Monitor or 
-Television to Output Audio and Video."
+text = "A CPU is used in all electronic devices of the modern era
+and is just one of the core parts of a desktop computer,
+it's job is to cater to the user's need's such as interacting
+with applications and programs.
+
+For example "
 align = 1
 valign = 1
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 1341.0
+margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
@@ -135,8 +131,8 @@ text = "Next"
 script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 525.0
-margin_right = 1278.0
+margin_left = 522.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
