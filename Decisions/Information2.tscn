@@ -78,11 +78,11 @@ text = "
 
 
 
+The ‘if’ part of the statement checks to see if the conditions of the statement  is either true or false.
 
+This could be checking numbers or if something is true or false.
 
-
-
-This is information page 2"
+For example: If the player has reached level 2, can either be true or false. If they ARE level 2 or if they are NOT."
 align = 1
 autowrap = true
 
