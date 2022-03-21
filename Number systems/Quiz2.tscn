@@ -82,19 +82,19 @@ rect_min_size = Vector2( 530, 0 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 530.0
-margin_bottom = 129.0
+margin_bottom = 85.0
 rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "How many unique numbers does the decimal number system use to create other numbers?"
+text = "When is the decimal number system commonly used?"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 133.0
+margin_top = 89.0
 margin_right = 530.0
-margin_bottom = 373.0
+margin_bottom = 329.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 530.0
@@ -102,7 +102,7 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "0-9"
+text = "Used by computers"
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -116,7 +116,7 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "1-10"
+text = "Used by people"
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -129,7 +129,7 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "2-11"
+text = "Used for finding colours"
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -142,7 +142,7 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "1-9"
+text = "Used for storage"
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false

@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/The-trouble-with-graphs.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/Top-6-Software-Development-Methodologies.jpg" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -10,14 +10,10 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 32
+size = 24
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 40
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=4]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -51,7 +47,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
+margin_right = 635.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,76 +56,46 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 45.0
-margin_top = 170.0
-margin_right = 592.0
-margin_bottom = 443.0
+margin_left = 17.0
+margin_top = 147.0
+margin_right = 617.0
+margin_bottom = 466.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
-margin_right = 1279.0
-margin_bottom = 85.0
+[node name="Example_text" type="Label" parent="VBoxContainer/Main"]
+margin_left = 639.0
+margin_right = 1274.0
+margin_bottom = 613.0
 size_flags_horizontal = 3
-size_flags_vertical = 0
+size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "What is the appropriate format
- for this information?"
+text = "Software is a set of instructions, data or programs used
+to operate computers and performs specific tasks.
+It is the opposite of hardware, which describes the 
+physical aspects of a computer.
+When displaying data you must look at what type of 
+data you are trying to display. 
+
+If you are trying to 
+show the relationshi between different sets of data, 
+you want to use a scatter or bubble plot. 
+
+If you are displaying the distribution of different sets
+of data, you want to use column charts such as;
+histograms or scatter plots.
+
+If your are trying to display the composition of different
+sets of data, you want to use a pie or waterfall chart."
 align = 1
 
-[node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 155.342
-margin_top = 111.423
-margin_right = 499.342
-margin_bottom = 187.423
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "List"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 1278.0
+margin_right = 1278.0
+margin_bottom = 613.0
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 155.342
-margin_top = 214.811
-margin_right = 499.342
-margin_bottom = 290.811
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Table"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 152.621
-margin_top = 322.281
-margin_right = 496.621
-margin_bottom = 398.281
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Graph"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 155.342
-margin_top = 433.831
-margin_right = 499.342
-margin_bottom = 509.831
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Presentation"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -137,7 +103,7 @@ margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 578.0
+margin_right = 518.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -145,44 +111,44 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
 
-[node name="Return" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
-margin_right = 407.0
+margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
-text = "Return to Info"
+custom_fonts/font = SubResource( 3 )
+text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Software/Software_Information.tscn"
+scene_to_load = "res://Software/software_Question.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 411.0
-margin_right = 494.0
+margin_left = 351.0
+margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Back"
 script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 498.0
-margin_right = 578.0
+margin_left = 438.0
+margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Next"
 script = ExtResource( 3 )
 
-[node name="Score" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 582.0
+[node name="Label" type="Label" parent="VBoxContainer/Navigation"]
+margin_left = 522.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3

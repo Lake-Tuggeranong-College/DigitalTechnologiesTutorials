@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/Social_&_Ethical.png" type="Texture" id=2]
+[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Social"
+text = "Design Process - Empathy Stage"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -51,7 +51,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 825.0
+margin_right = 637.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,88 +60,75 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 272.0
-margin_top = 216.0
-margin_right = 552.0
-margin_bottom = 396.0
+margin_left = 118.0
+margin_top = 238.0
+margin_right = 518.0
+margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 829.0
+[node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
+margin_left = 641.0
 margin_right = 1279.0
-margin_bottom = 613.0
-
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
-margin_right = 450.0
-margin_bottom = 217.0
-rect_min_size = Vector2( 450, 0 )
+margin_bottom = 85.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "your name is jason smith
- and you want to make an account for yourself,
- what's the best user name to protect your privacy?"
+text = "
+In order to Empathise you need to….."
 align = 1
-autowrap = true
 
-[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 221.0
-margin_right = 450.0
-margin_bottom = 461.0
+[node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
+anchor_top = 0.0105307
+anchor_bottom = 0.0105307
+margin_left = -26.6751
+margin_top = 95.6959
+margin_right = 628.325
+margin_bottom = 171.696
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Create solutions to fix the situation"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_right = 450.0
-margin_bottom = 57.0
+[node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
+margin_left = -310.902
+margin_top = 201.371
+margin_right = 942.098
+margin_bottom = 274.371
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Jason_the_man225"
-script = ExtResource( 3 )
+text = "Put yourself into someone else's shoes to understand their situation"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 61.0
-margin_right = 450.0
-margin_bottom = 118.0
+[node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
+margin_left = 108.453
+margin_top = 311.03
+margin_right = 530.453
+margin_bottom = 387.03
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Jason Smith"
-script = ExtResource( 3 )
+text = "Brainstorm your ideas"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 122.0
-margin_right = 450.0
-margin_bottom = 179.0
+[node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
+margin_left = 150.559
+margin_top = 413.629
+margin_right = 494.559
+margin_bottom = 489.629
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Starwars19_ rulz77"
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-scene_to_load = "res://Social/information2.tscn"
-
-[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 183.0
-margin_right = 450.0
-margin_bottom = 240.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "JasonB99"
-script = ExtResource( 3 )
+text = "Test your ideas "
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -151,11 +138,7 @@ margin_top = 672.0
 margin_right = 1279.0
 margin_bottom = 723.0
 
-[node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 578.0
-margin_bottom = 51.0
-
-[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
 margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
@@ -163,22 +146,20 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 script = ExtResource( 3 )
-scene_to_load = "res://MainMenu.tscn"
 
-[node name="Return" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation"]
 margin_left = 189.0
-margin_right = 407.0
+margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "Return to Info"
+text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Social/information1.tscn"
 
-[node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 411.0
-margin_right = 494.0
+[node name="Back_button" type="Button" parent="VBoxContainer/Navigation"]
+margin_left = 351.0
+margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -186,9 +167,9 @@ custom_fonts/font = SubResource( 4 )
 text = "Back"
 script = ExtResource( 3 )
 
-[node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 498.0
-margin_right = 578.0
+[node name="Next_button" type="Button" parent="VBoxContainer/Navigation"]
+margin_left = 438.0
+margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -196,8 +177,8 @@ custom_fonts/font = SubResource( 4 )
 text = "Next"
 script = ExtResource( 3 )
 
-[node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 582.0
+[node name="Score" type="Label" parent="VBoxContainer/Navigation"]
+margin_left = 522.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
