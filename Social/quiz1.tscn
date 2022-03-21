@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
+[ext_resource path="res://Images/Social_&_Ethical.png" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -51,7 +51,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
+margin_right = 825.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,17 +60,21 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 118.0
-margin_top = 238.0
-margin_right = 518.0
-margin_bottom = 375.0
+margin_left = 272.0
+margin_top = 216.0
+margin_right = 552.0
+margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="Example_Question" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 829.0
 margin_right = 1279.0
+margin_bottom = 613.0
+
+[node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
+margin_right = 450.0
 margin_bottom = 217.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
@@ -82,54 +86,62 @@ text = "your name is jason smith
 align = 1
 autowrap = true
 
-[node name="Button" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 131.641
-margin_top = 172.356
-margin_right = 512.641
-margin_bottom = 248.356
+[node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
+margin_top = 221.0
+margin_right = 450.0
+margin_bottom = 461.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_right = 450.0
+margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Jason_the_man225"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 144.595
-margin_top = 281.296
-margin_right = 488.595
-margin_bottom = 357.296
+[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 61.0
+margin_right = 450.0
+margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Jason Smith"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 140.024
-margin_top = 390.617
-margin_right = 508.024
-margin_bottom = 466.617
+[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 122.0
+margin_right = 450.0
+margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Starwars19_ rulz77"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Social/information2.tscn"
 
-[node name="Button4" type="Button" parent="VBoxContainer/Main/Example_Question"]
-margin_left = 150.147
-margin_top = 500.316
-margin_right = 494.147
-margin_bottom = 576.316
+[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 183.0
+margin_right = 450.0
+margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "JasonB99"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
