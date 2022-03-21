@@ -46,7 +46,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 637.0
+margin_right = 635.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -55,17 +55,17 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 118.0
+margin_left = 117.0
 margin_top = 238.0
-margin_right = 518.0
+margin_right = 517.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 4 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 641.0
-margin_right = 1279.0
+margin_left = 639.0
+margin_right = 1274.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -76,6 +76,13 @@ this is example text
 this is example text
 this is example text"
 align = 1
+
+[node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 1278.0
+margin_right = 1278.0
+margin_bottom = 613.0
+
+[node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
