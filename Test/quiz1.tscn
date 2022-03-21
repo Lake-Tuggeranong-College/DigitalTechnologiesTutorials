@@ -44,13 +44,13 @@ align = 1
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
 margin_right = 1279.0
-margin_bottom = 824.0
+margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
 margin_right = 825.0
-margin_bottom = 769.0
+margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -59,9 +59,9 @@ __meta__ = {
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
 margin_left = 212.0
-margin_top = 316.0
+margin_top = 238.0
 margin_right = 612.0
-margin_bottom = 453.0
+margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
@@ -69,7 +69,7 @@ texture = ExtResource( 2 )
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 829.0
 margin_right = 1279.0
-margin_bottom = 769.0
+margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/VBoxContainer"]
 margin_right = 450.0
@@ -80,14 +80,14 @@ size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
 text = "What is the best Star War? 
 What happens if this question is really long? 
-It will have to go on to differnt lines."
+It will have to go on to different lines."
 align = 1
 autowrap = true
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
 margin_top = 221.0
 margin_right = 450.0
-margin_bottom = 355.0
+margin_bottom = 316.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -98,9 +98,9 @@ __meta__ = {
 }
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 359.0
+margin_top = 320.0
 margin_right = 450.0
-margin_bottom = 493.0
+margin_bottom = 415.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -111,9 +111,9 @@ __meta__ = {
 }
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 497.0
+margin_top = 419.0
 margin_right = 450.0
-margin_bottom = 631.0
+margin_bottom = 514.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -125,9 +125,9 @@ __meta__ = {
 scene_to_load = "res://Test/information2.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/VBoxContainer"]
-margin_top = 635.0
+margin_top = 518.0
 margin_right = 450.0
-margin_bottom = 769.0
+margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -138,11 +138,15 @@ __meta__ = {
 }
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 828.0
+margin_top = 672.0
 margin_right = 1279.0
-margin_bottom = 879.0
+margin_bottom = 723.0
 
-[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
+margin_right = 518.0
+margin_bottom = 51.0
+
+[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
@@ -150,7 +154,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 
-[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
 margin_right = 347.0
 margin_bottom = 51.0
@@ -159,7 +163,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Start Quiz"
 
-[node name="Back_button" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 351.0
 margin_right = 434.0
 margin_bottom = 51.0
@@ -168,7 +172,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Back"
 
-[node name="Next_button" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 438.0
 margin_right = 518.0
 margin_bottom = 51.0
