@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/decimals_image.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/NS_decimals.jpg" type="Texture" id=2]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=4]
 
@@ -82,19 +82,20 @@ rect_min_size = Vector2( 530, 0 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 530.0
-margin_bottom = 85.0
+margin_bottom = 129.0
 rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "When is the decimal number system commonly used?"
+text = "When is the decimal number system commonly used?
+"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 89.0
+margin_top = 133.0
 margin_right = 530.0
-margin_bottom = 329.0
+margin_bottom = 373.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 530.0
@@ -107,7 +108,6 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Number systems/Information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
@@ -121,6 +121,7 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Number systems/Information3.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
@@ -154,7 +155,7 @@ margin_right = 1230.0
 margin_bottom = 710.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 578.0
+margin_right = 407.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -176,9 +177,10 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Return to Info"
 script = ExtResource( 4 )
-scene_to_load = "res://Number systems/Information1.tscn"
+scene_to_load = "res://Number systems/Information2.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
 margin_left = 411.0
 margin_right = 494.0
 margin_bottom = 51.0
@@ -189,8 +191,9 @@ text = "Back"
 script = ExtResource( 4 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 498.0
-margin_right = 578.0
+visible = false
+margin_left = 411.0
+margin_right = 491.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -199,7 +202,7 @@ text = "Next"
 script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 582.0
+margin_left = 411.0
 margin_right = 1230.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
