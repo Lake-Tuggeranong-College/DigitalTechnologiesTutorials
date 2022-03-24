@@ -70,7 +70,8 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "When making a User name for yourself it is important that "
+text = "When making a User name for yourself it is important that you 
+don't put any of your personal detales as your Username. "
 align = 1
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
