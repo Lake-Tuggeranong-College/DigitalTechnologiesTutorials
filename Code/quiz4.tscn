@@ -25,7 +25,7 @@ font_data = ExtResource( 1 )
 script = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 723.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -33,7 +33,7 @@ __meta__ = {
 
 [node name="Popup" type="HBoxContainer" parent="VBoxContainer"]
 visible = false
-margin_right = 1279.0
+margin_right = 1277.0
 
 [node name="Panel" type="Panel" parent="VBoxContainer/Popup"]
 __meta__ = {
@@ -63,26 +63,26 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Code - 1"
+text = "Code - 4"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 958.0
+margin_right = 703.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -91,43 +91,41 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 279.0
+margin_left = 151.0
 margin_top = 238.0
-margin_right = 679.0
+margin_right = 551.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 962.0
-margin_right = 1279.0
+margin_left = 707.0
+margin_right = 1280.0
 margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
-margin_right = 317.0
-margin_bottom = 173.0
+margin_right = 573.0
+margin_bottom = 85.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = " What was the 
-name of the machine
- that could crack
- enigma codes?"
+text = " What is a Paradigm that is used often 
+within game development?"
 align = 1
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 177.0
-margin_right = 317.0
-margin_bottom = 417.0
+margin_top = 89.0
+margin_right = 573.0
+margin_bottom = 329.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_right = 317.0
+margin_right = 573.0
 margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Bomb."
+text = "High-level Programming."
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -135,12 +133,12 @@ __meta__ = {
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
-margin_right = 317.0
+margin_right = 573.0
 margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Coding."
+text = "Audio Based Programming."
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -148,12 +146,12 @@ __meta__ = {
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
-margin_right = 317.0
+margin_right = 573.0
 margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Enigma."
+text = "Functional Code."
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -161,21 +159,21 @@ __meta__ = {
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
-margin_right = 317.0
+margin_right = 573.0
 margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Bombe."
+text = "Object Oriented Programming"
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Code/Information2.tscn"
+scene_to_load = "res://Code/Information5.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
@@ -200,7 +198,7 @@ scene_to_load = "res://MainMenu.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 189.0
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
