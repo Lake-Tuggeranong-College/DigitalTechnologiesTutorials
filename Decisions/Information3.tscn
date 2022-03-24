@@ -1,13 +1,16 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/If_statement_code.jpg" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
+
+[sub_resource type="StreamTexture" id=4]
+flags = 4
+load_path = "res://.import/Decisions_Info_2.png-d57aad1b914ab4334bfb8e393f9f7657.stex"
 
 [sub_resource type="DynamicFont" id=2]
 size = 25
@@ -64,7 +67,7 @@ margin_bottom = 555.0
 rect_min_size = Vector2( 500, 500 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 2 )
+texture = SubResource( 4 )
 expand = true
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
@@ -74,7 +77,16 @@ margin_bottom = 610.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "This is information 3"
+text = "
+
+
+
+
+If statements are used all the time.
+
+Also, part of the if statement is the outcome of whether or not the condition is true.
+
+If the player IS level 2, then something will happen. For example they might recieve a reward for levelling up."
 align = 1
 autowrap = true
 
