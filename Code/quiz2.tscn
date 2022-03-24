@@ -71,7 +71,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Code - 1"
+text = "Code - 2"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -82,7 +82,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 958.0
+margin_right = 895.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -91,52 +91,77 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 279.0
+margin_left = 247.0
 margin_top = 238.0
-margin_right = 679.0
+margin_right = 647.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 962.0
+margin_left = 899.0
 margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
-margin_right = 317.0
-margin_bottom = 173.0
+margin_right = 380.0
+margin_bottom = 85.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = " What was the 
-name of the machine
- that could crack
- enigma codes?"
+text = "What is an example 
+of Low-Level Coding?"
 align = 1
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 177.0
-margin_right = 317.0
-margin_bottom = 417.0
+margin_top = 89.0
+margin_right = 380.0
+margin_bottom = 329.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_right = 317.0
+margin_right = 380.0
 margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Bomb."
+text = "Binary."
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Code/Information3.tscn"
+
+[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 61.0
+margin_right = 380.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "OnesandZeros."
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 61.0
-margin_right = 317.0
-margin_bottom = 118.0
+[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 122.0
+margin_right = 380.0
+margin_bottom = 179.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Machine Language."
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_top = 183.0
+margin_right = 380.0
+margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -145,33 +170,6 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 122.0
-margin_right = 317.0
-margin_bottom = 179.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Enigma."
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 183.0
-margin_right = 317.0
-margin_bottom = 240.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Bombe."
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-scene_to_load = "res://Code/Information2.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
