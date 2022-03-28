@@ -1,15 +1,16 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
-[ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
-[ext_resource path="res://Button_Menu.gd" type="Script" id=4]
+[ext_resource path="res://Images/If_statement_code.jpg" type="Texture" id=2]
+[ext_resource path="res://Button_Menu.gd" type="Script" id=3]
+[ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 25
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -17,37 +18,38 @@ size = 32
 font_data = ExtResource( 1 )
 
 [node name="Topic_1" type="Node2D"]
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_right = 1280.0
+margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Code - 1"
+text = "Decisions"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1279.0
-margin_bottom = 668.0
+margin_right = 1280.0
+margin_bottom = 665.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 635.0
-margin_bottom = 613.0
+margin_right = 638.0
+margin_bottom = 610.0
+rect_min_size = Vector2( 638, 610 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -55,43 +57,46 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 117.0
-margin_top = 238.0
-margin_right = 517.0
-margin_bottom = 375.0
+margin_left = 69.0
+margin_top = 55.0
+margin_right = 569.0
+margin_bottom = 555.0
+rect_min_size = Vector2( 500, 500 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
+expand = true
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 639.0
-margin_right = 1274.0
-margin_bottom = 613.0
+margin_left = 642.0
+margin_right = 1276.0
+margin_bottom = 610.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Code is used in order to communicate with computers 
-hardware and software, the history of coding is complicated 
-and people constantly debate about who created
- the first programmable computer, the most iconic
- fathers in computer coding has to be Alan Turing, 
-during WW2 he solved an unsolvable german code known as enigma.
- He did this using a programmable machine known as bombe it 
-was able to crack a daily code in under 
-4 hours, it had about 159 quintillion settings."
-clip_text = true
+text = "
+
+
+
+
+
+Programs make most of their decisions based on numerical values (numbers).
+
+A program can also make decisions on the comparison between values (Seen in the image to the left)."
+align = 1
+autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1278.0
-margin_right = 1278.0
-margin_bottom = 613.0
+margin_left = 1280.0
+margin_right = 1280.0
+margin_bottom = 610.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 672.0
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_top = 669.0
+margin_right = 1280.0
+margin_bottom = 720.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
 margin_right = 347.0
@@ -104,7 +109,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
-script = ExtResource( 4 )
+script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
 
 [node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -115,12 +120,34 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
-script = ExtResource( 4 )
-scene_to_load = "res://Code/quiz1.tscn"
+script = ExtResource( 3 )
+scene_to_load = "res://Decisions/Quiz5.tscn"
+
+[node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
+margin_left = 351.0
+margin_right = 434.0
+margin_bottom = 51.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Back"
+script = ExtResource( 3 )
+
+[node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
+margin_left = 438.0
+margin_right = 518.0
+margin_bottom = 51.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Next"
+script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 351.0
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )

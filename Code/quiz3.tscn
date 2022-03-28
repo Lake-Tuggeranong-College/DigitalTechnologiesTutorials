@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/NS_decimals.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=4]
 
@@ -25,37 +25,65 @@ font_data = ExtResource( 1 )
 script = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 50.0
-margin_top = 10.0
-margin_right = 1280.0
-margin_bottom = 720.0
+margin_right = 1277.0
+margin_bottom = 723.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup" type="HBoxContainer" parent="VBoxContainer"]
+visible = false
+margin_right = 1277.0
+
+[node name="Panel" type="Panel" parent="VBoxContainer/Popup"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/Popup/Panel"]
+margin_left = 170.427
+margin_top = 90.2792
+margin_right = 449.427
+margin_bottom = 115.279
+rect_scale = Vector2( 2, 2 )
+text = "Are you sure that you want to quit the quiz?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/Popup/Panel"]
+margin_left = 320.477
+margin_top = 169.477
+margin_right = 432.477
+margin_bottom = 219.477
+rect_scale = Vector2( 2, 2 )
+text = "Yes"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1230.0
+margin_right = 1277.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1230.0
+margin_right = 1277.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Number Systems"
+text = "Code - 3"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1230.0
-margin_bottom = 655.0
+margin_right = 1277.0
+margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 696.0
-margin_bottom = 600.0
-rect_min_size = Vector2( 600, 550 )
+margin_right = 682.0
+margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -63,73 +91,70 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 48.0
-margin_top = 100.0
-margin_right = 648.0
-margin_bottom = 500.0
-rect_min_size = Vector2( 600, 400 )
+margin_left = 141.0
+margin_top = 238.0
+margin_right = 541.0
+margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
-expand = true
-stretch_mode = 5
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 700.0
-margin_right = 1230.0
-margin_bottom = 600.0
-rect_min_size = Vector2( 530, 0 )
+margin_left = 686.0
+margin_right = 1277.0
+margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
-margin_right = 530.0
-margin_bottom = 129.0
-rect_min_size = Vector2( 500, 0 )
+margin_right = 591.0
+margin_bottom = 173.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "How many unique numbers does the decimal number system use to create other numbers?"
+text = " What does a High-level language 
+need to use in order for it 
+to communicate 
+with a Machine?"
 align = 1
-autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 133.0
-margin_right = 530.0
-margin_bottom = 373.0
+margin_top = 177.0
+margin_right = 591.0
+margin_bottom = 417.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_right = 530.0
+margin_right = 591.0
 margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "0-9"
+text = "Lister."
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Number systems/Information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
-margin_right = 530.0
+margin_right = 591.0
 margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "1-10"
+text = "Compiler."
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Code/Information4.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
-margin_right = 530.0
+margin_right = 591.0
 margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "2-11"
+text = "It doesn’t need to use anything."
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -137,25 +162,28 @@ __meta__ = {
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
-margin_right = 530.0
+margin_right = 591.0
 margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "1-9"
+text = "Numbers."
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 659.0
-margin_right = 1230.0
-margin_bottom = 710.0
+margin_top = 672.0
+margin_right = 1277.0
+margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 407.0
+margin_right = 185.0
 margin_bottom = 51.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_right = 185.0
@@ -165,46 +193,16 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 scene_to_load = "res://MainMenu.tscn"
 
-[node name="Return" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 189.0
-margin_right = 407.0
-margin_bottom = 51.0
-size_flags_horizontal = 0
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
-text = "Return to Info"
-script = ExtResource( 4 )
-scene_to_load = "res://Number systems/Information1.tscn"
-
-[node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-visible = false
-margin_left = 411.0
-margin_right = 494.0
-margin_bottom = 51.0
-size_flags_horizontal = 0
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
-text = "Back"
-script = ExtResource( 4 )
-
-[node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-visible = false
-margin_left = 411.0
-margin_right = 491.0
-margin_bottom = 51.0
-size_flags_horizontal = 0
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
-text = "Next"
-script = ExtResource( 4 )
-
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 411.0
-margin_right = 1230.0
+margin_left = 189.0
+margin_right = 1277.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Score: 15,500"
+text = "15,500"
 align = 2

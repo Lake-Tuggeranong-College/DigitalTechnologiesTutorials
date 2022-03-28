@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/If_statement_code.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/Decisions_Image_3.png" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -121,7 +121,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Decisions/Quiz1.tscn"
+scene_to_load = "res://Decisions/Quiz2.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 visible = false
