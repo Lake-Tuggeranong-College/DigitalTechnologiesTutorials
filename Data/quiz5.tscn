@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Are text,video,animation,images,sounds,number,all data ? "
+text = "Is a online chart tracting book data for a libary"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -97,7 +97,7 @@ margin_right = 450.0
 margin_bottom = 57.0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "output"
+text = "What data"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -111,12 +111,11 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "input"
+text = "no"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Data/information5.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
@@ -125,7 +124,7 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "not video and text"
+text = "maybe"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -139,7 +138,7 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "all of them are data"
+text = "Yes"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -203,4 +202,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
-[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button2" to="VBoxContainer/Main/questionAnswer/Answers/Button2" method="_on_Button2_pressed_Data_Quiz4"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Button4_pressed_Data_Quiz5"]
