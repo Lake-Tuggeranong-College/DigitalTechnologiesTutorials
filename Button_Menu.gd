@@ -75,3 +75,8 @@ func _on_Button_pressed_Decisions_Quiz5():
 
 func _on_Button3_pressed_Hardware_quiz1():
 	Global.increaseScore()
+
+
+
+func _on_Correct_Answer():
+	Global.increaseScore()
