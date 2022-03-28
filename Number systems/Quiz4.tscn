@@ -88,7 +88,7 @@ rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "How many digits does binary number system use?
+text = "How many unique numbers does binary number system use?
 "
 align = 1
 autowrap = true
@@ -208,4 +208,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "Score: 15,500"
 align = 2
-[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Button4_pressed_NS_Q4"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Correct_Answer"]

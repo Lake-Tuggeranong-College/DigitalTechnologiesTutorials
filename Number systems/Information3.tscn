@@ -78,7 +78,7 @@ rect_min_size = Vector2( 530, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "The binary number system is used by computers, which allows them to count and perform tasks. It used 8 digits of 0 and 1 to calculate the value of numbers, depending on their position within the 8 digits and adding them together."
+text = "Binary: The binary number system is used by computers, which allows them to count and perform tasks. It used 8 digits of 0 and 1 to calculate the value of numbers, depending on their position within the 8 digits and adding them together."
 align = 1
 autowrap = true
 
