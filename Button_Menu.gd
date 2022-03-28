@@ -88,3 +88,7 @@ func _on_Button3_pressed_Hardware_quiz2():
 
 func _on_Button4_pressed_Hardware_quiz3():
 	pass # Replace with function body. 
+
+
+func _on_Button2_pressed():
+	pass # Replace with function body.
