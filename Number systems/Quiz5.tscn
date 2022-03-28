@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Button_Menu.gd" type="Script" id=1]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=2]
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Images/NS_binary.jpg" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -70,7 +69,6 @@ margin_bottom = 500.0
 rect_min_size = Vector2( 600, 400 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
 expand = true
 stretch_mode = 5
 
@@ -82,20 +80,19 @@ rect_min_size = Vector2( 530, 0 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 530.0
-margin_bottom = 129.0
+margin_bottom = 85.0
 rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "What number system does  a computer use?
-"
+text = "How many unique digits does the hex number system have?"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 133.0
+margin_top = 89.0
 margin_right = 530.0
-margin_bottom = 373.0
+margin_bottom = 329.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 530.0
@@ -103,7 +100,7 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Bi-narie"
+text = "0-9"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -116,7 +113,7 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Decimal"
+text = "0-A or 0-10"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -129,12 +126,11 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Binary"
+text = "0-1"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Number systems/Information4.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
@@ -143,11 +139,12 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Hex"
+text = "0-F or 0-15"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://MainMenu.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 659.0

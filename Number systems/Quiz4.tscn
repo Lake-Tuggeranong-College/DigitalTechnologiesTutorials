@@ -87,7 +87,7 @@ rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "What number system does  a computer use?
+text = "How many digits does binary number system use?
 "
 align = 1
 autowrap = true
@@ -103,7 +103,7 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Bi-narie"
+text = "16"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -116,7 +116,7 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Decimal"
+text = "10"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -129,12 +129,11 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Binary"
+text = "8"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Number systems/Information4.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
@@ -143,11 +142,12 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Hex"
+text = "2"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Number systems/Information5.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 659.0
