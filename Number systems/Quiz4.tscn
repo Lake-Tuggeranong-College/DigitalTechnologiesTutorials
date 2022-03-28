@@ -35,26 +35,27 @@ __meta__ = {
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
 margin_right = 1230.0
-margin_bottom = 51.0
+margin_bottom = 105.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
 margin_right = 1230.0
-margin_bottom = 51.0
+margin_bottom = 105.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Number Systems"
+text = "Number Systems
+"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 55.0
+margin_top = 109.0
 margin_right = 1230.0
-margin_bottom = 655.0
+margin_bottom = 659.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
 margin_right = 696.0
-margin_bottom = 600.0
+margin_bottom = 550.0
 rect_min_size = Vector2( 600, 550 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -64,9 +65,9 @@ __meta__ = {
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
 margin_left = 48.0
-margin_top = 100.0
+margin_top = 75.0
 margin_right = 648.0
-margin_bottom = 500.0
+margin_bottom = 475.0
 rect_min_size = Vector2( 600, 400 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -77,7 +78,7 @@ stretch_mode = 5
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 700.0
 margin_right = 1230.0
-margin_bottom = 600.0
+margin_bottom = 550.0
 rect_min_size = Vector2( 530, 0 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
@@ -150,9 +151,9 @@ __meta__ = {
 scene_to_load = "res://Number systems/Information5.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 659.0
+margin_top = 663.0
 margin_right = 1230.0
-margin_bottom = 710.0
+margin_bottom = 714.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
 margin_right = 578.0
@@ -207,3 +208,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "Score: 15,500"
 align = 2
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Button4_pressed_NS_Q4"]

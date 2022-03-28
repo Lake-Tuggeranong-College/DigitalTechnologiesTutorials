@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Images/NS_Hex.png" type="Texture" id=2]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=4]
 
@@ -59,12 +60,13 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_top = 75.0
+margin_top = 24.0
 margin_right = 600.0
-margin_bottom = 475.0
-rect_min_size = Vector2( 600, 400 )
+margin_bottom = 524.0
+rect_min_size = Vector2( 600, 500 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
+texture = ExtResource( 2 )
 expand = true
 stretch_mode = 5
 
@@ -76,7 +78,7 @@ rect_min_size = Vector2( 530, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Hex "
+text = "Hex number system uses a base 16 number system, the first 10 digits (0-9) are taken from the decimal number system, and the next 10-15 digits use letters to represent the numbers e.g., 10 = A, 11 = B …,15 = F. Hex numbers are useful for finding colours in computers, and for other memory-based systems."
 align = 1
 autowrap = true
 
