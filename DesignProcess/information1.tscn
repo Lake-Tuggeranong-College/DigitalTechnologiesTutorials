@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
+[ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -47,7 +48,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 635.0
+margin_right = 633.0
 margin_bottom = 617.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -56,17 +57,17 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 117.0
+margin_left = 116.0
 margin_top = 240.0
-margin_right = 517.0
+margin_right = 516.0
 margin_bottom = 377.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 639.0
-margin_right = 1275.0
+margin_left = 637.0
+margin_right = 1271.0
 margin_bottom = 617.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -87,20 +88,36 @@ align = 1
 valign = 1
 autowrap = true
 
+[node name="question answer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 1275.0
+margin_right = 1275.0
+margin_bottom = 617.0
+
+[node name="Answers" type="Node" parent="VBoxContainer/Main/question answer"]
+
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 676.0
 margin_right = 1275.0
 margin_bottom = 727.0
 
-[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
+margin_right = 518.0
+margin_bottom = 51.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
+script = ExtResource( 3 )
+scene_to_load = "res://MainMenu.tscn"
 
-[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
 margin_right = 347.0
 margin_bottom = 51.0
@@ -108,8 +125,10 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
+script = ExtResource( 3 )
+scene_to_load = "res://DesignProcess/quiz1.tscn"
 
-[node name="Back_button" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 351.0
 margin_right = 434.0
 margin_bottom = 51.0
@@ -117,8 +136,9 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Back"
+script = ExtResource( 3 )
 
-[node name="Next_button" type="Button" parent="VBoxContainer/Navigation"]
+[node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 438.0
 margin_right = 518.0
 margin_bottom = 51.0
@@ -126,6 +146,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Next"
+script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
