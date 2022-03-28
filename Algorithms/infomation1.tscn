@@ -9,7 +9,8 @@
 size = 40
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=4]
+size = 24
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -69,7 +70,7 @@ margin_right = 1275.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 4 )
 text = "An algorithm is a series of steps that a computer follows in order to solve a problem. The algorithm will follow the steps until it reaches the end."
 align = 1
 autowrap = true

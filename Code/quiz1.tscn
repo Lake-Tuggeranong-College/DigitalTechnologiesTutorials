@@ -32,6 +32,7 @@ __meta__ = {
 }
 
 [node name="Popup" type="HBoxContainer" parent="VBoxContainer"]
+visible = false
 margin_right = 1279.0
 
 [node name="Panel" type="Panel" parent="VBoxContainer/Popup"]
@@ -62,20 +63,19 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 4.0
 margin_right = 1279.0
-margin_bottom = 55.0
+margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Code - 1"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 59.0
+margin_top = 55.0
 margin_right = 1279.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
@@ -83,7 +83,7 @@ size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
 margin_right = 958.0
-margin_bottom = 609.0
+margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -92,9 +92,9 @@ __meta__ = {
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
 margin_left = 279.0
-margin_top = 236.0
+margin_top = 238.0
 margin_right = 679.0
-margin_bottom = 373.0
+margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
@@ -102,7 +102,7 @@ texture = ExtResource( 2 )
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 962.0
 margin_right = 1279.0
-margin_bottom = 609.0
+margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 317.0
@@ -132,7 +132,6 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Code/Information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
@@ -146,7 +145,6 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Code/Information2.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
@@ -160,7 +158,6 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Code/Information2.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
