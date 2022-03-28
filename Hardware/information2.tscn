@@ -35,7 +35,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Information 1"
+text = "Information 2"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -70,11 +70,10 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "A CPU is used in all electronic devices of the modern era and is just one of the core
+items of a desktop compuer, CPU stands for central processing unit and it is often 
+called the brains of the computer it's job is to cater to the users needs
+such as interacting with applications like games and programs"
 align = 1
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
