@@ -9,11 +9,11 @@
 size = 40
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 25
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -73,7 +73,7 @@ margin_right = 1276.0
 margin_bottom = 610.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "
 
 
@@ -107,7 +107,7 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
@@ -118,7 +118,7 @@ margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 script = ExtResource( 3 )
 scene_to_load = "res://Decisions/Quiz4.tscn"
@@ -130,7 +130,7 @@ margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Back"
 script = ExtResource( 3 )
 
@@ -141,7 +141,7 @@ margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Next"
 script = ExtResource( 3 )
 

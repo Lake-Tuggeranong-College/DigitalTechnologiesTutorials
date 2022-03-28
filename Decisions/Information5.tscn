@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/If_statement_code.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/Decisions_TABLE.png" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -82,7 +82,7 @@ text = "
 
 Programs make most of their decisions based on numerical values (numbers).
 
-A program can also make decisions on the comparison between values (Seen in the image to the left)."
+A program can also make decisions based on the comparison between values (Seen in the image to the left)."
 align = 1
 autowrap = true
 

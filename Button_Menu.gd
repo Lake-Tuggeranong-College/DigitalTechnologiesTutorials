@@ -16,6 +16,7 @@ func _on_Button4_pressed_code_quiz4():
 
 func _on_Button_pressed_code_quiz5():
   Global.increaseScore()
+  
 func _on_Button_pressed_NS_Q1():
 	Global.increaseScore()
 
@@ -55,6 +56,21 @@ func _on_Button3_pressed_Data_Quiz2():
 	Global.increaseScore()
 
 func _on_Button_pressed_Data_Quiz1():
+  Global.increaseScore()
+
+func _on_Button2_pressed_Decisions_Quiz1():
+	Global.increaseScore()
+
+func _on_Button4_pressed_Decisions_Quiz2():
+	Global.increaseScore()
+
+func _on_Button3_pressed_Decisions_Quiz3():
+	Global.increaseScore()
+
+func _on_Button2_pressed_Decisions_Quiz4():
+	Global.increaseScore()
+
+func _on_Button_pressed_Decisions_Quiz5():
   Global.increaseScore()
 
 func _on_Button3_pressed_Hardware_quiz1():
