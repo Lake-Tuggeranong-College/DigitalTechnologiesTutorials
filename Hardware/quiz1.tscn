@@ -126,7 +126,7 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Test/information2.tscn"
+scene_to_load = "res://Hardware/information2.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
