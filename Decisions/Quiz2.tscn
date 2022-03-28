@@ -202,8 +202,8 @@ script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 visible = false
-margin_left = 411.0
-margin_right = 491.0
+margin_left = 498.0
+margin_right = 578.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
