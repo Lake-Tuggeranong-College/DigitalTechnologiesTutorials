@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/The-trouble-with-graphs.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/Data tranfer_1.png" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Software: Question one"
+text = "Are text,video,animation,images,sounds,number,all data ? "
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -51,7 +51,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 825.0
+margin_right = 765.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,57 +60,58 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 139.0
-margin_top = 170.0
-margin_right = 686.0
-margin_bottom = 443.0
+margin_left = 260.0
+margin_top = 204.0
+margin_right = 505.0
+margin_bottom = 409.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 829.0
+margin_left = 769.0
 margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
-margin_right = 450.0
-margin_bottom = 129.0
+margin_right = 510.0
+margin_bottom = 85.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "If you were trying to display
-the composition of data, what
-would you use?"
+text = "is a video game safe file data
+"
 align = 1
-autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 133.0
-margin_right = 450.0
-margin_bottom = 373.0
-
-[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_right = 450.0
-margin_bottom = 57.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Scatter plot"
-script = ExtResource( 3 )
+margin_top = 89.0
+margin_right = 510.0
+margin_bottom = 329.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+margin_right = 510.0
+margin_bottom = 57.0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "all of them expect for video"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Data/information2.tscn"
+
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
-margin_right = 450.0
+margin_right = 510.0
 margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Histogram"
+text = "all of them are wrong"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -118,26 +119,26 @@ __meta__ = {
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
-margin_right = 450.0
+margin_right = 510.0
 margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Pie chart"
+text = "all of them are data"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Software/software_Information_2.tscn"
+scene_to_load = "res://Data/information1.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
-margin_right = 450.0
+margin_right = 510.0
 margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "All of the above"
+text = "not video and text"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -149,7 +150,7 @@ margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 518.0
+margin_right = 578.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -160,20 +161,22 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 script = ExtResource( 3 )
+scene_to_load = "res://MainMenu.tscn"
 
-[node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+[node name="Return" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
-margin_right = 347.0
+margin_right = 407.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "Start Quiz"
+text = "Return to Info"
 script = ExtResource( 3 )
+scene_to_load = "res://Data/information1.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 351.0
-margin_right = 434.0
+margin_left = 411.0
+margin_right = 494.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -182,8 +185,8 @@ text = "Back"
 script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-margin_left = 438.0
-margin_right = 518.0
+margin_left = 498.0
+margin_right = 578.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -192,10 +195,10 @@ text = "Next"
 script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 522.0
+margin_left = 582.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "15,500"
 align = 2

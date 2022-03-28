@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/decimals_image.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/NS_decimals.jpg" type="Texture" id=2]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=4]
 
@@ -100,7 +100,7 @@ margin_right = 1230.0
 margin_bottom = 714.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 518.0
+margin_right = 347.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -125,6 +125,7 @@ script = ExtResource( 4 )
 scene_to_load = "res://Number systems/Quiz1.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
 margin_left = 351.0
 margin_right = 434.0
 margin_bottom = 51.0
@@ -135,6 +136,7 @@ text = "Back"
 script = ExtResource( 4 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
 margin_left = 438.0
 margin_right = 518.0
 margin_bottom = 51.0
@@ -145,7 +147,7 @@ text = "Next"
 script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 522.0
+margin_left = 351.0
 margin_right = 1230.0
 margin_bottom = 51.0
 size_flags_horizontal = 3

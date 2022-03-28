@@ -35,7 +35,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Code - 1"
+text = "Code - 5"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -70,15 +70,6 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Code is used in order to communicate with computers 
-hardware and software, the history of coding is complicated 
-and people constantly debate about who created
- the first programmable computer, the most iconic
- fathers in computer coding has to be Alan Turing, 
-during WW2 he solved an unsolvable german code known as enigma.
- He did this using a programmable machine known as bombe it 
-was able to crack a daily code in under 
-4 hours, it had about 159 quintillion settings."
 clip_text = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
@@ -116,7 +107,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 script = ExtResource( 4 )
-scene_to_load = "res://Code/quiz1.tscn"
+scene_to_load = "res://Code/quiz5.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 351.0
