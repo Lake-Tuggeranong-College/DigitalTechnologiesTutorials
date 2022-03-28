@@ -97,7 +97,7 @@ margin_right = 450.0
 margin_bottom = 57.0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Yes"
+text = "maybe"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -124,11 +124,12 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "maybe"
+text = "Yes"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Data/information3.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
@@ -201,3 +202,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Button3_pressed_Data_Quiz2"]
