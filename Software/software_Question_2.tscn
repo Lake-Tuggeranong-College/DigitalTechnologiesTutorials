@@ -75,21 +75,19 @@ margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 450.0
-margin_bottom = 129.0
+margin_bottom = 173.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "If you were trying to display
-the composition of data, what
-would you use?"
+text = "What type of colour palette is appropriate for displaying numeric or inherently ordered values?"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 133.0
+margin_top = 177.0
 margin_right = 450.0
-margin_bottom = 373.0
+margin_bottom = 417.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 450.0
@@ -97,7 +95,7 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Scatter plot"
+text = "A Qualitative palette"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -111,12 +109,12 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Histogram"
+text = "A Sequential Palette"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Software/software_Information_2.tscn"
+scene_to_load = "res://Software/software_Information_3.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
@@ -125,7 +123,7 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Pie chart"
+text = "A Diverging palette"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false

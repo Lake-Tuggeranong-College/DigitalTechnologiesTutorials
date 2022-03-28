@@ -3,7 +3,7 @@
 [ext_resource path="res://Button_Menu.gd" type="Script" id=1]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=2]
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Images/NS_decimals.jpg" type="Texture" id=4]
+[ext_resource path="res://Images/NS_binary.jpg" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -35,26 +35,27 @@ __meta__ = {
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
 margin_right = 1230.0
-margin_bottom = 51.0
+margin_bottom = 105.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
 margin_right = 1230.0
-margin_bottom = 51.0
+margin_bottom = 105.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Number Systems"
+text = "Number Systems
+"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 55.0
+margin_top = 109.0
 margin_right = 1230.0
-margin_bottom = 655.0
+margin_bottom = 659.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
 margin_right = 696.0
-margin_bottom = 600.0
+margin_bottom = 550.0
 rect_min_size = Vector2( 600, 550 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -64,9 +65,9 @@ __meta__ = {
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
 margin_left = 48.0
-margin_top = 100.0
+margin_top = 75.0
 margin_right = 648.0
-margin_bottom = 500.0
+margin_bottom = 475.0
 rect_min_size = Vector2( 600, 400 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -77,7 +78,7 @@ stretch_mode = 5
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 700.0
 margin_right = 1230.0
-margin_bottom = 600.0
+margin_bottom = 550.0
 rect_min_size = Vector2( 530, 0 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
@@ -87,7 +88,7 @@ rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "When is the decimal number system commonly used?
+text = "What number system does  a computer use?
 "
 align = 1
 autowrap = true
@@ -103,12 +104,11 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Used by computers"
+text = "Bi-narie"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Number systems/Information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
@@ -117,7 +117,7 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Used by people"
+text = "Decimal"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -130,11 +130,12 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Used for finding colours"
+text = "Binary"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Number systems/Information4.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
@@ -143,16 +144,16 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Used for storage"
+text = "Hex"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 659.0
+margin_top = 663.0
 margin_right = 1230.0
-margin_bottom = 710.0
+margin_bottom = 714.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
 margin_right = 578.0
@@ -207,3 +208,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "Score: 15,500"
 align = 2
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Button3_pressed_NS_Q3"]

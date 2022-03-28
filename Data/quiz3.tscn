@@ -124,7 +124,7 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "all of them are data"
+text = "not video and text"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -138,11 +138,12 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "not video and text"
+text = "all of them are data"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Data/information4.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -202,3 +203,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Button4_pressed_Data_Quiz3"]
