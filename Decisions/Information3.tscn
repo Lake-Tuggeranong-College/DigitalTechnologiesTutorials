@@ -103,7 +103,7 @@ margin_right = 1280.0
 margin_bottom = 720.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 347.0
+margin_right = 269.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -117,6 +117,7 @@ script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
 
 [node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
 margin_left = 189.0
 margin_right = 347.0
 margin_bottom = 51.0
@@ -129,8 +130,8 @@ scene_to_load = "res://Decisions/Quiz3.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 visible = false
-margin_left = 351.0
-margin_right = 434.0
+margin_left = 189.0
+margin_right = 272.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -139,18 +140,18 @@ text = "Back"
 script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-visible = false
-margin_left = 438.0
-margin_right = 518.0
+margin_left = 189.0
+margin_right = 269.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Next"
 script = ExtResource( 3 )
+scene_to_load = "res://Decisions/Quiz3.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 351.0
+margin_left = 273.0
 margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
