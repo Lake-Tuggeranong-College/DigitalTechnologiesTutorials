@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "safe file data "
+text = "Are text,video,animation,images,sounds,number,all data ? "
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -97,12 +97,12 @@ margin_right = 450.0
 margin_bottom = 57.0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "maybe"
+text = "output"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Data/information3.tscn"
+scene_to_load = "res://Data/information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
@@ -111,7 +111,7 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "It a type of data"
+text = "input"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -124,12 +124,12 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Yes"
+text = "not video and text"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Data/information3.tscn"
+scene_to_load = "res://Data/information1.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
@@ -138,7 +138,7 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "no"
+text = "all of them are data"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -202,4 +202,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
-[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Button3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button2" to="VBoxContainer/Main/questionAnswer/Answers/Button2" method="_on_Button2_pressed"]
