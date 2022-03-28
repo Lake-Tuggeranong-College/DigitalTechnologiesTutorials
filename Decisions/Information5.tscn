@@ -1,6 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Images/If_statement_code.jpg" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -8,15 +9,11 @@
 size = 40
 font_data = ExtResource( 1 )
 
-[sub_resource type="StreamTexture" id=2]
-flags = 4
-load_path = "res://.import/Decisions_Info_2.png-d57aad1b914ab4334bfb8e393f9f7657.stex"
-
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 25
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -67,7 +64,7 @@ margin_bottom = 555.0
 rect_min_size = Vector2( 500, 500 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = SubResource( 2 )
+texture = ExtResource( 2 )
 expand = true
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
@@ -76,17 +73,16 @@ margin_right = 1276.0
 margin_bottom = 610.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "
 
 
 
 
-If statements are used a lot of the time.
 
-Also, part of the if statement is the outcome of whether or not the condition is true.
+Programs make most of their decisions based on numerical values (numbers).
 
-If the player IS level 2, then something will happen. For example they might recieve a reward for levelling up."
+A program can also make decisions on the comparison between values (Seen in the image to the left)."
 align = 1
 autowrap = true
 
@@ -111,7 +107,7 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
@@ -122,10 +118,10 @@ margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Decisions/Quiz3.tscn"
+scene_to_load = "res://Decisions/Quiz5.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 visible = false
@@ -134,7 +130,7 @@ margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Back"
 script = ExtResource( 3 )
 
@@ -145,7 +141,7 @@ margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Next"
 script = ExtResource( 3 )
 
