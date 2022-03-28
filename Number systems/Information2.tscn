@@ -78,7 +78,7 @@ rect_min_size = Vector2( 530, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Decimal: The decimal number system is used regularly by people because it is simple and easy to remember. The numbers range from 0-9, and are used to create numbers multiple digits numbers, for example, 20 is made of 2 and 0, 101 is made of 1 and 0 and 1 , etc."
+text = "Decimal: The decimal number system is used regularly by people because it is simple and easy to remember. The numbers range from 0-9, and are used to create  multiple digits numbers, for example, 20 is made of 2 and 0, 101 is made of 1 and 0 and 1 , etc."
 align = 1
 autowrap = true
 
