@@ -76,6 +76,8 @@ func _on_Button_pressed_Decisions_Quiz5():
 func _on_Button3_pressed_Hardware_quiz1():
 	Global.increaseScore()
 
+func _on_Button2_pressed_Software_Quiz2():
+	pass # Replace with function body.
 func _on_Button4_pressed_Data_Quiz5():
 	Global.increaseScore()
 
