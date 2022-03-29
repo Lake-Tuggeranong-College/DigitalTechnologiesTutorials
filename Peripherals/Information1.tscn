@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
@@ -7,9 +7,17 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 28
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -20,34 +28,36 @@ font_data = ExtResource( 1 )
 script = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_right = 1280.0
+margin_bottom = 720.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Topic Area"
+text = "Peripherals"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1279.0
-margin_bottom = 668.0
+margin_right = 1280.0
+margin_bottom = 665.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 635.0
-margin_bottom = 613.0
+margin_right = 636.0
+margin_bottom = 610.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -55,32 +65,61 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 117.0
-margin_top = 238.0
-margin_right = 517.0
-margin_bottom = 375.0
+margin_left = 118.0
+margin_top = 236.0
+margin_right = 518.0
+margin_bottom = 373.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
-[node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 639.0
-margin_right = 1274.0
-margin_bottom = 613.0
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Main"]
+margin_left = 640.0
+margin_right = 1276.0
+margin_bottom = 610.0
 size_flags_horizontal = 3
-size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="VBoxContainer/Main/VBoxContainer"]
+margin_right = 636.0
+margin_bottom = 36.0
+size_flags_vertical = 1
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "What Are Peripherals"
 align = 1
 
+[node name="Info" type="Label" parent="VBoxContainer/Main/VBoxContainer"]
+margin_top = 40.0
+margin_right = 636.0
+margin_bottom = 610.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 4 )
+text = "Peripherals are devices that are attached to computers. These devices are  attached to the computer to perform a specific function. This can then be used to input information and instructions into the computer. They are also the devices that show this data to us, the operators, through either images or sounds. However they are not required for the computer to run.
+
+As such it should be no surprise that we wouldn't recognise computers if not for these devices. In fact this program uses a bare minimum of 4 these devices to program this. These devices things that you use on a regular basis, such as;
+
+Mouses;
+Keyboards;
+Speakers;
+Cameras;
+Barcode readers,
+Monitors;
+Headphones;
+Speakers;
+Disk Drives;
+Solid State Drives;
+USBs;
+Internet Adaptors;
+And even Tablets and Phones can be Peripherals."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="questionAnswer" type="Control" parent="VBoxContainer/Main"]
-margin_left = 1278.0
-margin_right = 1278.0
-margin_bottom = 613.0
+margin_left = 1280.0
+margin_right = 1280.0
+margin_bottom = 610.0
 
 [node name="Answers" type="Control" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 40.0
@@ -90,9 +129,9 @@ __meta__ = {
 }
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 672.0
-margin_right = 1279.0
-margin_bottom = 723.0
+margin_top = 669.0
+margin_right = 1280.0
+margin_bottom = 720.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
 margin_right = 518.0
@@ -139,9 +178,9 @@ custom_fonts/font = SubResource( 3 )
 text = "Next"
 script = ExtResource( 3 )
 
-[node name="Score" type="Label" parent="VBoxContainer/Navigation"]
+[node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
-margin_right = 1279.0
+margin_right = 1280.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )

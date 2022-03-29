@@ -268,7 +268,7 @@ custom_styles/normal = SubResource( 25 )
 custom_fonts/font = SubResource( 5 )
 text = "Peripherals"
 script = ExtResource( 1 )
-scene_to_load = "res://Peripherals/Information.tscn"
+scene_to_load = "res://Peripherals/Information1.tscn"
 
 [node name="Credits" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 856.0
