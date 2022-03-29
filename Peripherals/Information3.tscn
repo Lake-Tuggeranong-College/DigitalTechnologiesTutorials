@@ -17,10 +17,10 @@ outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -99,7 +99,7 @@ margin_right = 636.0
 margin_bottom = 36.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 2 )
-text = "Types of Peripherals"
+text = "What is the Point of Peripheral Devices?"
 align = 1
 autowrap = true
 
@@ -109,10 +109,8 @@ margin_right = 636.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
-text = "Peripherals can be divided into 3 main types of Peripherals. These are input devices, output devices and input/output devices. These all perform a different function for the computer. Input devices allow you to input information into the computer. Keyboards and mice are examples of this. Output devices allow information to be outputted from a device. This can be things like speakers outputting sound, monitors outputting images or even a direct output from a computer to a machine. Finally input/output devices are things that can both input and output data. This is generally things such as Solid State Drives, USBs and other storage devices. However it can also be things like a network adapter for your computer.
-
-There are 4 other ways that peripheral devices can be classified. However these are not often used. These are Physical Connection, Virtual Connect, Shared and Dedicated devices. A physical connection device is connected to the computer physically, hrough things like a wire. Meanwhile a Virtual Connection is connected virtually through things like bluetooth. It should be noted that this connection requires a seperate peripheral to connect however. Shared devices can be connected to a computer or the wifi and be shared  by devices on the same network. Finally, dedicated devices are the opposite of shared devices, only being able to be used by one device at a time. "
+custom_fonts/font = SubResource( 3 )
+text = "As perviously touched upon, peripherals are not required for a device to run. This begs the question of why we even need them then. A computer can run easily without these peripherals. However you wouldn't be able to use them without some of them. Think of how you normally use a computer. The keyboard and mouse are almost required to be able to use the computer. This is because these devices allow you to input data into the computer. How else would you be able to do things on it if you didn't have these devices. Along with this think about how you are recieving information. This is through images being projected to you"
 autowrap = true
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
@@ -129,7 +127,7 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
@@ -140,7 +138,7 @@ margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Start Quiz"
 script = ExtResource( 3 )
 scene_to_load = "res://Peripherals/Quiz2.tscn"
@@ -151,7 +149,7 @@ margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Back"
 script = ExtResource( 3 )
 
@@ -161,7 +159,7 @@ margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Next"
 script = ExtResource( 3 )
 
