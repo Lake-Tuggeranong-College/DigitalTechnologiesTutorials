@@ -186,6 +186,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Back"
 script = ExtResource( 3 )
+scene_to_load = "res://Software/software_Information_5.tscn"
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 438.0
