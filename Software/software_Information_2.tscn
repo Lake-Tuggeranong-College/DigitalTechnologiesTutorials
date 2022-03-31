@@ -10,6 +10,7 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 24
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -46,7 +47,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 635.0
+margin_right = 485.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -55,31 +56,44 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 76.0
+margin_left = 1.0
 margin_top = 50.0
-margin_right = 559.0
+margin_right = 484.0
 margin_bottom = 562.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 639.0
-margin_right = 1274.0
+margin_left = 489.0
+margin_right = 1275.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "The colour you choose is a major factor when creating and displaying 
+data. Selecting the appropriate colours for your data will highlight the
+data, wheareas inaproprite colours distract from the data's purpose.
+
+There are three major colour palettes used in data visualisation, they 
+are; Qualitative palettes, Sequential palettes and Diverging palettes.
+
+A qualitiative palette is used when the data is categorical and takes on
+distinct labels. When using a qualitative palette, each possible value of
+the variable is assigned one colour from the palette.
+
+A sequential palette is used when the data is numeric or has inherently
+ordered values. Most colours in a sequential palette are light colours 
+like light blue or yellow.
+
+Finally, a diverging palette is used when the data has a meaningful 
+central value such as zero, a diverging palette is essentially a 
+combination of two sequential palettes with a shared end-point."
 align = 1
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1278.0
-margin_right = 1278.0
+margin_left = 1279.0
+margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
