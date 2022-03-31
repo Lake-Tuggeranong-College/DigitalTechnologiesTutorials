@@ -163,6 +163,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 script = ExtResource( 3 )
+scene_to_load = "res://MainMenu.tscn"
 
 [node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
