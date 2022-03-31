@@ -152,7 +152,7 @@ margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 518.0
+margin_right = 512.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -187,17 +187,17 @@ script = ExtResource( 3 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 438.0
-margin_right = 518.0
+margin_right = 512.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "Next"
+text = "Skip"
 script = ExtResource( 3 )
 scene_to_load = "res://Software/software_Information_5.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 522.0
+margin_left = 516.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
