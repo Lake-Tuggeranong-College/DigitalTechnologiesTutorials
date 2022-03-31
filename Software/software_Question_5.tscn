@@ -89,7 +89,7 @@ autowrap = true
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
 margin_top = 133.0
 margin_right = 450.0
-margin_bottom = 373.0
+margin_bottom = 251.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 450.0
@@ -97,7 +97,7 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Scatter plot"
+text = "True"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -111,7 +111,7 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Histogram"
+text = "False"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -119,6 +119,7 @@ __meta__ = {
 scene_to_load = "res://Software/software_Information_2.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+visible = false
 margin_top = 122.0
 margin_right = 450.0
 margin_bottom = 179.0
@@ -133,6 +134,7 @@ __meta__ = {
 scene_to_load = "res://Software/software_Information_2.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+visible = false
 margin_top = 183.0
 margin_right = 450.0
 margin_bottom = 240.0
