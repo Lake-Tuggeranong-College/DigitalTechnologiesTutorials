@@ -80,9 +80,7 @@ rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "If you were trying to display
-the composition of data, what
-would you use?"
+text = "What kind of graph is most commonly used to display data?"
 align = 1
 autowrap = true
 
