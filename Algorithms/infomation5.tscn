@@ -71,10 +71,10 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "INFOMATION 2
-INFOMATION 2
-INFOMATION 2
-INFOMATION 2
+text = "INFOMATION 5
+INFOMATION 5
+INFOMATION 5
+INFOMATION 5
 "
 align = 1
 autowrap = true
@@ -114,7 +114,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Algorithms/quiz2.tscn"
+scene_to_load = "res://Algorithms/quiz5.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 351.0
