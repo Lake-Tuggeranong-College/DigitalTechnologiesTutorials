@@ -72,9 +72,11 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
 text = "The solution to the RAM shutting down along with the computer was data storage. With data storage, users could save data onto a new device. Additionally, if the computer was shut down, the data was retained. 
 
-Additionally, instead of manually entering data into a computer, users could intruct the computer to pull data from the storage device.
+Additionally, instead of manually entering data into a computer, users could intruct the computer to pull data from the storage device. Dara storage devices come in two main categories.
 
-"
+The first is known as direct area storage, as known as DAS. This storage is dirrectly connected to the computer and is often the only machine connected to it.
+
+The second storage device is network-based storage"
 align = 1
 autowrap = true
 
