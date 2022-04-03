@@ -79,14 +79,7 @@ memory, also known as random access memory
 (RAM). 
 
 However, when the computer powers down, so does
-the RAM's ability to retain data, the solution? Data
-storage. With data storage, users can save data 
-onto a device and if the computer is shut down, the 
-data is retained.
-
-Additionally, instead of manually entering data 
-into a computer, users can instruct the computer to 
-pull data from storage devices."
+the RAM's ability to retain data. "
 align = 1
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
