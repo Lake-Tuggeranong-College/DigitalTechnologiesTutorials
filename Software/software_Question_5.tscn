@@ -75,21 +75,19 @@ margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 450.0
-margin_bottom = 129.0
+margin_bottom = 85.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "If you were trying to display
-the composition of data, what
-would you use?"
+text = "Data can be represented in different ways"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 133.0
+margin_top = 89.0
 margin_right = 450.0
-margin_bottom = 251.0
+margin_bottom = 207.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 450.0
