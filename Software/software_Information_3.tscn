@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/data.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/Software 3.jpg" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -10,6 +10,7 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 24
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -46,7 +47,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 702.0
+margin_right = 635.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -55,26 +56,28 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_top = 105.0
-margin_right = 702.0
-margin_bottom = 507.0
+margin_left = 17.0
+margin_top = 106.0
+margin_right = 617.0
+margin_bottom = 506.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 706.0
+margin_left = 639.0
 margin_right = 1275.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "In software, there are two types of data; input data and output data. Users provide the input data and computers provide the output data. 
+
+However, users continuously inputting data manually is time consuming. The to this problem was computer memory, also known as random access memory (RAM). 
+
+However, when the computer powers down, so does the RAM's ability to retain data. "
 align = 1
+autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 1279.0

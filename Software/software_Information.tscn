@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/Top-6-Software-Development-Methodologies.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/Software one.jpg" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -57,9 +57,9 @@ __meta__ = {
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
 margin_left = 17.0
-margin_top = 147.0
+margin_top = 106.0
 margin_right = 617.0
-margin_bottom = 466.0
+margin_bottom = 506.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
@@ -71,24 +71,17 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Software is a set of instructions, data or programs used
-to operate computers and performs specific tasks.
-It is the opposite of hardware, which describes the 
-physical aspects of a computer.
-When displaying data you must look at what type of 
-data you are trying to display. 
+text = "Software is a set of instructions, data or programs used to operate computers and performs specific tasks.
 
-If you are trying to 
-show the relationshi between different sets of data, 
-you want to use a scatter or bubble plot. 
+It is the opposite of hardware, which describes the physical aspects of a computer.
 
-If you are displaying the distribution of different sets
-of data, you want to use column charts such as;
-histograms or scatter plots.
+When displaying data you must look at what type of data you are trying to display. 
 
-If your are trying to display the composition of different
-sets of data, you want to use a pie or waterfall chart."
+If you are trying to show the relationshi between different sets of data, you want to use a scatter or bubble plot. 
+
+If you are displaying the distribution of different sets of data, you want to use column charts such as; histograms or scatter plots."
 align = 1
+autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 1279.0

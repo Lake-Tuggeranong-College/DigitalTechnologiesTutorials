@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/1_BGsMsXwOZnE0lxyZamph_w.png" type="Texture" id=2]
+[ext_resource path="res://Images/Software 3.jpg" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -61,9 +61,9 @@ __meta__ = {
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
 margin_left = 112.0
-margin_top = 6.0
+margin_top = 106.0
 margin_right = 712.0
-margin_bottom = 606.0
+margin_bottom = 506.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
@@ -75,19 +75,19 @@ margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 450.0
-margin_bottom = 129.0
+margin_bottom = 173.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "What kind of graph is most commonly used to display data?"
+text = "What was the solution to having to manaully enter data continuously into a computer?"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 133.0
+margin_top = 177.0
 margin_right = 450.0
-margin_bottom = 373.0
+margin_bottom = 417.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 450.0
@@ -95,12 +95,11 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Scatter plot"
+text = "DRAM"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Software/software_Information_2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
@@ -109,12 +108,11 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Histogram"
+text = "ROM"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Software/software_Information_2.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
@@ -123,12 +121,11 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Pie chart"
+text = "EEPROM"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Software/software_Information_2.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
@@ -137,12 +134,12 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "All of the above"
+text = "RAM"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Software/software_Information_2.tscn"
+scene_to_load = "res://Software/software_Information_4.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -204,3 +201,5 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "0"
 align = 2
+
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Correct_Answer"]
