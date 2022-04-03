@@ -70,13 +70,13 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "The solution to the RAM shutting down along with the computer was data storage. With data storage, users could save data onto a new device. Additionally, if the computer was shut down, the data was retained. 
+text = "File storage is a hierarchical storage methodology used to organise the store data on a computer hard drive or on a network attached storage device. 
 
-Additionally, instead of manually entering data into a computer, users could intruct the computer to pull data from the storage device. Dara storage devices come in two main categories.
+In file storage, data is sorted into files, the files are organised into folders, and the folders are organised under a hierarchy of directories and subdirectories.
 
-The first is known as direct area storage, as known as DAS. This storage is dirrectly connected to the computer and is often the only machine connected to it.
+To locate a file , all you or your computer system needs is the path from the directory to subdirectory to folder or file.
 
-The second storage device is network-based storage"
+Hierarchical file storage works well with easily organised amounts of structured data. But, as the number of files grows, the file retrieval process can become cumbersome and time consuming."
 align = 1
 autowrap = true
 
