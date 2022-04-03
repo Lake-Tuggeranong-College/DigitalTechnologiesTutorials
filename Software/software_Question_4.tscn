@@ -202,4 +202,4 @@ custom_fonts/font = SubResource( 1 )
 text = "0"
 align = 2
 
-[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="." method="_on_Correct_Answer"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Correct_Answer"]
