@@ -142,7 +142,7 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Software/software_Information_2.tscn"
+scene_to_load = "res://Software/software_Information_4.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
