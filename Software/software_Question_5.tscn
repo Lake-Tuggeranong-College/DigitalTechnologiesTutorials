@@ -100,6 +100,7 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://MainMenu.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
