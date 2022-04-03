@@ -71,24 +71,17 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Software is a set of instructions, data or programs used
-to operate computers and performs specific tasks.
-It is the opposite of hardware, which describes the 
-physical aspects of a computer.
-When displaying data you must look at what type of 
-data you are trying to display. 
+text = "Software is a set of instructions, data or programs used to operate computers and performs specific tasks.
 
-If you are trying to 
-show the relationshi between different sets of data, 
-you want to use a scatter or bubble plot. 
+It is the opposite of hardware, which describes the physical aspects of a computer.
 
-If you are displaying the distribution of different sets
-of data, you want to use column charts such as;
-histograms or scatter plots.
+When displaying data you must look at what type of data you are trying to display. 
 
-If your are trying to display the composition of different
-sets of data, you want to use a pie or waterfall chart."
+If you are trying to show the relationshi between different sets of data, you want to use a scatter or bubble plot. 
+
+If you are displaying the distribution of different sets of data, you want to use column charts such as; histograms or scatter plots."
 align = 1
+autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 1279.0
