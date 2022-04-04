@@ -155,7 +155,7 @@ margin_right = 1230.0
 margin_bottom = 714.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 578.0
+margin_right = 407.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -177,9 +177,10 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Return to Info"
 script = ExtResource( 1 )
-scene_to_load = "res://Number systems/Information2.tscn"
+scene_to_load = "res://Number systems/Information5.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
 margin_left = 411.0
 margin_right = 494.0
 margin_bottom = 51.0
@@ -190,6 +191,7 @@ text = "Back"
 script = ExtResource( 1 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
+visible = false
 margin_left = 498.0
 margin_right = 578.0
 margin_bottom = 51.0
@@ -200,7 +202,7 @@ text = "Next"
 script = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 582.0
+margin_left = 411.0
 margin_right = 1230.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
