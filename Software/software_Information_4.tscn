@@ -71,13 +71,13 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "File storage is a hierarchical storage methodology used to organise the store data on a computer hard drive or on a network attached storage device. 
+text = "
 
-In file storage, data is sorted into files, the files are organised into folders, and the folders are organised under a hierarchy of directories and subdirectories.
 
-To locate a file , all you or your computer system needs is the path from the directory to subdirectory to folder or file.
 
-Hierarchical file storage works well with easily organised amounts of structured data. But, as the number of files grows, the file retrieval process can become cumbersome and time consuming."
+File storage is what is called a hierarchical storage structure used to organise the storage on a computer or an internet-connected storage device. In file storage, data is sorted into files, the files are organised into folders, and the folders are then organised. 
+
+Hierarchical file storage works well with easily organised amounts of data. But, the more files there are, the longer it takes to find specific files."
 align = 1
 autowrap = true
 

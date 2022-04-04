@@ -66,26 +66,25 @@ texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 639.0
-margin_right = 1274.0
+margin_right = 1275.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Software is a set of instructions, data or programs used to operate computers and performs specific tasks.
+text = "
 
-It is the opposite of hardware, which describes the physical aspects of a computer.
 
-When displaying data you must look at what type of data you are trying to display. 
+Software is a set of instructions, data or jobs used to control computers and complete certain jobs. Software is the opposite of hardware, which is the actual physical part of the computer.
 
-If you are trying to show the relationshi between different sets of data, you want to use a scatter or bubble plot. 
+ When choosing how to show off data, you must look at what type of data you are trying to show off. If you are trying to show the similarities between different data, you want to use a scatter or bubble plot. 
 
-If you are displaying the distribution of different sets of data, you want to use column charts such as; histograms or scatter plots."
+If you are showing the composition of different sets of data, you want to use pie or waterfall charts."
 align = 1
 autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1278.0
-margin_right = 1278.0
+margin_left = 1279.0
+margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
