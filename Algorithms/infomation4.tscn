@@ -71,10 +71,7 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "INFOMATION 4
-INFOMATION 4
-INFOMATION 4
-INFOMATION 4
+text = "Flow charts are drawings of the steps used in an algorithm. Flow charts are used to clearly show the steps and help you to look for any mistakes or any way to improve the algorithm
 "
 align = 1
 autowrap = true
