@@ -20,18 +20,18 @@ font_data = ExtResource( 1 )
 script = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_right = 1280.0
-margin_bottom = 723.0
+margin_right = 1278.0
+margin_bottom = 721.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1280.0
+margin_right = 1278.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1280.0
+margin_right = 1278.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -40,14 +40,14 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1280.0
-margin_bottom = 668.0
+margin_right = 1278.0
+margin_bottom = 666.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
 margin_right = 650.0
-margin_bottom = 613.0
+margin_bottom = 611.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -55,9 +55,9 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_top = 86.0
+margin_top = 85.0
 margin_right = 650.0
-margin_bottom = 526.0
+margin_bottom = 525.0
 rect_min_size = Vector2( 650, 440 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -67,27 +67,28 @@ stretch_mode = 5
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 654.0
-margin_right = 1276.0
-margin_bottom = 613.0
+margin_right = 1274.0
+margin_bottom = 611.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
 text = "Save file is data cause it save progess and information from the game state
-so if you die or want to reload you have save to do so"
+so if you die or want to reload you have save to do so. put it in a file so you can 
+go back to it when need"
 align = 1
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1280.0
-margin_right = 1280.0
-margin_bottom = 613.0
+margin_left = 1278.0
+margin_right = 1278.0
+margin_bottom = 611.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 672.0
-margin_right = 1280.0
-margin_bottom = 723.0
+margin_top = 670.0
+margin_right = 1278.0
+margin_bottom = 721.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
 margin_right = 518.0
@@ -136,7 +137,7 @@ script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
-margin_right = 1280.0
+margin_right = 1278.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
