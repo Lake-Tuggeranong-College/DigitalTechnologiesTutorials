@@ -78,7 +78,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Transfer a image or a drawing from a ipad to a computer 
 can be done in a some ways. 
 Like use a cable 
-or upload to a cloud and grab it from it"
+or upload to a cloud and grab it from the cloud"
 align = 1
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]

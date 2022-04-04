@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Are text,video,animation,images,sounds,number,all data ? "
+text = "DATA"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -51,7 +51,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 825.0
+margin_right = 302.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,40 +60,40 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 290.0
+margin_left = 28.0
 margin_top = 204.0
-margin_right = 535.0
+margin_right = 273.0
 margin_bottom = 409.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 829.0
+margin_left = 306.0
 margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
-margin_right = 450.0
+margin_right = 973.0
 margin_bottom = 85.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "is a video game safe file data
+text = "Keyboard,mouse,headphones,touch screen what data do they use
 "
 align = 1
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
 margin_top = 89.0
-margin_right = 450.0
+margin_right = 973.0
 margin_bottom = 329.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_right = 450.0
+margin_right = 973.0
 margin_bottom = 57.0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
@@ -106,7 +106,7 @@ scene_to_load = "res://Data/information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
-margin_right = 450.0
+margin_right = 973.0
 margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -120,7 +120,7 @@ scene_to_load = "res://Data/information5.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
-margin_right = 450.0
+margin_right = 973.0
 margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -134,7 +134,7 @@ scene_to_load = "res://Data/information1.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
-margin_right = 450.0
+margin_right = 973.0
 margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -173,7 +173,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Return to Info"
 script = ExtResource( 3 )
-scene_to_load = "res://Data/information1.tscn"
+scene_to_load = "res://Data/information4.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 411.0
