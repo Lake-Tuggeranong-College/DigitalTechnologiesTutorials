@@ -47,7 +47,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 485.0
+margin_right = 635.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -56,40 +56,28 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 1.0
+margin_left = 76.0
 margin_top = 50.0
-margin_right = 484.0
+margin_right = 559.0
 margin_bottom = 562.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 489.0
+margin_left = 639.0
 margin_right = 1275.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "The colour you choose is a major factor when creating and displaying 
-data. Selecting the appropriate colours for your data will highlight the
-data, wheareas inaproprite colours distract from the data's purpose.
+text = "The colour you choose is very important when making and showing off data. Choosing the right colours for your data will show off the best parts of your data, but bad colours will distract from the data’s purpose. There are three different colour types used when showing off data, they are; qualitative, sequential and diverging. 
 
-There are three major colour palettes used in data visualisation, they 
-are; Qualitative palettes, Sequential palettes and Diverging palettes.
+Qualitative colours are used when the data is separated into categories and has important labels. When using qualitative colours, each set of data is assigned one type of colour from the qualitative set. 
 
-A qualitiative palette is used when the data is categorical and takes on
-distinct labels. When using a qualitative palette, each possible value of
-the variable is assigned one colour from the palette.
-
-A sequential palette is used when the data is numeric or has inherently
-ordered values. Most colours in a sequential palette are light colours 
-like light blue or yellow.
-
-Finally, a diverging palette is used when the data has a meaningful 
-central value such as zero, a diverging palette is essentially a 
-combination of two sequential palettes with a shared end-point."
+Sequential colours are used when the data has to be in number order or is naturally ordered. Most sequential colours are light colours like blue or yellow. Finally, diverging colours are used when the data has important numbers in its centre. Diverging coloured data is usually made from two sequential colours."
 align = 1
+autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 1279.0

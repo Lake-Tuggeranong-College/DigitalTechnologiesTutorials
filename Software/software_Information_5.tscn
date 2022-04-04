@@ -70,11 +70,10 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Data refers to the symbols that represent people, events, things and ideas. Data representation refers to the form in which data is stored, processed, and transmitted.
+text = "
+Data is something that represents people, events, things and ideas. Data representation refers to how the data is stored, changed and moved. Data can be represented in a lot of different ways, such as; numbers, text, tables, graphs and charts. 
 
-Data can be represented in a number of different ways, such as; numbers, text, tables, graphs and charts.
-
-The choice of how to represent the data is influenced by the nature of the data and the kinds of questions about the data."
+How you show off data is influenced by the data and the kinds of questions about the data."
 align = 1
 autowrap = true
 

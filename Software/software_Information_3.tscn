@@ -71,11 +71,12 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "In software, there are two types of data; input data and output data. Users provide the input data and computers provide the output data. 
+text = "
 
-However, users continuously inputting data manually is time consuming. The to this problem was computer memory, also known as random access memory (RAM). 
 
-However, when the computer powers down, so does the RAM's ability to retain data. "
+In software, there are two types of data; input data and output data. The person using the computer inputs data and the computer outputs data. However, always inputting data takes up a lot of time. 
+
+The answer to the problem was something called random access memory, also known as (RAM). Unfortunately, when the computer powers down, so does the RAM's ability to retain data."
 align = 1
 autowrap = true
 
