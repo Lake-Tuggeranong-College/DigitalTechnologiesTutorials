@@ -20,8 +20,9 @@ font_data = ExtResource( 1 )
 script = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_top = -1.58667
 margin_right = 1280.0
-margin_bottom = 723.0
+margin_bottom = 721.413
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -73,8 +74,10 @@ rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "data can be save stored then you can view it"
+text = "A chart is use to store information that can be used to update when a book being 
+borrow and return"
 align = 1
+autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 1280.0
