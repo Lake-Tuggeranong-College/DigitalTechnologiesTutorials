@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Button_Menu.gd" type="Script" id=1]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=2]
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Images/user.jpeg" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -56,13 +55,12 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 2.0
-margin_top = 128.0
-margin_right = 562.0
-margin_bottom = 484.0
+margin_left = 282.0
+margin_top = 306.0
+margin_right = 282.0
+margin_bottom = 306.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 568.0

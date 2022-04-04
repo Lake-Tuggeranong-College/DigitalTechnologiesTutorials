@@ -10,6 +10,7 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 22
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -70,12 +71,9 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "in user acessibillity it is important to make everthing as easy to use as possible. For example things like not haveing too many things on screen at once as to not confuse the user. This is possible because if people find it hard to use your softwere they most likrly wont use it again."
 align = 1
+autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
 margin_left = 1278.0
