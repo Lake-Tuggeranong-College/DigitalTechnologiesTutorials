@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
+[ext_resource path="res://Images/user2.jpg" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -36,7 +36,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "topic area "
+text = "user accessibility"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -47,7 +47,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 635.0
+margin_right = 800.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -56,17 +56,16 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 117.0
-margin_top = 238.0
-margin_right = 517.0
-margin_bottom = 375.0
+margin_top = 40.0
+margin_right = 800.0
+margin_bottom = 573.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
-margin_left = 639.0
-margin_right = 1274.0
+margin_left = 804.0
+margin_right = 1275.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -76,8 +75,8 @@ align = 1
 autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1278.0
-margin_right = 1278.0
+margin_left = 1279.0
+margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
@@ -110,7 +109,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
 script = ExtResource( 3 )
-scene_to_load = "res://Test/quiz1.tscn"
+scene_to_load = "res://Accessibility/userquiz2.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 351.0
