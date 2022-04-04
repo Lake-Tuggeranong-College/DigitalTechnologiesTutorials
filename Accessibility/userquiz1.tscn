@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Button_Menu.gd" type="Script" id=1]
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Images/Color-blind_Assistance_in_the_Monash_App.original.png" type="Texture" id=3]
+[ext_resource path="res://Images/stock color blind.jpg" type="Texture" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
@@ -32,11 +32,11 @@ __meta__ = {
 }
 
 [node name="Title" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1381.0
+margin_right = 1279.0
 margin_bottom = 51.0
 
 [node name="TitleText" type="Label" parent="VBoxContainer/Title"]
-margin_right = 1381.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
@@ -45,13 +45,13 @@ align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 55.0
-margin_right = 1381.0
+margin_right = 1279.0
 margin_bottom = 668.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 750.0
+margin_right = 648.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,16 +60,17 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_top = 25.0
-margin_right = 750.0
-margin_bottom = 587.0
+margin_left = 18.0
+margin_top = 90.0
+margin_right = 630.0
+margin_bottom = 522.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 3 )
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 754.0
-margin_right = 1381.0
+margin_left = 652.0
+margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
@@ -145,7 +146,7 @@ scene_to_load = "res://Test/information2.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
-margin_right = 1381.0
+margin_right = 1279.0
 margin_bottom = 723.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
@@ -193,7 +194,7 @@ script = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
-margin_right = 1381.0
+margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
