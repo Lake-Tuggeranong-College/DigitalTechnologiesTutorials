@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Code/Menu_Popup.gd" type="Script" id=1]
+
+[node name="Popup_menu" type="Panel"]
+margin_left = 333.081
+margin_top = 158.36
+margin_right = 931.081
+margin_bottom = 482.36
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 97.9547
+margin_top = 79.1169
+margin_right = 499.955
+margin_bottom = 144.117
+text = "Leaving will lose all progress, are you sure you want to leave?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="No" type="Button" parent="."]
+margin_left = 347.415
+margin_top = 187.325
+margin_right = 415.415
+margin_bottom = 241.325
+text = "No"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yes" type="Button" parent="."]
+margin_left = 159.683
+margin_top = 188.685
+margin_right = 227.683
+margin_bottom = 240.685
+text = "Yes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="No" to="." method="_on_No_pressed"]
+[connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
