@@ -2,6 +2,8 @@ extends Node
 
 var background_music = load("res://Music/bensound-thelounge.wav")
 
+# var mouse_click_sound_effect = load("res://Music/Mouse Click - Sound Effect (HD).wav")
+
 func _ready():
 	pass 
 
