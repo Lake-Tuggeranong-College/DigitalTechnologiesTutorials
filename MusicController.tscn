@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Music/MusicController.gd" type="Script" id=1]
-[ext_resource path="res://Music/bensound-thelounge.wav" type="AudioStream" id=2]
+[ext_resource path="res://Audio/MusicController.gd" type="Script" id=1]
+[ext_resource path="res://Audio/bensound-thelounge.wav" type="AudioStream" id=2]
+
 
 [node name="MusicController" type="Node"]
 script = ExtResource( 1 )
