@@ -71,10 +71,7 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "INFOMATION 2
-INFOMATION 2
-INFOMATION 2
-INFOMATION 2
+text = "Algorithms are used because of how quickly they work. If the algorithm is made correctly it will never accidentally get an answer wrong.
 "
 align = 1
 autowrap = true

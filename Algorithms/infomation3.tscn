@@ -71,10 +71,9 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "INFOMATION 3
-INFOMATION 3
-INFOMATION 3
-INFOMATION 3
+text = "An algorithm needs to have a starting point, an ending point and something in between. 
+
+But without any data the algorithm won’t be able to make decisions, making it useless
 "
 align = 1
 autowrap = true
