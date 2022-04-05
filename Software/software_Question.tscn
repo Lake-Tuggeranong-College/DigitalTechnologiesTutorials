@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/The-trouble-with-graphs.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/Software one.jpg" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
 
@@ -60,10 +60,10 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 139.0
-margin_top = 170.0
-margin_right = 686.0
-margin_bottom = 443.0
+margin_left = 112.0
+margin_top = 106.0
+margin_right = 712.0
+margin_bottom = 506.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
@@ -203,5 +203,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "0"
 align = 2
-
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Correct_Answer"]
