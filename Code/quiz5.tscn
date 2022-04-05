@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=4]
+[ext_resource path="res://Popup_menu.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -27,37 +28,6 @@ script = ExtResource( 3 )
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_right = 1277.0
 margin_bottom = 723.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Popup" type="HBoxContainer" parent="VBoxContainer"]
-visible = false
-margin_right = 1277.0
-
-[node name="Panel" type="Panel" parent="VBoxContainer/Popup"]
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="VBoxContainer/Popup/Panel"]
-margin_left = 170.427
-margin_top = 90.2792
-margin_right = 449.427
-margin_bottom = 115.279
-rect_scale = Vector2( 2, 2 )
-text = "Are you sure that you want to quit the quiz?"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button" type="Button" parent="VBoxContainer/Popup/Panel"]
-margin_left = 320.477
-margin_top = 169.477
-margin_right = 432.477
-margin_bottom = 219.477
-rect_scale = Vector2( 2, 2 )
-text = "Yes"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -205,4 +175,7 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
+
+[node name="Popup_menu" parent="." instance=ExtResource( 5 )]
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Correct_Answer"]
+[connection signal="pressed" from="VBoxContainer/Navigation/Buttons/Main_menu" to="Popup_menu" method="_on_Main_menu_pressed"]
