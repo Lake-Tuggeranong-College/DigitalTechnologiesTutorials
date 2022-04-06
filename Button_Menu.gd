@@ -13,7 +13,6 @@ func _on_Incorrect_Answer():
 	pass
 
 
-# func _on_Main_menu_pressed():
-	# pass # Replace with function body.
-	# $Music.stream = mouse_sound_effect
-	# $Music.play()
+# func button pressed():
+	# pass # 
+	# $mouse_sound_effect.play
