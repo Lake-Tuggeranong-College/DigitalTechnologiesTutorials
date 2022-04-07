@@ -10,6 +10,7 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 24
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -65,21 +66,18 @@ texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 639.0
-margin_right = 1274.0
+margin_right = 1275.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "this is example text
-this is example text
-this is example text
-this is example text
-this is example text"
+text = "Makign things that are targeted at a small audience makes it easier to use for those people. However, it will make it harder for others to pick it up and may make them not want to use it."
 align = 1
+autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1278.0
-margin_right = 1278.0
+margin_left = 1279.0
+margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
