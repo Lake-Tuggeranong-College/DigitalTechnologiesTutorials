@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Test Question / Scene"
+text = "Question four"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -51,7 +51,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Main"]
-margin_right = 825.0
+margin_right = 448.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,44 +60,42 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 212.0
+margin_left = 24.0
 margin_top = 238.0
-margin_right = 612.0
+margin_right = 424.0
 margin_bottom = 375.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 829.0
+margin_left = 452.0
 margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
-margin_right = 450.0
-margin_bottom = 217.0
+margin_right = 827.0
+margin_bottom = 85.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "What is the best Star War? 
-What happens if this question is really long? 
-It will have to go on to different lines."
+text = "To make your system easy to use for everybody, what should you include?"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 221.0
-margin_right = 450.0
-margin_bottom = 461.0
+margin_top = 89.0
+margin_right = 827.0
+margin_bottom = 329.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_right = 450.0
+margin_right = 827.0
 margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 1"
+text = "Multiple ways for people to use the system"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -105,12 +103,12 @@ __meta__ = {
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
-margin_right = 450.0
+margin_right = 827.0
 margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 2"
+text = "Save time and make it without any addtions"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -118,12 +116,12 @@ __meta__ = {
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
-margin_right = 450.0
+margin_right = 827.0
 margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 3"
+text = "Make a \"Mum\" mode"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -132,12 +130,12 @@ scene_to_load = "res://Test/information2.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
-margin_right = 450.0
+margin_right = 827.0
 margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 4"
+text = "make a \"Dad\" mode"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -200,4 +198,5 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
+
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Button3_pressed_Test_Quiz1"]

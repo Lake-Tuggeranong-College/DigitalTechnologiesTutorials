@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Test Question / Scene"
+text = "Question five"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -75,21 +75,19 @@ margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 450.0
-margin_bottom = 217.0
+margin_bottom = 41.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "What is the best Star War? 
-What happens if this question is really long? 
-It will have to go on to different lines."
+text = "Is user testing a good idea"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 221.0
+margin_top = 45.0
 margin_right = 450.0
-margin_bottom = 461.0
+margin_bottom = 163.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 450.0
@@ -97,13 +95,14 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 1"
+text = "Yes"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+visible = false
 margin_top = 61.0
 margin_right = 450.0
 margin_bottom = 118.0
@@ -117,13 +116,13 @@ __meta__ = {
 }
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 122.0
+margin_top = 61.0
 margin_right = 450.0
-margin_bottom = 179.0
+margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 3"
+text = "No"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -131,6 +130,7 @@ __meta__ = {
 scene_to_load = "res://Test/information2.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
+visible = false
 margin_top = 183.0
 margin_right = 450.0
 margin_bottom = 240.0
@@ -200,4 +200,5 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
+
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Button3_pressed_Test_Quiz1"]

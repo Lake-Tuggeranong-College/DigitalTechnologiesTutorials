@@ -40,7 +40,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Test Question / Scene"
+text = "Question three"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
@@ -75,21 +75,19 @@ margin_bottom = 613.0
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 450.0
-margin_bottom = 217.0
+margin_bottom = 129.0
 rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "What is the best Star War? 
-What happens if this question is really long? 
-It will have to go on to different lines."
+text = "It's important to make it easy for ______ to use your software."
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 221.0
+margin_top = 133.0
 margin_right = 450.0
-margin_bottom = 461.0
+margin_bottom = 373.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 450.0
@@ -97,7 +95,7 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 1"
+text = "Potatoes"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -110,7 +108,7 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 2"
+text = "Everybody"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -123,7 +121,7 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 3"
+text = "Colour blind people"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -137,7 +135,7 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Answer 4"
+text = "Your parents"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -200,4 +198,5 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
+
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Button3_pressed_Test_Quiz1"]
