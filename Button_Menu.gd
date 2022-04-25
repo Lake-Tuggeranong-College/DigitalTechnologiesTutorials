@@ -18,3 +18,7 @@ func _on_Incorrect_Answer():
 # func button pressed():
 	# pass # 
 	# $mouse_sound_effect.play
+
+
+func _on_Button2_pressed():
+	pass # Replace with function body.
