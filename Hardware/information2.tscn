@@ -55,11 +55,10 @@ __meta__ = {
 }
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
-margin_left = 141.0
-margin_top = 160.0
-margin_right = 374.0
-margin_bottom = 337.0
-rect_scale = Vector2( 2.25, 2.25 )
+margin_left = 199.0
+margin_top = 218.0
+margin_right = 435.0
+margin_bottom = 395.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
