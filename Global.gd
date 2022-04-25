@@ -3,8 +3,8 @@ extends Node
 
 var playerScore=0
 
-func increaseScore():
-	playerScore += 500
+func increaseScore(multiplier = 1):
+	playerScore += 500 * multiplier
 	print(playerScore)
 #in your quiz scene click on your correct answer button. in the top right there should be a node button click on 
 #it then double click pressed it should open a menu. click the button in the list. when you do so 
