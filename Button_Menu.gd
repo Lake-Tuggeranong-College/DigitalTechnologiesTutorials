@@ -13,6 +13,7 @@ func _on_Correct_Answer():
 
 func _on_Incorrect_Answer():
 	incorrectCounter += 1
+	print("Incorrect Answer")
 	#Global.increaseScore(Global.scoreMultiplier[incorrectCounter-1])
 
 
