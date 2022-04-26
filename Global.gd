@@ -1,6 +1,6 @@
 extends Node
 
-var scoreMultiplier =[0.8,0.6,0.5]
+var scoreMultiplier =[1, 0.8,0.6,0.5]
 var playerScore=0
 
 func increaseScore(multiplier = 1):
