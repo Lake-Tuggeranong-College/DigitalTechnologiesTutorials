@@ -13,7 +13,7 @@ func _on_Correct_Answer():
 
 func _on_Incorrect_Answer():
 	incorrectCounter += 1
-	Global.increaseScore()
+	Global.increaseScore(Global.scoreMultiplier[incorrectCounter-1])
 
 
 # func button pressed():
