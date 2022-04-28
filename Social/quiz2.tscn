@@ -169,7 +169,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Return to Info"
 script = ExtResource( 3 )
-scene_to_load = "res://Social/information1.tscn"
+scene_to_load = "res://Social/information2.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 411.0
@@ -190,6 +190,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Next"
 script = ExtResource( 3 )
+scene_to_load = "res://Social/information3.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 582.0
