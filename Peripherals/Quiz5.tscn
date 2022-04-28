@@ -182,7 +182,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Return to Info"
 script = ExtResource( 3 )
-scene_to_load = "res://Peripherals/Information2.tscn"
+scene_to_load = "res://Peripherals/Information5.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 411.0
