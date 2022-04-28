@@ -66,7 +66,7 @@ texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 639.0
-margin_right = 1275.0
+margin_right = 1274.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -76,8 +76,8 @@ align = 1
 autowrap = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1279.0
-margin_right = 1279.0
+margin_left = 1278.0
+margin_right = 1278.0
 margin_bottom = 613.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
@@ -131,6 +131,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Next"
 script = ExtResource( 3 )
+scene_to_load = "res://Accessibility/userquiz4.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 522.0
