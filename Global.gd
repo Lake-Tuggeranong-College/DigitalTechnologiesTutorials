@@ -2,6 +2,7 @@ extends Node
 
 var scoreMultiplier =[1, 0.8,0.6,0.5]
 var playerScore=0
+var incorrectCounter = 0
 
 func increaseScore(multiplier = 1):
 	playerScore += 500 * multiplier
