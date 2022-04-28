@@ -192,6 +192,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Next"
 script = ExtResource( 3 )
+scene_to_load = "res://Data/information2.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 582.0
