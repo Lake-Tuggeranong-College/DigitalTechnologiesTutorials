@@ -11,23 +11,23 @@ outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=2]
 size = 32
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=7]
+[sub_resource type="DynamicFont" id=3]
 size = 40
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=4]
 size = 32
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=5]
 size = 40
 font_data = ExtResource( 1 )
 
@@ -90,7 +90,7 @@ margin_right = 638.0
 margin_bottom = 85.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 text = "What is an Example of A Peripheral Device?"
 align = 1
 autowrap = true
@@ -109,7 +109,7 @@ margin_right = 638.0
 margin_bottom = 128.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 3 )
 text = "Graphics Processing Unit (GPU)"
 script = ExtResource( 3 )
 __meta__ = {
@@ -122,7 +122,7 @@ margin_right = 638.0
 margin_bottom = 260.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 3 )
 text = "Cables"
 script = ExtResource( 3 )
 __meta__ = {
@@ -135,7 +135,7 @@ margin_right = 638.0
 margin_bottom = 392.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 3 )
 text = "Monitor"
 script = ExtResource( 3 )
 __meta__ = {
@@ -149,7 +149,7 @@ margin_right = 638.0
 margin_bottom = 524.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 3 )
 text = "Motherboard"
 script = ExtResource( 3 )
 __meta__ = {
@@ -170,7 +170,7 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
@@ -181,10 +181,10 @@ margin_right = 407.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 4 )
 text = "Return to Info"
 script = ExtResource( 3 )
-scene_to_load = "res://Peripherals/Information.tscn"
+scene_to_load = "res://Peripherals/Information1.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 411.0
@@ -192,7 +192,7 @@ margin_right = 494.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 4 )
 text = "Back"
 script = ExtResource( 3 )
 
@@ -202,16 +202,20 @@ margin_right = 578.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 4 )
 text = "Next"
 script = ExtResource( 3 )
+scene_to_load = "res://Peripherals/Information2.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 582.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 5 )
 text = "15,500"
 align = 2
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Incorrect_Answer"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button2" to="VBoxContainer/Main/questionAnswer/Answers/Button2" method="_on_Incorrect_Answer"]
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Correct_Answer"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Incorrect_Answer"]
