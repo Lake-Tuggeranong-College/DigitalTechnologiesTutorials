@@ -118,3 +118,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
+[node name="Popup_menu" parent="." instance=ExtResource( 5 )]
