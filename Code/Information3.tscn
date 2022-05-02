@@ -120,4 +120,3 @@ text = "15,500"
 align = 2
 
 [node name="Popup_menu" parent="." instance=ExtResource( 5 )]
-[connection signal="pressed" from="VBoxContainer/Navigation/Buttons/Main_menu" to="Popup_menu" method="_on_Main_menu_pressed"]
