@@ -1,6 +1,5 @@
 extends Button
 
-export(String) var scene_to_load
 
 var mouse_sound_effect = load("res://Music/Mouse Click - Sound Effect (HD).wav")
 var popup = preload("res://Popup_menu.tscn")
@@ -18,7 +17,11 @@ func _on_Incorrect_Answer():
 	var pop = popup.instance()
 	add_child(pop)
 
+func _on_Topic_pressed():
+	$AudioStreamPlayer.play()
 
+
+export(String) var scene_to_load
 # func button pressed():
 	# pass # 
 	# $mouse_sound_effect.play
