@@ -67,7 +67,7 @@ texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 637.0
-margin_right = 1271.0
+margin_right = 1270.0
 margin_bottom = 617.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -89,8 +89,8 @@ valign = 1
 autowrap = true
 
 [node name="question answer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1275.0
-margin_right = 1275.0
+margin_left = 1274.0
+margin_right = 1274.0
 margin_bottom = 617.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/question answer"]
