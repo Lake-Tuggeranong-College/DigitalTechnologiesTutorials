@@ -24,13 +24,12 @@ func _on_Incorrect_Answer():
 	print("Incorrect Answer")
 	#Global.increaseScore(Global.scoreMultiplier[incorrectCounter-1])
 	var pop = popup.instance()
+	pop.position = Vector2(0, 0)
 	add_child(pop)
 
 func _on_Topic_pressed():
 	$AudioStreamPlayer.play()
 
-
-export(String) var scene_to_load
 # func button pressed():
 	# pass # 
 	# $mouse_sound_effect.play
