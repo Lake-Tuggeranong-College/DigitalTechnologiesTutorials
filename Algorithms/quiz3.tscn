@@ -96,6 +96,7 @@ custom_fonts/font = SubResource( 3 )
 text = "A loop"
 script = ExtResource( 3 )
 scene_to_load = "res://Algorithms/infomation4.tscn"
+array_pos = 7
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
