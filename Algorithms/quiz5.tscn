@@ -103,6 +103,7 @@ custom_fonts/font = SubResource( 3 )
 text = "Anytime"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
+array_pos = 9
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 122.0
