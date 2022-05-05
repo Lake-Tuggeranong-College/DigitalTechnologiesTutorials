@@ -30,7 +30,7 @@ func _on_Topic_pressed():
 	$AudioStreamPlayer.play()
 
 
-export(String) var scene_to_load
+
 # func button pressed():
 	# pass # 
 	# $mouse_sound_effect.play
