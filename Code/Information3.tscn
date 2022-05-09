@@ -70,6 +70,12 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
+text = "The other form of coding is referred to as High-level language or
+Programming Language, it is much easier to read compared to low-level language,
+as it consists of human vocabulary. It still communicates with the machine, however,
+it needs to use a compiler in order to turn the High-level language into Machine 
+language.
+"
 clip_text = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
