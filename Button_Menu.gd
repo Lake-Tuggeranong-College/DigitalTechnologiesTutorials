@@ -5,6 +5,7 @@ export(int) var array_pos
 
 var mouse_sound_effect = load("res://Music/Mouse Click - Sound Effect (HD).wav")
 var popup = preload("res://Popup_menu.tscn")
+var pop_loc = Vector2(-300,-100)
 
 func _on_Correct_Answer():
 	print(array_pos)
@@ -21,10 +22,11 @@ func _on_Correct_Answer():
 func _on_Incorrect_Answer():
 	print(Global.incorrectCounter)
 	Global.incorrectCounter += 1
-	print("Incorrect Answer")
 	#Global.increaseScore(Global.scoreMultiplier[incorrectCounter-1])
 	var pop = popup.instance()
+	pop.set_position(pop_loc)
 	add_child(pop)
+	print("Incorrect Answer")
 
 func _on_Topic_pressed():
 	$AudioStreamPlayer.play()
