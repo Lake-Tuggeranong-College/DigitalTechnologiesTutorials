@@ -1,8 +1,12 @@
 extends Button
 
 export(String) var scene_to_load
+export(String) var topicname
 
 var mouse_sound_effect = load("res://Music/Mouse Click - Sound Effect (HD).wav")
+
+func _ready():
+	Global.topic = topicname
 
 func _on_Correct_Answer():
 	Global.increaseScore()

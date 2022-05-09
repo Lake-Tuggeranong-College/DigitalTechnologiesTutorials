@@ -2,6 +2,7 @@ extends Node
 
 
 var playerScore=0
+var topic = "Ssadsada"
 
 func increaseScore():
 	playerScore += 500
