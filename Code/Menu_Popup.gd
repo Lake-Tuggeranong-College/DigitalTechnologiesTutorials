@@ -7,3 +7,4 @@ func _ready():
 func _on_TryAgain_pressed():
 	self.visible = 0
 	get_tree().paused = false
+
