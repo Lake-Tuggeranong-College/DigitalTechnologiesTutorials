@@ -24,6 +24,7 @@ __meta__ = {
 }
 
 [node name="Yes" type="Button" parent="."]
+pause_mode = 2
 margin_left = 259.167
 margin_top = 187.178
 margin_right = 329.167
@@ -32,4 +33,4 @@ text = "Try Again"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="Yes" to="." method="_on_TryAgain_pressed"]
