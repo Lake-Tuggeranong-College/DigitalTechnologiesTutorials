@@ -70,6 +70,13 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
+text = "There is a special type of Programming language known as Scripting language, 
+a recognizable Scripting Language is Python. The main difference between
+Programming languages and Scripting languages is that Scripting languages do 
+not need to use a compiler in order to translate code into machine language. 
+Instead it uses an interpreter to instantly translate the code into machine language.
+
+"
 clip_text = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]

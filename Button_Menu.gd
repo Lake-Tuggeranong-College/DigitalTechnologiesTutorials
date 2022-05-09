@@ -4,8 +4,8 @@ export(String) var scene_to_load
 export(int) var array_pos
 
 var mouse_sound_effect = load("res://Music/Mouse Click - Sound Effect (HD).wav")
-var popup = preload("res://Popup_menu.tscn")
 var pop_loc = Vector2(350,200)
+var popup = preload("res://Popup_menu.tscn")
 
 func _on_Correct_Answer():
 	print(array_pos)
@@ -24,7 +24,7 @@ func _on_Incorrect_Answer():
 	Global.incorrectCounter += 1
 	#Global.increaseScore(Global.scoreMultiplier[incorrectCounter-1])
 	var pop = popup.instance()
-	add_child(pop)
+	get_tree().get_root().get_node(".").add_child(pop)
 	pop.set_global_position(pop_loc)
 	print("Incorrect Answer")
 
