@@ -130,6 +130,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_to_load = "res://Software/software_Information_2.tscn"
+array_pos = 50
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 183.0
@@ -204,7 +205,6 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "0"
 align = 2
-
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Incorrect_Answer"]
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button2" to="VBoxContainer/Main/questionAnswer/Answers/Button2" method="_on_Incorrect_Answer"]
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Correct_Answer"]
