@@ -70,6 +70,11 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
+text = "There are sub-styles of the High-level language known as paradigms.
+These paradigms usually make the code easier to understand and implement 
+or give the code more functionality. A common type of Paradigm is Object Oriented
+Programming, this is used often within game development to create characters.
+"
 clip_text = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
