@@ -12,7 +12,7 @@ func _on_Correct_Answer():
 	if Global.answered[array_pos] == 0 :
 		Global.increaseScore(Global.scoreMultiplier[Global.incorrectCounter])
 		Global.incorrectCounter = 0
-		Global.answered[array_pos] = 1
+		Global.answered[array_pos] == 1
 	else:
 		Global.incorrectCounter = 0
 	print("Changing Scene...2")
