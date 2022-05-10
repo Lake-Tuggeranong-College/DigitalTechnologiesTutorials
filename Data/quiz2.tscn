@@ -4,7 +4,7 @@
 [ext_resource path="res://Images/Data tranfer_1.png" type="Texture" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
-[ext_resource path="res://Images/granite-texture_1.jpg" type="Texture" id=5]
+[ext_resource path="res://Images/granite_texture5.jpg" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -26,11 +26,12 @@ font_data = ExtResource( 1 )
 script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = -9.52264
-margin_top = -1.36035
-margin_right = 1272.48
-margin_bottom = 851.64
+margin_left = -10.0
+margin_top = -1.0
+margin_right = 1298.0
+margin_bottom = 734.0
 texture = ExtResource( 5 )
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -51,7 +52,7 @@ margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.196078, 0.164706, 0.890196, 1 )
+custom_colors/font_color = Color( 0.909804, 0.905882, 0.968627, 1 )
 text = "safe file data "
 align = 1
 
