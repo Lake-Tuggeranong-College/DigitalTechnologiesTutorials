@@ -102,6 +102,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_to_load = "res://Software/software_Information_5.tscn"
+array_pos = 53
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
