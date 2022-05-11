@@ -126,6 +126,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_to_load = "res://Algorithms/infomation5.tscn"
+array_pos = 8
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -155,7 +156,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Reutrn to Info"
 script = ExtResource( 3 )
-scene_to_load = "res://Algorithms/infomation1.tscn"
+scene_to_load = "res://Algorithms/infomation4.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 411.0
@@ -186,4 +187,7 @@ custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
 
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Incorrect_Answer"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button2" to="VBoxContainer/Main/questionAnswer/Answers/Button2" method="_on_Incorrect_Answer"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Incorrect_Answer"]
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Correct_Answer"]

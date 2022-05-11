@@ -17,29 +17,20 @@ margin_left = 97.9547
 margin_top = 79.1169
 margin_right = 499.955
 margin_bottom = 144.117
-text = "Leaving will lose all progress, are you sure you want to leave?"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="No" type="Button" parent="."]
-margin_left = 347.415
-margin_top = 187.325
-margin_right = 415.415
-margin_bottom = 241.325
-text = "No"
+text = "Incorrect, try again"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Yes" type="Button" parent="."]
-margin_left = 159.683
-margin_top = 188.685
-margin_right = 227.683
-margin_bottom = 240.685
-text = "Yes"
+pause_mode = 2
+margin_left = 259.167
+margin_top = 187.178
+margin_right = 329.167
+margin_bottom = 239.178
+text = "Try Again"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="No" to="." method="_on_No_pressed"]
-[connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="Yes" to="." method="_on_TryAgain_pressed"]

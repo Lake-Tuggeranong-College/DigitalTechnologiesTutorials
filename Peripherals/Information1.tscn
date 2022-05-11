@@ -17,10 +17,10 @@ outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -93,7 +93,7 @@ margin_right = 636.0
 margin_bottom = 610.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Peripherals are devices that are attached to computers. These devices are  attached to the computer to perform a specific function. This can then be used to input information and instructions into the computer. They are also the devices that show this data to us, the operators, through either images or sounds. However they are not required for the computer to run.
 
 As such it should be no surprise that we wouldn't recognise computers if not for these devices. In fact this program uses a bare minimum of 4 these devices to program this. These devices things that you use on a regular basis, such as;
@@ -142,7 +142,7 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
@@ -153,7 +153,7 @@ margin_right = 347.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Start Quiz"
 script = ExtResource( 3 )
 scene_to_load = "res://Peripherals/Quiz1.tscn"
@@ -164,7 +164,7 @@ margin_right = 434.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Back"
 script = ExtResource( 3 )
 
@@ -174,7 +174,7 @@ margin_right = 518.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Next"
 script = ExtResource( 3 )
 
