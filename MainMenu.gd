@@ -6,10 +6,6 @@ func _ready():
 		button.connect("button_down", self, "_clicked", [button.topicname])
 
 func _on_Button_pressed(scene_to_load):
-	print("Changing Scene...")
-	print(scene_to_load)
-	$AudioStreamPlayer.play()
-	yield(get_tree().create_timer(0.5), "timeout")
 	get_tree().change_scene(scene_to_load)
 
 

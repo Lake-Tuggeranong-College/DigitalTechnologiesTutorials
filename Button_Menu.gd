@@ -8,6 +8,9 @@ var mouse_sound_effect = load("res://Music/Mouse Click - Sound Effect (HD).wav")
 var pop_loc = Vector2(350,200)
 var popup = preload("res://Popup_menu.tscn")
 
+func _ready():
+	Global.topic = topicname
+
 func _on_Correct_Answer():
 	print(array_pos)
 	if Global.answered[array_pos] == 0 :

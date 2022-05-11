@@ -15,8 +15,7 @@ func _ready():
 	$VBoxContainer/Navigation/Label.text = str(Global.playerScore)
 
 func _on_Button_pressed(scene_to_load):
-	print("Changing Scene...2")
-	print(scene_to_load)
+	print(topic)
 	get_tree().change_scene(scene_to_load)
 
 
