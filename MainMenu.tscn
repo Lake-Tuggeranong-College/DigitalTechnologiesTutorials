@@ -231,7 +231,6 @@ custom_fonts/font = SubResource( 5 )
 text = "Number System"
 script = ExtResource( 1 )
 scene_to_load = "res://Number systems/Information1.tscn"
-topicname = "NS"
 
 [node name="Topic 8" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 428.0
@@ -297,4 +296,3 @@ custom_fonts/font = SubResource( 5 )
 text = "Credits"
 script = ExtResource( 1 )
 scene_to_load = "res://Test/information1.tscn"
-topicname = "DATA"
