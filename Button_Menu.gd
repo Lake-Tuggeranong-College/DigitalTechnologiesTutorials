@@ -19,8 +19,8 @@ func _on_Correct_Answer():
 		Global.incorrectCounter = 0
 	print("Changing Scene...2")
 	print(scene_to_load)
+	print(Global.topic)
 	get_tree().change_scene(scene_to_load)
-	Global.topic = topicname
 	Global.stage +=1
 
 func _on_Incorrect_Answer():
