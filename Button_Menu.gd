@@ -8,8 +8,6 @@ var mouse_sound_effect = load("res://Music/Mouse Click - Sound Effect (HD).wav")
 var pop_loc = Vector2(350,200)
 var popup = preload("res://Popup_menu.tscn")
 
-func _ready():
-	Global.topic = topicname
 
 func _on_Correct_Answer():
 	print(array_pos)
@@ -21,8 +19,9 @@ func _on_Correct_Answer():
 		Global.incorrectCounter = 0
 	print("Changing Scene...2")
 	print(scene_to_load)
+	print(Global.topic)
 	get_tree().change_scene(scene_to_load)
-	Global.topic = topicname
+	Global.stage +=1
 
 func _on_Incorrect_Answer():
 	print(Global.incorrectCounter)

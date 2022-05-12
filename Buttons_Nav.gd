@@ -1,6 +1,6 @@
 extends Node2D
 var topicn = []
-export var stage = 1
+var stage = Global.stage
 var topic = Global.topic
 var csv = "res://Q1.csv"
 
@@ -15,7 +15,6 @@ func _ready():
 	$VBoxContainer/Navigation/Label.text = str(Global.playerScore)
 
 func _on_Button_pressed(scene_to_load):
-	print(topic)
 	get_tree().change_scene(scene_to_load)
 
 
@@ -30,15 +29,14 @@ func load_csv():
 		while !file.eof_reached():
 			var q = file.get_csv_line()
 			if (q.size() > 5):
-				print(q[0])
-				if (q[0] == "+ACI-"+topic+"+ACI-" and int(q[1]) == stage):
+				if (q[0] == topic and int(q[1]) == stage):
+					print(q[0] + "asd")
 					topicn.append(q)
 					$VBoxContainer/Main/questionAnswer/Example_Question.text = String(topicn[0][2])
 					$VBoxContainer/Main/questionAnswer/Answers/Button.text = String(topicn[0][3])
 					$VBoxContainer/Main/questionAnswer/Answers/Button2.text = String(topicn[0][4])
 					$VBoxContainer/Main/questionAnswer/Answers/Button3.text = String(topicn[0][5])
 					$VBoxContainer/Main/questionAnswer/Answers/Button4.text = String(topicn[0][6])
-					print("dadsabjd")
 		file.close()
 #	print(get_tree().get_current_scene().get_name())
 
