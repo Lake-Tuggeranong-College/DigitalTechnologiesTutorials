@@ -20,8 +20,8 @@ func _on_Correct_Answer():
 	print("Changing Scene...2")
 	print(scene_to_load)
 	print(Global.topic)
+	Global.stage +=1 #when answered correctly, the players mvoe onto the next stage (question)
 	get_tree().change_scene(scene_to_load)
-	Global.stage +=1
 
 func _on_Incorrect_Answer():
 	print(Global.incorrectCounter)
@@ -36,11 +36,7 @@ func _on_Topic_pressed():
 	$AudioStreamPlayer.play()
 
 
-
 # func button pressed():
 	# pass # 
 	# $mouse_sound_effect.play
-
-
-
 
