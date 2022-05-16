@@ -6,7 +6,7 @@ var csv = "res://Q1.csv"
 
 func _ready():
 	for button in $VBoxContainer/Navigation/Buttons.get_children():
-		button.connect("pressed", self, "_on_Button_pressed", [button.scene_to_load])
+		button.connect("pressed", self, "_on_Button_pressed", [button, button.scene_to_load])
 #	for button in $VBoxContainer/Main/questionAnswer/Answers.get_children():
 #		button.connect("pressed", self, "_on_Button_pressed", [button.scene_to_load])
 	load_csv()
@@ -14,8 +14,11 @@ func _ready():
 	# Update the UI with the current Score
 	$VBoxContainer/Navigation/Label.text = str(Global.playerScore)
 
-func _on_Button_pressed(scene_to_load):
+func _on_Button_pressed(button, scene_to_load):
+	if button.text == "Back":
+		Global.stage -=1
 	get_tree().change_scene(scene_to_load)
+
 
 
 func _on_Incorrect_Answer():
