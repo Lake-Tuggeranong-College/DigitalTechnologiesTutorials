@@ -297,4 +297,3 @@ custom_fonts/font = SubResource( 5 )
 text = "Credits"
 script = ExtResource( 1 )
 scene_to_load = "res://Credits/Credits.tscn"
-topicname = "DATA"
