@@ -25,7 +25,7 @@ func _on_Incorrect_Answer():
 	pass # Replace with function body.
 
 func load_csv():
-	if stage == 5:
+	if stage >= 5:
 		get_tree().change_scene("res://MainMenu.tscn")
 	var file = File.new()
 	file.open(csv, file.READ)
