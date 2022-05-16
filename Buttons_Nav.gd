@@ -9,8 +9,9 @@ func _ready():
 	for button in $VBoxContainer/Navigation/Buttons.get_children():
 		button.connect("pressed", self, "_on_Button_pressed", [button, button.scene_to_load])
 	load_csv()
-	for btn in $VBoxContainer/Main/questionAnswer/Answers.get_children():
-		btn.connect("button_down", self, "_Correct", [btn])
+	if get_tree().get_current_scene().get_name() != "Credits" :
+		for btn in $VBoxContainer/Main/questionAnswer/Answers.get_children():
+			btn.connect("button_down", self, "_Correct", [btn])
 	
 	# Update the UI with the current Score
 	$VBoxContainer/Navigation/Label.text = str(Global.playerScore)
