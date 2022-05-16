@@ -230,7 +230,7 @@ custom_styles/normal = SubResource( 17 )
 custom_fonts/font = SubResource( 5 )
 text = "Number System"
 script = ExtResource( 1 )
-scene_to_load = "res://Number systems/Information1.tscn"
+scene_to_load = "res://Number systems/Information.tscn"
 topicname = "NS"
 
 [node name="Topic 8" type="Button" parent="VBoxContainer/Levels"]

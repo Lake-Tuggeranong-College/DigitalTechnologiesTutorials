@@ -186,7 +186,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Return to Info"
 script = ExtResource( 4 )
-scene_to_load = "res://Number systems/Information1.tscn"
+scene_to_load = "res://Number systems/Information.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 visible = false
