@@ -8,6 +8,8 @@ var correct = ""
 func _ready():
 	for button in $VBoxContainer/Navigation/Buttons.get_children():
 		button.connect("pressed", self, "_on_Button_pressed", [button, button.scene_to_load])
+		if button.text == "Back" and stage == 0:
+			button.visible = false
 	load_csv()
 	if get_tree().get_current_scene().get_name() != "Credits" :
 		for btn in $VBoxContainer/Main/questionAnswer/Answers.get_children():
@@ -18,8 +20,9 @@ func _ready():
 	print(stage)
 
 func _on_Button_pressed(button, scene_to_load):
-	if button.text == "Back":
+	if button.text == "Back" and stage != 0:
 		Global.stage -=1
+		get_tree().change_scene("res://Number systems/Quiz.tscn")
 	get_tree().change_scene(scene_to_load)
 
 func _on_Incorrect_Answer():
@@ -33,7 +36,7 @@ func load_csv():
 	while !file.eof_reached():
 		var q = file.get_csv_line()
 #if the scene is called Quiz, edits the button and labels in that scene using different coloumns
-# from the csv file.
+# from the csv file.z
 		if get_tree().get_current_scene().get_name() == "Quiz":
 #check if the first coloumn is same as the topic provided from the main menu scene
 #and if the stage is the same as the glboal script, which updates when next button is pressed (WIP)
@@ -47,7 +50,6 @@ func load_csv():
 				$VBoxContainer/Main/questionAnswer/Answers/Button4.text = String(topicn[0][6])
 				$VBoxContainer/Main/CenterContainer/Example_image.texture = load(str(topicn[0][8]))
 				correct = topicn[0][10]
-
 #similar to above, but this changes the Information scene
 		if get_tree().get_current_scene().get_name() == "Information":
 #check if the first coloumn is same as the topic provided from the main menu scene
@@ -62,5 +64,7 @@ func load_csv():
 
 func _Correct(btn):
 	if btn.text == correct:
+		Global.increaseScore(Global.scoreMultiplier[Global.incorrectCounter])
+		Global.incorrectCounter = 0
 		Global.stage +=1
 		get_tree().change_scene("res://Number systems/Information.tscn")
