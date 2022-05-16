@@ -11,7 +11,8 @@ var scoreMultiplier =[1, 0.8,0.6,0.5, 0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.
 
 var playerScore = 0
 var incorrectCounter = 0
-var topic = "GLOBAL"
+var topic = "GLOBAL" #provides the topic for the load_csv function helps identify what topic the players are doing
+var stage = 0 #provides the stage alue for the load_csv function, helps identify what stage the players are up to
 
 var answered = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 

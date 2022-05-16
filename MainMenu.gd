@@ -14,4 +14,5 @@ func _on_Topic_pressed():
 
 func _clicked(topicname):
 	Global.topic = topicname
+	Global.stage = 0
 
