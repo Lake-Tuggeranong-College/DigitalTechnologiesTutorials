@@ -11,5 +11,5 @@ func _ready():
 
 func play_music():
 	
-	$Music.stream = backup_music
+	$Music.stream = background_music
 	$Music.play()
