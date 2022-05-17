@@ -82,7 +82,7 @@ rect_min_size = Vector2( 450, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "A chart is use to store information that can be used to update when a book being 
+text = "A chart is used to store information that can be used to update when a book being 
 borrow and return"
 align = 1
 autowrap = true

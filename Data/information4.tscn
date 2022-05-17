@@ -44,7 +44,7 @@ margin_right = 1283.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "what data do keyborad,mouse and touch screen use"
+text = "what data do keyboard,mouse and touch screen use"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]

@@ -43,7 +43,7 @@ margin_right = 1278.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Is a s video game safe file data"
+text = "Is a video game safe file data"
 align = 1
 
 [node name="Main" type="HBoxContainer" parent="VBoxContainer"]
