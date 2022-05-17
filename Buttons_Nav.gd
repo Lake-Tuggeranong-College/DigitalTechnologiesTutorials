@@ -23,9 +23,6 @@ func _on_Button_pressed(button, scene_to_load):
 		Global.stage -=1
 	get_tree().change_scene(scene_to_load)
 
-func _on_Incorrect_Answer():
-	pass # Replace with function body.
-
 func load_csv():
 	if stage >= 5:
 		get_tree().change_scene("res://MainMenu.tscn")

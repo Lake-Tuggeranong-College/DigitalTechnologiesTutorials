@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
+[ext_resource path="res://Button_Menu.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -100,6 +101,8 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
+script = ExtResource( 4 )
+scene_to_load = "res://MainMenu.tscn"
 
 [node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
@@ -109,6 +112,8 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Start Quiz"
+script = ExtResource( 4 )
+scene_to_load = "res://Code/quiz2.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 351.0
