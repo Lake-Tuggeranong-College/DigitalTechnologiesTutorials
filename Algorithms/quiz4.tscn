@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Images/Algroithm_1.png" type="Texture" id=1]
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=3]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=4]
+[ext_resource path="res://Images/granite_texture6.jpg" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -23,6 +24,15 @@ font_data = ExtResource( 2 )
 
 [node name="Topic_1" type="Node2D"]
 script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1285.0
+margin_bottom = 724.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_right = 1279.0
@@ -154,7 +164,7 @@ margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
-text = "Reutrn to Info"
+text = "Return to Info"
 script = ExtResource( 3 )
 scene_to_load = "res://Algorithms/infomation4.tscn"
 
@@ -186,7 +196,6 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
-
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Incorrect_Answer"]
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button2" to="VBoxContainer/Main/questionAnswer/Answers/Button2" method="_on_Incorrect_Answer"]
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Incorrect_Answer"]

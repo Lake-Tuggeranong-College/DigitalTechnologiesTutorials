@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
 [ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
 [ext_resource path="res://Button_Menu.gd" type="Script" id=4]
-[ext_resource path="res://Popup_menu.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -66,7 +65,7 @@ texture = ExtResource( 2 )
 
 [node name="Example_text" type="Label" parent="VBoxContainer/Main"]
 margin_left = 639.0
-margin_right = 1274.0
+margin_right = 1275.0
 margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -83,8 +82,8 @@ was able to crack a daily code in under
 clip_text = true
 
 [node name="questionAnswer" type="VBoxContainer" parent="VBoxContainer/Main"]
-margin_left = 1278.0
-margin_right = 1278.0
+margin_left = 1279.0
+margin_right = 1279.0
 margin_bottom = 613.0
 
 [node name="Answers" type="Node" parent="VBoxContainer/Main/questionAnswer"]
@@ -106,6 +105,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
 script = ExtResource( 4 )
+scene_to_load = "res://MainMenu.tscn"
 
 [node name="Start_quiz" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 margin_left = 189.0
@@ -126,6 +126,3 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
-
-[node name="Popup_menu" parent="." instance=ExtResource( 5 )]
-[connection signal="pressed" from="VBoxContainer/Navigation/Buttons/Main_menu" to="Popup_menu" method="_on_Main_menu_pressed"]

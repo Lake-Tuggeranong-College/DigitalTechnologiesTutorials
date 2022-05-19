@@ -1,28 +1,38 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Button_Menu.gd" type="Script" id=1]
-[ext_resource path="res://Buttons_Nav.gd" type="Script" id=2]
-[ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Images/NS_Hex.png" type="Texture" id=4]
+[ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Images/NS_decimals.jpg" type="Texture" id=2]
+[ext_resource path="res://Buttons_Nav.gd" type="Script" id=3]
+[ext_resource path="res://Button_Menu.gd" type="Script" id=4]
+[ext_resource path="res://Images/granite_texture6.jpg" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 32
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 40
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 32
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
-[node name="Topic_1" type="Node2D"]
-script = ExtResource( 2 )
+[node name="Quiz" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1281.0
+margin_bottom = 725.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 50.0
@@ -65,13 +75,13 @@ __meta__ = {
 
 [node name="Example_image" type="TextureRect" parent="VBoxContainer/Main/CenterContainer"]
 margin_left = 48.0
-margin_top = 25.0
+margin_top = 75.0
 margin_right = 648.0
-margin_bottom = 525.0
-rect_min_size = Vector2( 600, 500 )
+margin_bottom = 475.0
+rect_min_size = Vector2( 600, 400 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 2 )
 expand = true
 stretch_mode = 5
 
@@ -83,19 +93,19 @@ rect_min_size = Vector2( 530, 0 )
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 530.0
-margin_bottom = 85.0
+margin_bottom = 129.0
 rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "How many unique digits does the hex number system have?"
+text = "How many unique numbers does the decimal number system use to create other numbers?"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 89.0
+margin_top = 133.0
 margin_right = 530.0
-margin_bottom = 329.0
+margin_bottom = 373.0
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 530.0
@@ -103,11 +113,11 @@ margin_bottom = 57.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "0-9"
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Number systems/Information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
@@ -116,8 +126,8 @@ margin_bottom = 118.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "0-A or 0-10"
-script = ExtResource( 1 )
+text = "1-10"
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -129,8 +139,8 @@ margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "0-1"
-script = ExtResource( 1 )
+text = "2-11"
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -142,12 +152,11 @@ margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "0-F or 0-15"
-script = ExtResource( 1 )
+text = "1-9"
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://MainMenu.tscn"
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 663.0
@@ -165,7 +174,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 scene_to_load = "res://MainMenu.tscn"
 
 [node name="Return" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -176,8 +185,8 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Return to Info"
-script = ExtResource( 1 )
-scene_to_load = "res://Number systems/Information5.tscn"
+script = ExtResource( 4 )
+scene_to_load = "res://Number systems/Information.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 visible = false
@@ -188,18 +197,18 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Back"
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 
 [node name="Next_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
 visible = false
-margin_left = 498.0
-margin_right = 578.0
+margin_left = 411.0
+margin_right = 491.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 4 )
 text = "Next"
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
 margin_left = 411.0
@@ -209,4 +218,4 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "Score: 15,500"
 align = 2
-[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Correct_Answer"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Correct_Answer"]

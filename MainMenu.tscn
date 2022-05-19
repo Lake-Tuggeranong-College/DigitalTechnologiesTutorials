@@ -1,10 +1,11 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://Button_Menu.gd" type="Script" id=1]
 [ext_resource path="res://MainMenu.gd" type="Script" id=2]
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
 [ext_resource path="res://Music/Mouse Click - Sound Effect (HD).wav" type="AudioStream" id=5]
+[ext_resource path="res://Images/wp44707241.jpg" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 72
@@ -86,6 +87,15 @@ margin_right = 1280.0
 margin_bottom = 720.0
 mouse_filter = 2
 color = Color( 0.278431, 0.266667, 0.266667, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Tree"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+stretch_mode = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -220,7 +230,8 @@ custom_styles/normal = SubResource( 17 )
 custom_fonts/font = SubResource( 5 )
 text = "Number System"
 script = ExtResource( 1 )
-scene_to_load = "res://Number systems/Information1.tscn"
+scene_to_load = "res://Number systems/Information.tscn"
+topicname = "NS"
 
 [node name="Topic 8" type="Button" parent="VBoxContainer/Levels"]
 margin_left = 428.0
@@ -285,4 +296,4 @@ custom_styles/normal = SubResource( 27 )
 custom_fonts/font = SubResource( 5 )
 text = "Credits"
 script = ExtResource( 1 )
-scene_to_load = "res://Test/information1.tscn"
+scene_to_load = "res://Credits/Credits.tscn"
