@@ -117,7 +117,6 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Number systems/Information2.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
@@ -218,4 +217,3 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "Score: 15,500"
 align = 2
-[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Correct_Answer"]

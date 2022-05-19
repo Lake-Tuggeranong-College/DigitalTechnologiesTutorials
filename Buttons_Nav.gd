@@ -8,7 +8,8 @@ var correct = ""
 func _ready():
 	for button in $VBoxContainer/Navigation/Buttons.get_children():
 		button.connect("pressed", self, "_on_Button_pressed", [button, button.scene_to_load])
-	
+		if button.text == "Back" and stage == 0:
+			button.visible = false
 	load_csv()
 	if get_tree().get_current_scene().get_name() != "Credits" :
 		for btn in $VBoxContainer/Main/questionAnswer/Answers.get_children():
@@ -19,8 +20,9 @@ func _ready():
 	print(stage)
 
 func _on_Button_pressed(button, scene_to_load):
-	if button.text == "Back":
+	if button.text == "Back" and stage != 0:
 		Global.stage -=1
+		get_tree().change_scene("res://Number systems/Quiz.tscn")
 	get_tree().change_scene(scene_to_load)
 
 func load_csv():
@@ -61,5 +63,7 @@ func load_csv():
 
 func _Correct(btn):
 	if btn.text == correct:
+		Global.increaseScore(Global.scoreMultiplier[Global.incorrectCounter])
+		Global.incorrectCounter = 0
 		Global.stage +=1
 		get_tree().change_scene("res://Number systems/Information.tscn")
