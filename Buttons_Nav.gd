@@ -4,6 +4,9 @@ var stage = Global.stage
 var topic = Global.topic
 var csv = "res://Q1.csv"
 var correct = ""
+var arr_pos
+var menu = preload("res://Button_Menu.gd")
+var menu_script = menu.new()
 
 func _ready():
 	for button in $VBoxContainer/Navigation/Buttons.get_children():
@@ -50,6 +53,7 @@ func load_csv():
 				$VBoxContainer/Main/questionAnswer/Answers/Button4.text = String(topicn[0][6])
 				$VBoxContainer/Main/CenterContainer/Example_image.texture = load(str(topicn[0][8]))
 				correct = topicn[0][10]
+				arr_pos = topicn[0][11]
 #similar to above, but this changes the Information scene
 		if get_tree().get_current_scene().get_name() == "Information":
 #check if the first coloumn is same as the topic provided from the main menu scene
@@ -64,7 +68,11 @@ func load_csv():
 
 func _Correct(btn):
 	if btn.text == correct:
+		get_tree().change_scene("res://Number systems/Information.tscn")
+		Global.stage +=1
+	if btn.text != correct:
+		Global.incorrectCounter +=1
+	if Global.answered[int(arr_pos)] == 0:
 		Global.increaseScore(Global.scoreMultiplier[Global.incorrectCounter])
 		Global.incorrectCounter = 0
-		Global.stage +=1
-		get_tree().change_scene("res://Number systems/Information.tscn")
+		Global.answered[int(arr_pos)] = 1
