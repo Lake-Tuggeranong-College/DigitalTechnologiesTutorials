@@ -4,6 +4,9 @@ var stage = Global.stage
 var topic = Global.topic
 var csv = "res://Q1.txt"
 var correct = ""
+var arr_pos
+var menu = preload("res://Button_Menu.gd")
+var menu_script = menu.new()
 
 func _ready():
 	for button in $VBoxContainer/Navigation/Buttons.get_children():
@@ -29,6 +32,7 @@ func load_csv():
 	if stage >= 5:
 		get_tree().change_scene("res://MainMenu.tscn")
 	var file = File.new()
+
 	var error = file.open(csv, file.READ)
 	if error == OK:
 		while !file.eof_reached():
@@ -63,7 +67,11 @@ func load_csv():
 
 func _Correct(btn):
 	if btn.text == correct:
+		get_tree().change_scene("res://Number systems/Information.tscn")
+		Global.stage +=1
+	if btn.text != correct:
+		Global.incorrectCounter +=1
+	if Global.answered[int(arr_pos)] == 0:
 		Global.increaseScore(Global.scoreMultiplier[Global.incorrectCounter])
 		Global.incorrectCounter = 0
-		Global.stage +=1
-		get_tree().change_scene("res://Number systems/Information.tscn")
+		Global.answered[int(arr_pos)] = 1
