@@ -1,8 +1,9 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Code/Menu_Popup.gd" type="Script" id=1]
+[ext_resource path="res://Menu_Popup.gd" type="Script" id=1]
 
 [node name="Popup_menu" type="Panel"]
+pause_mode = 2
 margin_left = 333.081
 margin_top = 158.36
 margin_right = 931.081
@@ -33,4 +34,4 @@ text = "Try Again"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="Yes" to="." method="_on_TryAgain_pressed"]
+[connection signal="pressed" from="Yes" to="." method="_on_Try_Again"]
