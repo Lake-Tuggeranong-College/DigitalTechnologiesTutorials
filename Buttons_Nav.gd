@@ -14,7 +14,7 @@ func _ready():
 		if button.text == "Back" and stage == 0:
 			button.visible = false
 	load_csv()
-	if get_tree().get_current_scene().get_name() != "Credits" :
+	if topic == "NS" && get_tree().get_current_scene().get_name() != "Credits" :
 		for btn in $VBoxContainer/Main/questionAnswer/Answers.get_children():
 			btn.connect("button_down", self, "_Correct", [btn])
 	
@@ -52,6 +52,7 @@ func load_csv():
 					$VBoxContainer/Main/questionAnswer/Answers/Button4.text = String(topicn[0][6])
 					$VBoxContainer/Main/CenterContainer/Example_image.texture = load(str(topicn[0][8]))
 					correct = topicn[0][10]
+					arr_pos = topicn[0][11]
 	
 	#similar to above, but this changes the Information scene
 			if get_tree().get_current_scene().get_name() == "Information":
