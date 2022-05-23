@@ -100,7 +100,7 @@ margin_right = 1230.0
 margin_bottom = 714.0
 
 [node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Navigation"]
-margin_right = 347.0
+margin_right = 434.0
 margin_bottom = 51.0
 
 [node name="Main_menu" type="Button" parent="VBoxContainer/Navigation/Buttons"]
@@ -125,7 +125,6 @@ script = ExtResource( 4 )
 scene_to_load = "res://Number systems/Quiz.tscn"
 
 [node name="Back_button" type="Button" parent="VBoxContainer/Navigation/Buttons"]
-visible = false
 margin_left = 351.0
 margin_right = 434.0
 margin_bottom = 51.0
@@ -147,7 +146,7 @@ text = "Next"
 script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="VBoxContainer/Navigation"]
-margin_left = 351.0
+margin_left = 438.0
 margin_right = 1230.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
