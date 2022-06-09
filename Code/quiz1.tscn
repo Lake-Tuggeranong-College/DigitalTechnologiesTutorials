@@ -217,7 +217,6 @@ size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "15,500"
 align = 2
-
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Incorrect_Answer"]
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button2" to="VBoxContainer/Main/questionAnswer/Answers/Button2" method="_on_Incorrect_Answer"]
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Incorrect_Answer"]

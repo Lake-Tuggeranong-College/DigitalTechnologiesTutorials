@@ -117,6 +117,7 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+array_pos = 35
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 61.0
